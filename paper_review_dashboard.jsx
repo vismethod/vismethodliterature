@@ -494,6 +494,9 @@ export default function PaperReviewDashboard() {
                           <div className="flex h-7 w-7 items-center justify-center rounded-full bg-slate-100 text-xs font-semibold text-slate-500">
                             {paper._index}
                           </div>
+                          {paper._matchedPdf && (
+                            <FileText className="h-4 w-4 text-emerald-600 shrink-0" />
+                          )}
                         </div>
 
                         <div className="min-w-0 flex-1">
@@ -502,11 +505,8 @@ export default function PaperReviewDashboard() {
                             className="w-full text-left"
                           >
                             <div className="flex flex-col gap-1">
-                              <div className="text-sm font-medium leading-tight text-slate-900 hover:text-violet-700 flex items-start gap-1.5">
-                                {paper._matchedPdf && (
-                                  <FileText className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
-                                )}
-                                <span>{paper.title || "Untitled paper"}</span>
+                              <div className="text-sm font-medium leading-tight text-slate-900 hover:text-violet-700">
+                                {paper.title || "Untitled paper"}
                               </div>
                               <div className="text-xs text-slate-500">
                                 {paper.year || "Unknown year"} · {paper.venue || "Unknown venue"}
