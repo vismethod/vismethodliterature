@@ -407,7 +407,7 @@ export default function PaperReviewDashboard() {
   return (
     <div className="h-screen flex flex-col bg-slate-50 text-slate-900 overflow-hidden">
       <div className="shrink-0 border-b bg-white/90 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <h1 className="text-2xl font-semibold tracking-tight">Literature Organizer</h1>
