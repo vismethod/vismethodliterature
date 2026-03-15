@@ -405,8 +405,8 @@ export default function PaperReviewDashboard() {
   }, [papers, enrichedPapers]);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <div className="border-b bg-white/90 backdrop-blur">
+    <div className="h-screen flex flex-col bg-slate-50 text-slate-900 overflow-hidden">
+      <div className="shrink-0 border-b bg-white/90 backdrop-blur">
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
@@ -454,9 +454,9 @@ export default function PaperReviewDashboard() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-        <div className="grid gap-4 lg:grid-cols-[0.6fr_1.4fr]">
-          <div className="rounded-3xl border bg-white shadow-sm">
+      <div className="flex-1 overflow-hidden mx-auto max-w-7xl w-full px-4 pt-4 pb-0 sm:px-6 lg:px-8">
+        <div className="grid gap-4 h-full lg:grid-cols-[0.6fr_1.4fr]">
+          <div className="h-full flex flex-col rounded-t-3xl border border-b-0 bg-white shadow-sm overflow-hidden">
             <div className="flex items-center justify-between border-b px-4 py-3 bg-slate-50 rounded-t-3xl">
               <div className="flex items-center gap-4">
                 <h2 className="font-medium shrink-0">Paper list</h2>
@@ -478,7 +478,7 @@ export default function PaperReviewDashboard() {
                 number = {filteredPapers.length}
               </div>
             </div>
-            <div className="h-[calc(100vh-100px)] overflow-auto">
+            <div className="flex-1 overflow-auto">
               {filteredPapers.length === 0 ? (
                 <div className="p-8 text-center text-sm text-slate-500">No papers match the current filters.</div>
               ) : (
@@ -610,15 +610,15 @@ export default function PaperReviewDashboard() {
             </div>
           </div>
 
-          <div className="rounded-3xl border bg-white shadow-sm overflow-hidden flex flex-col">
+          <div className="rounded-t-3xl border border-b-0 bg-white shadow-sm overflow-hidden flex flex-col">
 
             {!selectedPaper ? (
-              <div className="flex h-[calc(100vh-100px)] items-center justify-center p-8 text-center text-sm text-slate-500">
+              <div className="flex h-full items-center justify-center p-8 text-center text-sm text-slate-500">
                 Select a paper from the left to preview it here.
               </div>
             ) : (
-              <div className="flex h-[calc(100vh-100px)] flex-col">
-                <div className="flex-1">
+              <div className="flex h-full flex-col">
+                <div className="flex-1 min-h-0 relative">
                   {selectedPaper._matchedPdf ? (
                     <iframe
                       title={selectedPaper.title}
