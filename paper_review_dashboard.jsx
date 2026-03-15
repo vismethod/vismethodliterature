@@ -86,6 +86,9 @@ export default function PaperReviewDashboard() {
   const [reviewFilter, setReviewFilter] = useState("all");
   const [manualNumbers, setManualNumbers] = useState({});
   const [annotations, setAnnotations] = useState({});
+  const [labelFilter, setLabelFilter] = useState("all");
+  const [addingLabelId, setAddingLabelId] = useState(null);
+  const [newLabelText, setNewLabelText] = useState("");
   const [csvName, setCsvName] = useState("paper_search_results.csv");
   const [status, setStatus] = useState("Loading CSV...");
 
@@ -114,6 +117,7 @@ export default function PaperReviewDashboard() {
           download_status: row.download_status || "",
           is_open_access: row.is_open_access || "",
           abstract: row.abstract || "",
+          label: row.label || "",
         }));
         setPapers(mapped);
         setStatus(`Automagically loaded ${mapped.length} papers.`);
@@ -177,6 +181,7 @@ export default function PaperReviewDashboard() {
           notes: review.notes || "",
           tags: Array.isArray(review.tags) ? review.tags : [],
         },
+        label: paper.label || "",
       };
     });
   }, [papers, manualNumbers, annotations]);
@@ -195,9 +200,18 @@ export default function PaperReviewDashboard() {
 
       const matchesInclude = includeFilter === "all" || String(paper.include_guess || "").toLowerCase() === includeFilter;
       const matchesReview = reviewFilter === "all" || paper._review.decision === reviewFilter;
-      return matchesSearch && matchesInclude && matchesReview;
+      const matchesLabel = labelFilter === "all" || paper.label === labelFilter;
+      return matchesSearch && matchesInclude && matchesReview && matchesLabel;
     });
-  }, [enrichedPapers, search, includeFilter, reviewFilter]);
+  }, [enrichedPapers, search, includeFilter, reviewFilter, labelFilter]);
+
+  const uniqueLabels = useMemo(() => {
+    const labels = new Set();
+    enrichedPapers.forEach(p => {
+      if (p.label) labels.add(p.label);
+    });
+    return Array.from(labels).sort();
+  }, [enrichedPapers]);
 
   useEffect(() => {
     if (!filteredPapers.length) {
@@ -230,7 +244,31 @@ export default function PaperReviewDashboard() {
 
     try {
       const csvStr = Papa.unparse(nextPapers, {
-        columns: ["source","query","title","year","venue","citation_count","relevance_score","include_guess","doi","paper_url","semantic_open_pdf","pdf_url","pdf_file","download_status","is_open_access","abstract"]
+        columns: ["source","query","title","year","venue","citation_count","relevance_score","include_guess","doi","paper_url","semantic_open_pdf","pdf_url","pdf_file","download_status","is_open_access","abstract","label"]
+      });
+      await fetch('/api/save-csv', {
+        method: 'POST',
+        body: csvStr
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  async function updatePaperLabel(key, value) {
+    const nextPapers = papers.map(p => {
+      if (paperKey(p) === key) {
+        return { ...p, label: value };
+      }
+      return p;
+    });
+    setPapers(nextPapers);
+    setAddingLabelId(null);
+    setNewLabelText("");
+
+    try {
+      const csvStr = Papa.unparse(nextPapers, {
+        columns: ["source","query","title","year","venue","citation_count","relevance_score","include_guess","doi","paper_url","semantic_open_pdf","pdf_url","pdf_file","download_status","is_open_access","abstract","label"]
       });
       await fetch('/api/save-csv', {
         method: 'POST',
@@ -272,7 +310,7 @@ export default function PaperReviewDashboard() {
       
       // Save CSV
       const csvStr = Papa.unparse(nextPapers, {
-        columns: ["source","query","title","year","venue","citation_count","relevance_score","include_guess","doi","paper_url","semantic_open_pdf","pdf_url","pdf_file","download_status","is_open_access","abstract"]
+        columns: ["source","query","title","year","venue","citation_count","relevance_score","include_guess","doi","paper_url","semantic_open_pdf","pdf_url","pdf_file","download_status","is_open_access","abstract","label"]
       });
       await fetch('/api/save-csv', {
         method: 'POST',
@@ -342,6 +380,7 @@ export default function PaperReviewDashboard() {
       citation_count: p.citation_count,
       paper_url: p.paper_url,
       pdf_file: p.pdf_file,
+      label: p.label,
     }));
 
     const csv = Papa.unparse(rows);
@@ -380,6 +419,20 @@ export default function PaperReviewDashboard() {
                   <X className="h-4 w-4 text-slate-400" />
                 </button>
               )}
+            </div>
+            
+            <div className="flex items-center gap-1.5 border rounded-2xl px-3 py-2 ml-auto">
+              <Tag className="h-4 w-4 text-slate-400" />
+              <select
+                value={labelFilter}
+                onChange={(e) => setLabelFilter(e.target.value)}
+                className="bg-transparent text-sm text-slate-700 outline-none cursor-pointer"
+              >
+                <option value="all">All Labels</option>
+                {uniqueLabels.map(lbl => (
+                  <option key={lbl} value={lbl}>{lbl}</option>
+                ))}
+              </select>
             </div>
           </div>
         </div>
@@ -461,6 +514,54 @@ export default function PaperReviewDashboard() {
                                     </button>
                                   );
                                 })}
+                              </div>
+                              <div className="mt-1 flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
+                                {paper.label ? (
+                                  <div className="group flex items-center gap-1">
+                                    <span className="inline-flex items-center gap-1 rounded bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
+                                      <Tag className="h-3 w-3" />
+                                      {paper.label}
+                                    </span>
+                                    <button 
+                                      onClick={() => updatePaperLabel(paper._key, "")}
+                                      className="text-slate-400 hover:text-rose-500 hidden group-hover:block"
+                                      title="Remove label"
+                                    >
+                                      <X className="h-3.5 w-3.5" />
+                                    </button>
+                                  </div>
+                                ) : (
+                                  addingLabelId === paper._key ? (
+                                    <form 
+                                      className="flex items-center gap-1"
+                                      onSubmit={(e) => {
+                                        e.preventDefault();
+                                        updatePaperLabel(paper._key, newLabelText);
+                                      }}
+                                    >
+                                      <input 
+                                        type="text" 
+                                        autoFocus
+                                        value={newLabelText}
+                                        onChange={(e) => setNewLabelText(e.target.value)}
+                                        placeholder="Label name"
+                                        className="text-xs border rounded px-2 py-0.5 outline-none w-24"
+                                      />
+                                      <button type="submit" className="text-xs text-white bg-violet-600 hover:bg-violet-700 px-2 py-0.5 rounded">Save</button>
+                                      <button type="button" onClick={() => setAddingLabelId(null)} className="text-xs text-slate-500 hover:bg-slate-100 px-2 py-0.5 rounded">Cancel</button>
+                                    </form>
+                                  ) : (
+                                    <button 
+                                      onClick={() => {
+                                        setAddingLabelId(paper._key);
+                                        setNewLabelText("");
+                                      }}
+                                      className="inline-flex items-center gap-1 rounded border border-dashed border-slate-300 px-2 py-0.5 text-[11px] font-medium text-slate-500 hover:bg-slate-50 hover:text-slate-700 transition"
+                                    >
+                                      + Add label
+                                    </button>
+                                  )
+                                )}
                               </div>
                             </div>
                           </button>
