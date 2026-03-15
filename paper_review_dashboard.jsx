@@ -454,10 +454,10 @@ export default function PaperReviewDashboard() {
         </div>
       </div>
 
-      <div className="flex-1 overflow-hidden mx-auto max-w-7xl w-full px-4 pt-4 pb-0 sm:px-6 lg:px-8">
-        <div className="grid gap-4 h-full lg:grid-cols-[0.6fr_1.4fr]">
-          <div className="h-full flex flex-col rounded-t-3xl border border-b-0 bg-white shadow-sm overflow-hidden">
-            <div className="flex items-center justify-between border-b px-4 py-3 bg-slate-50 rounded-t-3xl">
+      <div className="flex-1 overflow-hidden w-full">
+        <div className="grid gap-0 h-full lg:grid-cols-[400px_1fr]">
+          <div className="h-full flex flex-col border-r bg-white overflow-hidden">
+            <div className="flex items-center justify-between border-b px-4 py-3 bg-slate-50">
               <div className="flex items-center gap-4">
                 <h2 className="font-medium shrink-0">Paper list</h2>
                 <div className="flex items-center gap-1.5 border-l pl-4 border-slate-200">
@@ -610,7 +610,7 @@ export default function PaperReviewDashboard() {
             </div>
           </div>
 
-          <div className="rounded-t-3xl border border-b-0 bg-white shadow-sm overflow-hidden flex flex-col">
+          <div className="h-full bg-white flex flex-col overflow-hidden">
 
             {!selectedPaper ? (
               <div className="flex h-full items-center justify-center p-8 text-center text-sm text-slate-500">
