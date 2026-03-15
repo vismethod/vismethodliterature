@@ -478,7 +478,7 @@ export default function PaperReviewDashboard() {
                 number = {filteredPapers.length}
               </div>
             </div>
-            <div className="max-h-[72vh] overflow-auto">
+            <div className="h-[calc(100vh-140px)] overflow-auto">
               {filteredPapers.length === 0 ? (
                 <div className="p-8 text-center text-sm text-slate-500">No papers match the current filters.</div>
               ) : (
@@ -613,11 +613,11 @@ export default function PaperReviewDashboard() {
           <div className="rounded-3xl border bg-white shadow-sm overflow-hidden flex flex-col">
 
             {!selectedPaper ? (
-              <div className="flex min-h-[72vh] items-center justify-center p-8 text-center text-sm text-slate-500">
+              <div className="flex h-[calc(100vh-140px)] items-center justify-center p-8 text-center text-sm text-slate-500">
                 Select a paper from the left to preview it here.
               </div>
             ) : (
-              <div className="flex h-[85vh] flex-col">
+              <div className="flex h-[calc(100vh-140px)] flex-col">
                 <div className="flex-1">
                   {selectedPaper._matchedPdf ? (
                     <iframe
