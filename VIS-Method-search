@@ -18,7 +18,7 @@ CSV_PATH = OUTPUT_DIR / "paper_search_results.csv"
 
 # 是否启用 Google Scholar（通过 SerpAPI）
 USE_SERPAPI_GOOGLE_SCHOLAR = True
-SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY", "90b36af49d16c046dccaeb49f21d2b1864b8b3b6541eb3051d8aa713e8441dbe")
+SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY", "<YOUR_SERPAPI_KEY_HERE>")
 
 # Unpaywall 需要 email
 UNPAYWALL_EMAIL = os.getenv("UNPAYWALL_EMAIL", "wangzezhong2016@gmail.com")
