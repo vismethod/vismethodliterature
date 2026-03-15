@@ -1,0 +1,472 @@
+import csv
+import os
+import re
+import time
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+import requests
+
+# =========================
+# CONFIG
+# =========================
+
+# 你的本地保存路径
+OUTPUT_DIR = Path("/Users/zezhongwang/Downloads/VIS-Method")
+PDF_DIR = OUTPUT_DIR / "papers"
+CSV_PATH = OUTPUT_DIR / "paper_search_results.csv"
+
+# 是否启用 Google Scholar（通过 SerpAPI）
+USE_SERPAPI_GOOGLE_SCHOLAR = True
+SERPAPI_API_KEY = os.getenv("SERPAPI_API_KEY", "90b36af49d16c046dccaeb49f21d2b1864b8b3b6541eb3051d8aa713e8441dbe")
+
+# Unpaywall 需要 email
+UNPAYWALL_EMAIL = os.getenv("UNPAYWALL_EMAIL", "wangzezhong2016@gmail.com")
+
+# 下载设置
+DOWNLOAD_PDFS = True
+DOWNLOAD_ONLY_INCLUDE = {"yes", "maybe"}   # 下载 yes / maybe
+MAX_DOWNLOADS = 50
+REQUEST_TIMEOUT = 30
+SLEEP_SECONDS = 7.0
+
+# 接口
+SEMANTIC_SCHOLAR_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
+SERPAPI_URL = "https://serpapi.com/search.json"
+UNPAYWALL_URL = "https://api.unpaywall.org/v2"
+
+# 主题检索式，可自己继续加
+QUERY_LIST = [
+    '"interaction analysis" video visualization qualitative',
+    'observational video "visual analysis" interaction',
+    'video "spatial visualization" interaction analysis',
+    'video "temporal visualization" action sequence qualitative',
+    'video state diagram interaction qualitative visualization',
+]
+
+# 正向关键词：更像你的 scope
+POSITIVE_KEYWORDS = {
+    "interaction analysis": 6,
+    "observational": 4,
+    "empirical": 3,
+    "video": 3,
+    "qualitative": 5,
+    "coding": 4,
+    "coded": 3,
+    "diagram": 4,
+    "information visualization": 6,
+    "visualization": 3,
+    "interpret": 3,
+    "interpretive": 4,
+    "interaction": 2,
+    "embodied": 3,
+    "gesture": 1,
+}
+
+# 负向关键词：你大概率想排除
+NEGATIVE_KEYWORDS = {
+    "computer vision": -8,
+    "pose estimation": -8,
+    "gesture recognition": -8,
+    "detection": -6,
+    "recognition": -6,
+    "kinect": -4,
+    "leap motion": -4,
+    "eye tracking": -5,
+    "sports": -3,
+    "player tracking": -4,
+    "performance analysis": -4,
+    "deep learning": -8,
+    "neural network": -8,
+}
+
+MIN_YEAR = 2000
+MAX_RESULTS_PER_QUERY = 20
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; PaperSearchBot/1.0)"
+}
+
+# =========================
+# HELPERS
+# =========================
+
+def normalize(text: Optional[str]) -> str:
+    if not text:
+        return ""
+    text = text.lower().strip()
+    text = re.sub(r"\s+", " ", text)
+    return text
+
+def sanitize_filename(name: str, max_len: int = 180) -> str:
+    name = re.sub(r'[\\/*?:"<>|]', "_", name)
+    name = re.sub(r"\s+", " ", name).strip()
+    if len(name) > max_len:
+        name = name[:max_len].rstrip()
+    return name
+
+def safe_int(v: Any, default: int = 0) -> int:
+    try:
+        return int(v)
+    except Exception:
+        return default
+
+def score_text(title: str, abstract: str, venue: str = "") -> int:
+    blob = normalize(" ".join([title or "", abstract or "", venue or ""]))
+    score = 0
+
+    for term, weight in POSITIVE_KEYWORDS.items():
+        if term in blob:
+            score += weight
+
+    for term, weight in NEGATIVE_KEYWORDS.items():
+        if term in blob:
+            score += weight
+
+    # 额外规则
+    if "video" in blob and "visualization" in blob:
+        score += 4
+    if "interaction" in blob and ("qualitative" in blob or "interpretive" in blob):
+        score += 4
+    if "annotation" in blob and ("timeline" in blob or "sequence" in blob):
+        score += 3
+    if "mosaic" in blob or "keyframe" in blob:
+        score += 3
+
+    return score
+
+def include_guess(score: int) -> str:
+    if score >= 12:
+        return "yes"
+    if score >= 6:
+        return "maybe"
+    return "no"
+
+def dedupe(records: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    seen = set()
+    out = []
+    for r in records:
+        key = (
+            normalize(r.get("title", "")),
+            str(r.get("year", "")),
+        )
+        if key not in seen and key[0]:
+            seen.add(key)
+            out.append(r)
+    return out
+
+# =========================
+# SEARCH
+# =========================
+
+def search_semantic_scholar(query: str, limit: int = 20) -> List[Dict[str, Any]]:
+    params = {
+        "query": query,
+        "limit": limit,
+        "fields": ",".join([
+            "title",
+            "abstract",
+            "year",
+            "venue",
+            "citationCount",
+            "url",
+            "externalIds",
+            "openAccessPdf",
+            "isOpenAccess",
+        ])
+    }
+    resp = requests.get(
+        SEMANTIC_SCHOLAR_URL,
+        params=params,
+        headers=HEADERS,
+        timeout=REQUEST_TIMEOUT,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+
+    results = []
+    for item in data.get("data", []):
+        external_ids = item.get("externalIds", {}) or {}
+        open_access_pdf = item.get("openAccessPdf", {}) or {}
+
+        results.append({
+            "source": "Semantic Scholar",
+            "query": query,
+            "title": item.get("title", ""),
+            "abstract": item.get("abstract", "") or "",
+            "year": item.get("year", ""),
+            "venue": item.get("venue", ""),
+            "citation_count": item.get("citationCount", 0),
+            "paper_url": item.get("url", ""),
+            "doi": external_ids.get("DOI", ""),
+            "semantic_open_pdf": open_access_pdf.get("url", "") if isinstance(open_access_pdf, dict) else "",
+            "is_open_access": item.get("isOpenAccess", False),
+        })
+    return results
+
+def extract_year_from_summary(text: str) -> str:
+    if not text:
+        return ""
+    m = re.search(r"(20\d{2}|19\d{2})", text)
+    return m.group(1) if m else ""
+
+def extract_citation_count_serpapi(item: Dict[str, Any]) -> int:
+    inline_links = item.get("inline_links", {}) or {}
+    cited_by = inline_links.get("cited_by", {}) or {}
+    return safe_int(cited_by.get("total", 0), 0)
+
+def search_google_scholar_serpapi(query: str, api_key: str, num: int = 10) -> List[Dict[str, Any]]:
+    results = []
+    start = 0
+
+    while True:
+        params = {
+            "engine": "google_scholar",
+            "q": query,
+            "num": num,
+            "start": start,
+            "api_key": api_key,
+        }
+        resp = requests.get(
+            SERPAPI_URL,
+            params=params,
+            headers=HEADERS,
+            timeout=REQUEST_TIMEOUT,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+
+        organic = data.get("organic_results", [])
+        if not organic:
+            break
+
+        for item in organic:
+            publication_info = item.get("publication_info", {}) or {}
+            summary = publication_info.get("summary", "") or ""
+            resources = item.get("resources", []) or []
+
+            pdf_link = ""
+            for r in resources:
+                if isinstance(r, dict):
+                    link = r.get("link", "")
+                    if link and ".pdf" in link.lower():
+                        pdf_link = link
+                        break
+
+            results.append({
+                "source": "Google Scholar (SerpAPI)",
+                "query": query,
+                "title": item.get("title", ""),
+                "abstract": item.get("snippet", "") or "",
+                "year": extract_year_from_summary(summary),
+                "venue": summary,
+                "citation_count": extract_citation_count_serpapi(item),
+                "paper_url": item.get("link", ""),
+                "doi": "",
+                "semantic_open_pdf": pdf_link,
+                "is_open_access": bool(pdf_link),
+            })
+
+        # 如果返回数量少于 num，说明已到最后一页
+        if len(organic) < num:
+            break
+
+        start += num
+        time.sleep(SLEEP_SECONDS)
+
+    return results
+
+# =========================
+# OPEN ACCESS PDF LOOKUP
+# =========================
+
+def get_unpaywall_pdf_url(doi: str, email: str) -> str:
+    if not doi or not email or "@" not in email:
+        return ""
+    url = f"{UNPAYWALL_URL}/{doi}"
+    params = {"email": email}
+    try:
+        resp = requests.get(url, params=params, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        if resp.status_code != 200:
+            return ""
+        data = resp.json()
+        best = data.get("best_oa_location") or {}
+        pdf_url = best.get("url_for_pdf") or ""
+        if pdf_url:
+            return pdf_url
+
+        oa_locations = data.get("oa_locations") or []
+        for loc in oa_locations:
+            if not isinstance(loc, dict):
+                continue
+            pdf_url = loc.get("url_for_pdf") or ""
+            if pdf_url:
+                return pdf_url
+        return ""
+    except Exception:
+        return ""
+
+def choose_pdf_url(record: Dict[str, Any]) -> str:
+    # 1) Semantic Scholar / Scholar 结果中已有 pdf 链接
+    if record.get("semantic_open_pdf"):
+        return record["semantic_open_pdf"]
+
+    # 2) 用 DOI 去 Unpaywall 查 OA PDF
+    doi = record.get("doi", "")
+    pdf_url = get_unpaywall_pdf_url(doi, UNPAYWALL_EMAIL)
+    if pdf_url:
+        return pdf_url
+
+    return ""
+
+def download_pdf(pdf_url: str, out_path: Path) -> str:
+    try:
+        with requests.get(pdf_url, headers=HEADERS, timeout=REQUEST_TIMEOUT, stream=True) as r:
+            if r.status_code != 200:
+                return f"http_{r.status_code}"
+            content_type = (r.headers.get("Content-Type") or "").lower()
+
+            # 有些站点 content-type 不标准，所以不强制必须 application/pdf
+            with open(out_path, "wb") as f:
+                for chunk in r.iter_content(chunk_size=1024 * 64):
+                    if chunk:
+                        f.write(chunk)
+
+        # 简单检查文件大小
+        if out_path.exists() and out_path.stat().st_size > 10_000:
+            return "downloaded"
+        return "too_small"
+    except Exception as e:
+        return f"error: {type(e).__name__}"
+
+# =========================
+# MAIN
+# =========================
+
+def main():
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    PDF_DIR.mkdir(parents=True, exist_ok=True)
+
+    all_records: List[Dict[str, Any]] = []
+
+    print("Searching papers...")
+    for query in QUERY_LIST:
+        print(f"  - {query}")
+
+        try:
+            all_records.extend(search_semantic_scholar(query, MAX_RESULTS_PER_QUERY))
+        except Exception as e:
+            print(f"    Semantic Scholar error: {e}")
+
+        if USE_SERPAPI_GOOGLE_SCHOLAR and SERPAPI_API_KEY:
+            try:
+                all_records.extend(search_google_scholar_serpapi(query, SERPAPI_API_KEY, num=100))
+            except Exception as e:
+                print(f"    Google Scholar / SerpAPI error: {e}")
+
+        time.sleep(SLEEP_SECONDS)
+
+    all_records = dedupe(all_records)
+
+    filtered: List[Dict[str, Any]] = []
+    for r in all_records:
+        year = str(r.get("year", "")).strip()
+        if year.isdigit() and int(year) < MIN_YEAR:
+            continue
+
+        score = score_text(r.get("title", ""), r.get("abstract", ""), r.get("venue", ""))
+        r["relevance_score"] = score
+        r["include_guess"] = include_guess(score)
+        r["pdf_url"] = ""
+        r["pdf_file"] = ""
+        r["download_status"] = ""
+        filtered.append(r)
+
+    filtered.sort(
+        key=lambda x: (
+            x["include_guess"] != "yes",
+            -x["relevance_score"],
+            -safe_int(x.get("citation_count", 0), 0),
+        )
+    )
+
+    # 下载 PDF
+    if DOWNLOAD_PDFS:
+        print("\nDownloading open-access PDFs...")
+        download_count = 0
+        for i, r in enumerate(filtered, start=1):
+            if r["include_guess"] not in DOWNLOAD_ONLY_INCLUDE:
+                continue
+            if download_count >= MAX_DOWNLOADS:
+                break
+
+            pdf_url = choose_pdf_url(r)
+            r["pdf_url"] = pdf_url
+
+            if not pdf_url:
+                r["download_status"] = "no_open_pdf_found"
+                continue
+
+            year = str(r.get("year", "") or "unknown")
+            title = sanitize_filename(r.get("title", "untitled"))
+            filename = f"{year} - {title}.pdf"
+            out_path = PDF_DIR / filename
+
+            # 避免重复下载
+            if out_path.exists() and out_path.stat().st_size > 10_000:
+                r["pdf_file"] = str(out_path)
+                r["download_status"] = "already_exists"
+                download_count += 1
+                continue
+
+            status = download_pdf(pdf_url, out_path)
+            r["pdf_file"] = str(out_path) if out_path.exists() else ""
+            r["download_status"] = status
+
+            if status in {"downloaded", "already_exists"}:
+                download_count += 1
+
+            print(f"[{i}/{len(filtered)}] {r['include_guess']} | {status} | {r['title'][:80]}")
+            time.sleep(SLEEP_SECONDS)
+
+    # 写 CSV
+    fieldnames = [
+        "source",
+        "query",
+        "title",
+        "year",
+        "venue",
+        "citation_count",
+        "relevance_score",
+        "include_guess",
+        "doi",
+        "paper_url",
+        "semantic_open_pdf",
+        "pdf_url",
+        "pdf_file",
+        "download_status",
+        "is_open_access",
+        "abstract",
+    ]
+
+    with open(CSV_PATH, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(filtered)
+
+    print("\nDone.")
+    print(f"CSV saved to: {CSV_PATH}")
+    print(f"PDF folder:    {PDF_DIR}")
+
+    print("\nTop 20 results:")
+    for r in filtered[:20]:
+        print(
+            f"[{r['include_guess']}] "
+            f"score={r['relevance_score']} | "
+            f"{r.get('year','')} | "
+            f"{r['title']} | "
+            f"{r['source']}"
+        )
+
+if __name__ == "__main__":
+    main()
