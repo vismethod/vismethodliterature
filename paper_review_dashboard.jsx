@@ -91,9 +91,9 @@ export default function PaperReviewDashboard() {
 
   // Auto-fetch the CSV on component mount
   useEffect(() => {
-    fetch("/paper_search_results.csv")
+    fetch(`${import.meta.env.BASE_URL}paper_search_results.csv`)
       .then(res => {
-        if (!res.ok) throw new Error("Failed to load /paper_search_results.csv");
+        if (!res.ok) throw new Error("Failed to load CSV");
         return res.text();
       })
       .then(text => parseCsv(text))
@@ -161,7 +161,7 @@ export default function PaperReviewDashboard() {
       if (paper.pdf_file) {
         // e.g., /Users/zezhongwang/Downloads/papers/file.pdf => file.pdf
         const filename = sanitizeFilename(paper.pdf_file);
-        matchedPdf = { url: `/papers/${filename}` };
+        matchedPdf = { url: `${import.meta.env.BASE_URL}papers/${filename}` };
       }
 
       const review = annotations[key] || { decision: "undecided", notes: "", tags: [] };
