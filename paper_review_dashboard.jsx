@@ -406,12 +406,26 @@ export default function PaperReviewDashboard() {
             <div>
               <h1 className="text-2xl font-semibold tracking-tight">Literature Organizer</h1>
             </div>
-            <div className="flex flex-1 items-center gap-3 rounded-2xl border px-3 py-2 lg:max-w-md">
+            <div className="flex items-center gap-1.5 border rounded-2xl px-3 py-2 mx-auto lg:max-w-xs w-full justify-center">
+              <Tag className="h-4 w-4 text-slate-400" />
+              <select
+                value={labelFilter}
+                onChange={(e) => setLabelFilter(e.target.value)}
+                className="bg-transparent text-sm text-slate-700 outline-none cursor-pointer text-center w-full"
+              >
+                <option value="all">All Labels</option>
+                {uniqueLabels.map(lbl => (
+                  <option key={lbl} value={lbl}>{lbl}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="flex items-center gap-3 rounded-2xl border px-3 py-2 ml-auto lg:w-64">
               <Search className="h-4 w-4 text-slate-400" />
               <input
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search title, abstract, venue, query, notes, or tags..."
+                placeholder="Search Papers..."
                 className="w-full bg-transparent text-sm outline-none placeholder:text-slate-400"
               />
               {search && (
@@ -419,20 +433,6 @@ export default function PaperReviewDashboard() {
                   <X className="h-4 w-4 text-slate-400" />
                 </button>
               )}
-            </div>
-            
-            <div className="flex items-center gap-1.5 border rounded-2xl px-3 py-2 ml-auto">
-              <Tag className="h-4 w-4 text-slate-400" />
-              <select
-                value={labelFilter}
-                onChange={(e) => setLabelFilter(e.target.value)}
-                className="bg-transparent text-sm text-slate-700 outline-none cursor-pointer"
-              >
-                <option value="all">All Labels</option>
-                {uniqueLabels.map(lbl => (
-                  <option key={lbl} value={lbl}>{lbl}</option>
-                ))}
-              </select>
             </div>
           </div>
         </div>
