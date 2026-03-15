@@ -86,7 +86,7 @@ export default function PaperReviewDashboard() {
   const [reviewFilter, setReviewFilter] = useState("all");
   const [manualNumbers, setManualNumbers] = useState({});
   const [annotations, setAnnotations] = useState({});
-  const [labelFilter, setLabelFilter] = useState("all");
+  const [labelFilters, setLabelFilters] = useState([]);
   const [addingLabelId, setAddingLabelId] = useState(null);
   const [newLabelText, setNewLabelText] = useState("");
   const [csvName, setCsvName] = useState("paper_search_results.csv");
@@ -200,10 +200,10 @@ export default function PaperReviewDashboard() {
 
       const matchesInclude = includeFilter === "all" || String(paper.include_guess || "").toLowerCase() === includeFilter;
       const matchesReview = reviewFilter === "all" || paper._review.decision === reviewFilter;
-      const matchesLabel = labelFilter === "all" || paper.label === labelFilter;
+      const matchesLabel = labelFilters.length === 0 || labelFilters.includes(paper.label);
       return matchesSearch && matchesInclude && matchesReview && matchesLabel;
     });
-  }, [enrichedPapers, search, includeFilter, reviewFilter, labelFilter]);
+  }, [enrichedPapers, search, includeFilter, reviewFilter, labelFilters]);
 
   const uniqueLabels = useMemo(() => {
     const labels = new Set();
@@ -406,18 +406,28 @@ export default function PaperReviewDashboard() {
             <div>
               <h1 className="text-2xl font-semibold tracking-tight">Literature Organizer</h1>
             </div>
-            <div className="flex items-center gap-1.5 border rounded-2xl px-3 py-2 mx-auto lg:max-w-xs w-full justify-center">
-              <Tag className="h-4 w-4 text-slate-400" />
-              <select
-                value={labelFilter}
-                onChange={(e) => setLabelFilter(e.target.value)}
-                className="bg-transparent text-sm text-slate-700 outline-none cursor-pointer text-center w-full"
-              >
-                <option value="all">All Labels</option>
-                {uniqueLabels.map(lbl => (
-                  <option key={lbl} value={lbl}>{lbl}</option>
-                ))}
-              </select>
+            <div className="flex flex-wrap items-center justify-center gap-2 mx-auto lg:max-w-2xl w-full">
+              {uniqueLabels.map(lbl => {
+                const isActive = labelFilters.includes(lbl);
+                return (
+                  <button
+                    key={lbl}
+                    onClick={() => {
+                      setLabelFilters(prev => 
+                        prev.includes(lbl) ? prev.filter(l => l !== lbl) : [...prev, lbl]
+                      );
+                    }}
+                    className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
+                      isActive 
+                        ? "bg-violet-600 text-white shadow-sm" 
+                        : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 hover:border-slate-300"
+                    }`}
+                  >
+                    <Tag className={`h-3.5 w-3.5 ${isActive ? "text-violet-200" : "text-slate-400"}`} />
+                    {lbl}
+                  </button>
+                );
+              })}
             </div>
 
             <div className="flex items-center gap-3 rounded-2xl border px-3 py-2 ml-auto lg:w-64">
