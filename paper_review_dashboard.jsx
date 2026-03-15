@@ -198,6 +198,7 @@ export default function PaperReviewDashboard() {
         normalizeText(paper._review.notes).includes(q) ||
         normalizeText(formatTags(paper._review.tags)).includes(q);
 
+      const matchesInclude = includeFilter === "all" || String(paper.include_guess || "").toLowerCase() === includeFilter;
       const matchesReview = reviewFilter === "all" || paper._review.decision === reviewFilter;
       const paperLabels = String(paper.label || "").split(",").map(l => l.trim()).filter(Boolean);
       const matchesLabel = labelFilters.length === 0 || labelFilters.some(f => paperLabels.includes(f));
