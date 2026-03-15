@@ -198,9 +198,9 @@ export default function PaperReviewDashboard() {
         normalizeText(paper._review.notes).includes(q) ||
         normalizeText(formatTags(paper._review.tags)).includes(q);
 
-      const matchesInclude = includeFilter === "all" || String(paper.include_guess || "").toLowerCase() === includeFilter;
       const matchesReview = reviewFilter === "all" || paper._review.decision === reviewFilter;
-      const matchesLabel = labelFilters.length === 0 || labelFilters.includes(paper.label);
+      const paperLabels = String(paper.label || "").split(",").map(l => l.trim()).filter(Boolean);
+      const matchesLabel = labelFilters.length === 0 || labelFilters.some(f => paperLabels.includes(f));
       return matchesSearch && matchesInclude && matchesReview && matchesLabel;
     });
   }, [enrichedPapers, search, includeFilter, reviewFilter, labelFilters]);
@@ -208,7 +208,12 @@ export default function PaperReviewDashboard() {
   const uniqueLabels = useMemo(() => {
     const labels = new Set();
     enrichedPapers.forEach(p => {
-      if (p.label) labels.add(p.label);
+      if (p.label) {
+        String(p.label).split(",").forEach(l => {
+          const trimmed = l.trim();
+          if (trimmed) labels.add(trimmed);
+        });
+      }
     });
     return Array.from(labels).sort();
   }, [enrichedPapers]);
@@ -525,52 +530,62 @@ export default function PaperReviewDashboard() {
                                   );
                                 })}
                               </div>
-                              <div className="mt-1 flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
-                                {paper.label ? (
-                                  <div className="group flex items-center gap-1">
+                              <div className="mt-1 flex flex-wrap items-center gap-2" onClick={(e) => e.stopPropagation()}>
+                                {String(paper.label || "").split(",").map(l => l.trim()).filter(Boolean).map((lbl, idx) => (
+                                  <div key={idx} className="group flex items-center gap-1">
                                     <span className="inline-flex items-center gap-1 rounded bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
                                       <Tag className="h-3 w-3" />
-                                      {paper.label}
+                                      {lbl}
                                     </span>
                                     <button 
-                                      onClick={() => updatePaperLabel(paper._key, "")}
+                                      onClick={() => {
+                                        const currentLabels = String(paper.label || "").split(",").map(x => x.trim()).filter(Boolean);
+                                        const nextLabels = currentLabels.filter(x => x !== lbl).join(", ");
+                                        updatePaperLabel(paper._key, nextLabels);
+                                      }}
                                       className="text-slate-400 hover:text-rose-500 hidden group-hover:block"
                                       title="Remove label"
                                     >
                                       <X className="h-3.5 w-3.5" />
                                     </button>
                                   </div>
+                                ))}
+
+                                {addingLabelId === paper._key ? (
+                                  <form 
+                                    className="flex items-center gap-1"
+                                    onSubmit={(e) => {
+                                      e.preventDefault();
+                                      const currentLabels = String(paper.label || "").split(",").map(x => x.trim()).filter(Boolean);
+                                      if (newLabelText.trim() && !currentLabels.includes(newLabelText.trim())) {
+                                        const nextLabels = [...currentLabels, newLabelText.trim()].join(", ");
+                                        updatePaperLabel(paper._key, nextLabels);
+                                      } else {
+                                        setAddingLabelId(null);
+                                      }
+                                    }}
+                                  >
+                                    <input 
+                                      type="text" 
+                                      autoFocus
+                                      value={newLabelText}
+                                      onChange={(e) => setNewLabelText(e.target.value)}
+                                      placeholder="Label name"
+                                      className="text-xs border rounded px-2 py-0.5 outline-none w-24"
+                                    />
+                                    <button type="submit" className="text-xs text-white bg-violet-600 hover:bg-violet-700 px-2 py-0.5 rounded">Save</button>
+                                    <button type="button" onClick={() => setAddingLabelId(null)} className="text-xs text-slate-500 hover:bg-slate-100 px-2 py-0.5 rounded">Cancel</button>
+                                  </form>
                                 ) : (
-                                  addingLabelId === paper._key ? (
-                                    <form 
-                                      className="flex items-center gap-1"
-                                      onSubmit={(e) => {
-                                        e.preventDefault();
-                                        updatePaperLabel(paper._key, newLabelText);
-                                      }}
-                                    >
-                                      <input 
-                                        type="text" 
-                                        autoFocus
-                                        value={newLabelText}
-                                        onChange={(e) => setNewLabelText(e.target.value)}
-                                        placeholder="Label name"
-                                        className="text-xs border rounded px-2 py-0.5 outline-none w-24"
-                                      />
-                                      <button type="submit" className="text-xs text-white bg-violet-600 hover:bg-violet-700 px-2 py-0.5 rounded">Save</button>
-                                      <button type="button" onClick={() => setAddingLabelId(null)} className="text-xs text-slate-500 hover:bg-slate-100 px-2 py-0.5 rounded">Cancel</button>
-                                    </form>
-                                  ) : (
-                                    <button 
-                                      onClick={() => {
-                                        setAddingLabelId(paper._key);
-                                        setNewLabelText("");
-                                      }}
-                                      className="inline-flex items-center gap-1 rounded border border-dashed border-slate-300 px-2 py-0.5 text-[11px] font-medium text-slate-500 hover:bg-slate-50 hover:text-slate-700 transition"
-                                    >
-                                      + Add label
-                                    </button>
-                                  )
+                                  <button 
+                                    onClick={() => {
+                                      setAddingLabelId(paper._key);
+                                      setNewLabelText("");
+                                    }}
+                                    className="inline-flex items-center gap-1 rounded border border-dashed border-slate-300 px-2 py-0.5 text-[11px] font-medium text-slate-500 hover:bg-slate-50 hover:text-slate-700 transition"
+                                  >
+                                    + Add label
+                                  </button>
                                 )}
                               </div>
                             </div>
