@@ -446,7 +446,7 @@ export default function PaperReviewDashboard() {
         <div className="w-full px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <h1 className="text-2xl font-semibold tracking-tight">LiterReader</h1>
+              <h1 className="text-2xl font-semibold tracking-tight">VIS Method Literature</h1>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-2 mx-auto lg:max-w-2xl w-full">
               {uniqueLabels.map(lbl => {
