@@ -572,7 +572,9 @@ export default function PaperReviewDashboard() {
                             {paper._index}
                           </div>
                           {paper._matchedPdf && (
-                            <FileText className="h-4 w-4 text-emerald-600 shrink-0" />
+                            <div className="mt-0.5 px-1 py-0.5 bg-rose-100 text-[10px] font-bold text-rose-700 leading-none rounded-[3px] border border-rose-200 shadow-sm shrink-0">
+                              PDF
+                            </div>
                           )}
                         </div>
 
