@@ -518,7 +518,7 @@ export default function PaperReviewDashboard() {
               {filteredPapers.length === 0 ? (
                 <div className="p-8 text-center text-sm text-slate-500">No papers match the current filters.</div>
               ) : (
-                filteredPapers.map((paper) => {
+                filteredPapers.map((paper, idx) => {
                   const isSelected = paper._key === selectedKey;
                   return (
                     <div
@@ -528,7 +528,7 @@ export default function PaperReviewDashboard() {
                       <div className="flex gap-3">
                         <div className="flex w-12 flex-col items-center gap-2 pt-1 shrink-0">
                           <div className="flex h-7 w-7 items-center justify-center rounded-full bg-slate-100 text-xs font-semibold text-slate-500">
-                            {paper._index}
+                            {idx + 1}
                           </div>
                           {paper._matchedPdf && (
                             <FileText className="h-4 w-4 text-emerald-600 shrink-0" />
