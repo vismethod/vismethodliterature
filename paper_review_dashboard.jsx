@@ -572,8 +572,13 @@ export default function PaperReviewDashboard() {
                             {paper._index}
                           </div>
                           {paper._matchedPdf && (
-                            <div className="mt-0.5 px-1 py-0.5 bg-rose-100 text-[10px] font-bold text-rose-700 leading-none rounded-[3px] border border-rose-200 shadow-sm shrink-0">
-                              PDF
+                            <div className="mt-1 shadow-sm">
+                              <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-sm">
+                                <path d="M4 0C1.79086 0 0 1.79086 0 4V24C0 26.2091 1.79086 28 4 28H20C22.2091 28 24 26.2091 24 24V8L16 0H4Z" fill="#FEE2E2"/>
+                                <path d="M16 0V8H24L16 0Z" fill="#FECACA"/>
+                                <rect x="2" y="14" width="20" height="10" rx="1.5" fill="#EF4444"/>
+                                <text x="12" y="21.5" textAnchor="middle" fill="white" style={{ fontSize: '8px', fontWeight: 'bold', fontFamily: 'system-ui, sans-serif' }}>PDF</text>
+                              </svg>
                             </div>
                           )}
                         </div>
