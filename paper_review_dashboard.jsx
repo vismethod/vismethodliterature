@@ -98,7 +98,15 @@ function formatPaperMetadata(year, rawVenue) {
     cleaned = cleaned.replace(/,\s*,/g, ",").replace(/\s+/g, " ").trim();
     cleaned = cleaned.replace(/,$/, "");
     return cleaned;
-  }).filter(p => p && !/^\d+$/.test(p));
+  }).filter(p => {
+    if (!p) return false;
+    if (/^\d+$/.test(p)) return false;
+    // Filter out common publisher domains and generic URLs
+    const domainRegex = /\b(ieee|acm|mdpi|springer|nature|science|sciencedirect|dl\.acm\.org|ieeexplore|org|com|net|edu|gov|io)\b/i;
+    const urlPattern = /\.(org|com|net|edu|gov|io|ca|uk|de|au|jp|cn)$/i;
+    if (urlPattern.test(p) || (p.includes('.') && domainRegex.test(p))) return false;
+    return true;
+  });
 
   parts = [...new Set(parts)];
 
