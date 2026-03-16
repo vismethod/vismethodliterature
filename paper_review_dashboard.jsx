@@ -618,7 +618,7 @@ export default function PaperReviewDashboard() {
                                     {/* Suggestions */}
                                     {uniqueLabels.length > 0 && (
                                       <div className="flex flex-wrap gap-1 mt-1 max-w-[240px]">
-                                        <div className="w-full text-[10px] text-slate-400 font-medium mb-1">Suggestions:</div>
+                                        <div className="w-full text-[10px] text-slate-400 font-medium mb-1">Or select from:</div>
                                         {uniqueLabels
                                           .filter(l => !String(paper.label || "").includes(l))
                                           .map(l => (
