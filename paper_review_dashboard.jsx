@@ -92,6 +92,10 @@ export default function PaperReviewDashboard() {
   const [csvName, setCsvName] = useState("paper_search_results.csv");
   const [status, setStatus] = useState("Loading CSV...");
 
+  // History state for undo/redo
+  const [pastPapers, setPastPapers] = useState([]);
+  const [futurePapers, setFuturePapers] = useState([]);
+
   // Auto-fetch the CSV on component mount
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}paper_search_results.csv`)
@@ -230,24 +234,7 @@ export default function PaperReviewDashboard() {
 
   const selectedPaper = filteredPapers.find((p) => p._key === selectedKey) || null;
 
-  function updateNumber(key, value) {
-    setManualNumbers((prev) => {
-      const next = { ...prev };
-      if (!String(value).trim()) delete next[key];
-      else next[key] = String(value).trim();
-      return next;
-    });
-  }
-
-  async function updateIncludeGuess(key, value) {
-    const nextPapers = papers.map(p => {
-      if (paperKey(p) === key) {
-        return { ...p, include_guess: value };
-      }
-      return p;
-    });
-    setPapers(nextPapers);
-
+  async function saveToCsv(nextPapers) {
     try {
       const csvStr = Papa.unparse(nextPapers, {
         columns: ["source","query","title","year","venue","citation_count","relevance_score","include_guess","doi","paper_url","semantic_open_pdf","pdf_url","pdf_file","download_status","is_open_access","abstract","label"]
@@ -259,6 +246,67 @@ export default function PaperReviewDashboard() {
     } catch (e) {
       console.error(e);
     }
+  }
+
+  function executePaperChange(nextPapers) {
+    setPastPapers(prev => [papers, ...prev].slice(0, 50));
+    setFuturePapers([]);
+    setPapers(nextPapers);
+    saveToCsv(nextPapers);
+  }
+
+  function undo() {
+    if (pastPapers.length === 0) return;
+    const previous = pastPapers[0];
+    const newPast = pastPapers.slice(1);
+    setPastPapers(newPast);
+    setFuturePapers(prev => [papers, ...prev]);
+    setPapers(previous);
+    saveToCsv(previous);
+  }
+
+  function redo() {
+    if (futurePapers.length === 0) return;
+    const next = futurePapers[0];
+    const newFuture = futurePapers.slice(1);
+    setFuturePapers(newFuture);
+    setPastPapers(prev => [papers, ...prev]);
+    setPapers(next);
+    saveToCsv(next);
+  }
+
+  // Keyboard shortcuts for Undo/Redo
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      const isZ = e.key.toLowerCase() === 'z';
+      const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+      const isMod = isMac ? e.metaKey : e.ctrlKey;
+
+      if (isMod && isZ) {
+        e.preventDefault();
+        if (e.shiftKey) {
+          redo();
+        } else {
+          undo();
+        }
+      } else if (!isMac && isMod && e.key.toLowerCase() === 'y') {
+        e.preventDefault();
+        redo();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [papers, pastPapers, futurePapers]);
+
+  async function updateIncludeGuess(key, value) {
+    const nextPapers = papers.map(p => {
+      if (paperKey(p) === key) {
+        return { ...p, include_guess: value };
+      }
+      return p;
+    });
+    executePaperChange(nextPapers);
   }
 
   async function updatePaperLabel(key, value) {
@@ -268,21 +316,9 @@ export default function PaperReviewDashboard() {
       }
       return p;
     });
-    setPapers(nextPapers);
+    executePaperChange(nextPapers);
     setAddingLabelId(null);
     setNewLabelText("");
-
-    try {
-      const csvStr = Papa.unparse(nextPapers, {
-        columns: ["source","query","title","year","venue","citation_count","relevance_score","include_guess","doi","paper_url","semantic_open_pdf","pdf_url","pdf_file","download_status","is_open_access","abstract","label"]
-      });
-      await fetch('/api/save-csv', {
-        method: 'POST',
-        body: csvStr
-      });
-    } catch (e) {
-      console.error(e);
-    }
   }
 
   async function uploadPdf(key, file) {
