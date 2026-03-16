@@ -79,10 +79,8 @@ function formatTags(tags) {
 }
 
 function formatPaperMetadata(year, rawVenue) {
-  if (!rawVenue) return year || "Unknown";
-  
-  // Clean up year for comparison
   const cleanYear = String(year || "").trim();
+  if (!rawVenue) return { authors: cleanYear || "Unknown", venue: "" };
   
   // Split by " - " which is common in SerpAPI venue field: Authors - Venue - Source
   let parts = String(rawVenue).split(" - ").map(p => p.trim()).filter(Boolean);
@@ -90,33 +88,28 @@ function formatPaperMetadata(year, rawVenue) {
   // Specific cleanups for SerpAPI data
   parts = parts.map(p => {
     let cleaned = p;
-    // Remove trailing ", [Year]" or " [Year]"
     if (cleanYear) {
       const yearRegex = new RegExp(`[,\\s]+${cleanYear}$`, "g");
       cleaned = cleaned.replace(yearRegex, "");
-      // Also remove standalone year matches
       const standaloneYearRegex = new RegExp(`\\b${cleanYear}\\b`, "g");
       cleaned = cleaned.replace(standaloneYearRegex, "");
     }
-    // Remove LaTeX ellipsis or common artifacts
     cleaned = cleaned.replace(/…/g, "").replace(/\.\.\./g, "");
-    // Cleanup multiple commas or spaces
     cleaned = cleaned.replace(/,\s*,/g, ",").replace(/\s+/g, " ").trim();
-    // Remove trailing comma
     cleaned = cleaned.replace(/,$/, "");
     return cleaned;
-  }).filter(p => {
-    // Remove parts that are just numbers or very short artifacts after cleaning
-    if (!p) return false;
-    if (/^\d+$/.test(p)) return false;
-    return true;
-  });
+  }).filter(p => p && !/^\d+$/.test(p));
 
-  // Unique parts only
   parts = [...new Set(parts)];
 
-  const metadata = [cleanYear, ...parts].filter(Boolean).join(" · ");
-  return metadata || cleanYear || "Unknown";
+  // Usually: parts[0] is authors, parts[1] is venue, parts[2] is more venue/source
+  const authorsPart = parts[0] || "";
+  const venuePart = parts.slice(1).join(" · ") || "";
+
+  return {
+    authors: [cleanYear, authorsPart].filter(Boolean).join(" · "),
+    venue: venuePart
+  };
 }
 
 export default function PaperReviewDashboard() {
@@ -592,8 +585,22 @@ export default function PaperReviewDashboard() {
                               <div className="text-sm font-medium leading-tight text-slate-900 hover:text-violet-700">
                                 {paper.title || "Untitled paper"}
                               </div>
-                              <div className="text-xs text-slate-500 line-clamp-1">
-                                {formatPaperMetadata(paper.year, paper.venue)}
+                              <div className="flex flex-col gap-0.5 mt-0.5">
+                                {(() => {
+                                  const meta = formatPaperMetadata(paper.year, paper.venue);
+                                  return (
+                                    <>
+                                      <div className="text-[11px] font-medium text-slate-600 line-clamp-1">
+                                        {meta.authors}
+                                      </div>
+                                      {meta.venue && (
+                                        <div className="text-[10px] text-slate-400 line-clamp-1 italic">
+                                          {meta.venue}
+                                        </div>
+                                      )}
+                                    </>
+                                  );
+                                })()}
                               </div>
                               <div className="mt-2.5 flex items-center gap-1.5" onClick={(e) => e.stopPropagation()}>
                                 {["Include", "Maybe", "Exclude"].map(opt => {
