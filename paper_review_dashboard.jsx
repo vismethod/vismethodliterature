@@ -495,7 +495,7 @@ export default function PaperReviewDashboard() {
           <div className="h-full flex flex-col border-r bg-white overflow-hidden">
             <div className="flex items-center justify-between border-b px-4 py-3 bg-slate-50">
               <div className="flex items-center gap-4">
-                <h2 className="font-medium shrink-0">Paper list</h2>
+                <h2 className="font-medium shrink-0">Paper ID</h2>
                 <div className="flex items-center gap-1.5 border-l pl-4 border-slate-200">
                   <Filter className="h-3.5 w-3.5 text-slate-400" />
                   <select
