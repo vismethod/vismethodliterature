@@ -594,7 +594,7 @@ export default function PaperReviewDashboard() {
                                         {meta.authors}
                                       </div>
                                       {meta.venue && (
-                                        <div className="text-[10px] text-slate-400 line-clamp-1 italic">
+                                        <div className="text-[10px] text-slate-400 italic">
                                           {meta.venue}
                                         </div>
                                       )}
