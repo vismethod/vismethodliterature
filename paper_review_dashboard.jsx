@@ -553,30 +553,57 @@ export default function PaperReviewDashboard() {
                                 ))}
 
                                 {addingLabelId === paper._key ? (
-                                  <form 
-                                    className="flex items-center gap-1"
-                                    onSubmit={(e) => {
-                                      e.preventDefault();
-                                      const currentLabels = String(paper.label || "").split(",").map(x => x.trim()).filter(Boolean);
-                                      if (newLabelText.trim() && !currentLabels.includes(newLabelText.trim())) {
-                                        const nextLabels = [...currentLabels, newLabelText.trim()].join(", ");
-                                        updatePaperLabel(paper._key, nextLabels);
-                                      } else {
-                                        setAddingLabelId(null);
-                                      }
-                                    }}
-                                  >
-                                    <input 
-                                      type="text" 
-                                      autoFocus
-                                      value={newLabelText}
-                                      onChange={(e) => setNewLabelText(e.target.value)}
-                                      placeholder="Label name"
-                                      className="text-xs border rounded px-2 py-0.5 outline-none w-24"
-                                    />
-                                    <button type="submit" className="text-xs text-white bg-violet-600 hover:bg-violet-700 px-2 py-0.5 rounded">Save</button>
-                                    <button type="button" onClick={() => setAddingLabelId(null)} className="text-xs text-slate-500 hover:bg-slate-100 px-2 py-0.5 rounded">Cancel</button>
-                                  </form>
+                                  <div className="flex flex-col gap-2 p-2 border rounded-lg bg-slate-50 shadow-sm mt-1">
+                                    <form 
+                                      className="flex items-center gap-1"
+                                      onSubmit={(e) => {
+                                        e.preventDefault();
+                                        const currentLabels = String(paper.label || "").split(",").map(x => x.trim()).filter(Boolean);
+                                        if (newLabelText.trim() && !currentLabels.includes(newLabelText.trim())) {
+                                          const nextLabels = [...currentLabels, newLabelText.trim()].join(", ");
+                                          updatePaperLabel(paper._key, nextLabels);
+                                        } else {
+                                          setAddingLabelId(null);
+                                        }
+                                      }}
+                                    >
+                                      <input 
+                                        type="text" 
+                                        autoFocus
+                                        value={newLabelText}
+                                        onChange={(e) => setNewLabelText(e.target.value)}
+                                        placeholder="New label..."
+                                        className="text-xs border rounded px-2 py-1 outline-none w-32"
+                                      />
+                                      <button type="submit" className="text-xs text-white bg-violet-600 hover:bg-violet-700 px-2 py-1 rounded">Save</button>
+                                      <button type="button" onClick={() => setAddingLabelId(null)} className="text-xs text-slate-500 hover:bg-slate-100 px-2 py-1 rounded">Cancel</button>
+                                    </form>
+
+                                    {/* Suggestions */}
+                                    {uniqueLabels.length > 0 && (
+                                      <div className="flex flex-wrap gap-1 mt-1 max-w-[240px]">
+                                        <div className="w-full text-[10px] text-slate-400 font-medium mb-1">Suggestions:</div>
+                                        {uniqueLabels
+                                          .filter(l => !String(paper.label || "").includes(l))
+                                          .map(l => (
+                                            <button
+                                              key={l}
+                                              type="button"
+                                              onClick={() => {
+                                                const currentLabels = String(paper.label || "").split(",").map(x => x.trim()).filter(Boolean);
+                                                const nextLabels = [...currentLabels, l].join(", ");
+                                                updatePaperLabel(paper._key, nextLabels);
+                                                setAddingLabelId(null);
+                                              }}
+                                              className="px-1.5 py-0.5 text-[10px] bg-white border border-slate-200 rounded text-slate-500 hover:bg-violet-50 hover:border-violet-200 hover:text-violet-600 transition"
+                                            >
+                                              {l}
+                                            </button>
+                                          ))
+                                        }
+                                      </div>
+                                    )}
+                                  </div>
                                 ) : (
                                   <button 
                                     onClick={() => {
