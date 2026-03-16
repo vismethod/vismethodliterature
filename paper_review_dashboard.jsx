@@ -511,7 +511,7 @@ export default function PaperReviewDashboard() {
                 </div>
               </div>
               <div className="text-xs text-slate-500 whitespace-nowrap">
-                number = {filteredPapers.length}
+                {filteredPapers.length} {filteredPapers.length === 1 ? "item" : "items"}
               </div>
             </div>
             <div className="flex-1 overflow-auto">
