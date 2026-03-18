@@ -4,6 +4,7 @@
     "version": "0.0.0",
     "type": "module",
     "homepage": "https://vismethod.github.io/vismethodliterature/",
+    "license": "Apache-2.0",
     "scripts": {
         "dev": "vite",
         "build": "vite build && cp paper_search_results.csv dist/ && cp -r papers dist/",
