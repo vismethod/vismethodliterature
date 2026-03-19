@@ -81,6 +81,10 @@ export default function DashboardView({ papers }) {
 
   const stats = useMemo(() => {
     const total = includedPapers.length;
+    const years = includedPapers.map(p => parseInt(p.year)).filter(Boolean);
+    const minYear = years.length ? Math.min(...years) : 'N/A';
+    const maxYear = years.length ? Math.max(...years) : 'N/A';
+    
     // Unique venue count using cleaned logic
     const venues = includedPapers.map(p => getCleanVenue(p)).filter(v => v !== 'Unknown');
     const venueCounts = venues.reduce((acc, v) => { acc[v] = (acc[v] || 0) + 1; return acc; }, {});
