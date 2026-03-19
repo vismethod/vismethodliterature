@@ -2,7 +2,8 @@ import React, { useEffect, useMemo, useState, useRef } from "react";
 import Papa from "papaparse";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
-import { Search, Upload, FileText, Eye, Hash, Download, Filter, X, Tag, NotebookPen, BookOpen, Layers, ChevronLeft, ChevronRight, Save, Plus, FileArchive, Loader2 } from "lucide-react";
+import { Search, Upload, FileText, Eye, Hash, Download, Filter, X, Tag, NotebookPen, BookOpen, Layers, ChevronLeft, ChevronRight, Save, Plus, FileArchive, Loader2, BarChart3 } from "lucide-react";
+import DashboardView from "./DashboardView";
 
 function normalizeText(value) {
   return String(value || "")
@@ -595,12 +596,12 @@ export default function PaperReviewDashboard() {
 
   const stats = useMemo(() => {
     const total = papers.length;
-    const yes = papers.filter((p) => String(p.include_guess).toLowerCase() === "yes").length;
-    const maybe = papers.filter((p) => String(p.include_guess).toLowerCase() === "maybe").length;
+    const includedCount = papers.filter((p) => String(p.include_guess).toLowerCase() === "included").length;
+    const maybeCount = papers.filter((p) => String(p.include_guess).toLowerCase() === "maybe").length;
     const matched = enrichedPapers.filter((p) => p._matchedPdf).length;
     const included = enrichedPapers.filter((p) => p._review.decision === "included").length;
     const excluded = enrichedPapers.filter((p) => p._review.decision === "excluded").length;
-    return { total, yes, maybe, matched, included, excluded };
+    return { total, yes: includedCount, maybe: maybeCount, matched, included, excluded };
   }, [papers, enrichedPapers]);
 
   async function saveLabelData(newData) {
@@ -710,6 +711,14 @@ export default function PaperReviewDashboard() {
           >
             <Tag className="h-6 w-6" />
           </button>
+
+          <button 
+            onClick={() => setCurrentView('dashboard')}
+            className={`p-3 rounded-xl transition-all ${currentView === 'dashboard' ? 'bg-violet-600 text-white shadow-lg shadow-violet-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-800'}`}
+            title="Corpus Dashboard"
+          >
+            <BarChart3 className="h-6 w-6" />
+          </button>
         </div>
 
         <div className="mt-auto pb-4">
@@ -791,6 +800,8 @@ export default function PaperReviewDashboard() {
             saveLabelData={saveLabelData}
             savingLabels={savingLabels}
           />
+        ) : currentView === 'dashboard' ? (
+          <DashboardView papers={enrichedPapers} />
         ) : (
           <div className="grid gap-0 h-full lg:grid-cols-[400px_1fr]">
             <div className="h-full flex flex-col border-r bg-white overflow-hidden">
@@ -805,9 +816,9 @@ export default function PaperReviewDashboard() {
                       className="bg-transparent text-sm text-slate-700 outline-none cursor-pointer"
                     >
                       <option value="all">All</option>
-                      <option value="include">Include</option>
+                      <option value="included">Included</option>
                       <option value="maybe">Maybe</option>
-                      <option value="exclude">Exclude</option>
+                      <option value="excluded">Excluded</option>
                     </select>
                   </div>
                 </div>
@@ -913,17 +924,18 @@ export default function PaperReviewDashboard() {
                                 </div>
                                 <div className="mt-2.5 flex items-center gap-1.5" onClick={(e) => e.stopPropagation()}>
                                   {["Include", "Maybe", "Exclude"].map(opt => {
-                                    let isSelected = (paper.include_guess || "").toLowerCase() === opt.toLowerCase();
+                                    const val = opt === "Include" ? "included" : opt === "Exclude" ? "excluded" : "maybe";
+                                    let isSelected = (paper.include_guess || "").toLowerCase() === val;
                                     let colorClass = "bg-white border-slate-200 text-slate-600 hover:bg-slate-50";
                                     if (isSelected) {
-                                      if (opt === "Include") colorClass = "bg-emerald-100 border-emerald-200 text-emerald-800";
-                                      else if (opt === "Exclude") colorClass = "bg-rose-100 border-rose-200 text-rose-800";
+                                      if (val === "included") colorClass = "bg-emerald-100 border-emerald-200 text-emerald-800";
+                                      else if (val === "excluded") colorClass = "bg-rose-100 border-rose-200 text-rose-800";
                                       else colorClass = "bg-amber-100 border-amber-200 text-amber-800";
                                     }
                                     return (
                                       <button
                                         key={opt}
-                                        onClick={() => updateIncludeGuess(paper._key, opt)}
+                                        onClick={() => updateIncludeGuess(paper._key, val)}
                                         className={`px-2.5 py-0.5 text-xs rounded-full border transition-colors ${colorClass}`}
                                       >
                                         {opt}
