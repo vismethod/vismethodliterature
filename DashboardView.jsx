@@ -81,16 +81,12 @@ export default function DashboardView({ papers }) {
 
   const stats = useMemo(() => {
     const total = includedPapers.length;
-    const years = includedPapers.map(p => parseInt(p.year)).filter(Boolean);
-    const minYear = years.length ? Math.min(...years) : 'N/A';
-    const maxYear = years.length ? Math.max(...years) : 'N/A';
-    
-    // Most frequent venue using updated logic
+    // Unique venue count using cleaned logic
     const venues = includedPapers.map(p => getCleanVenue(p)).filter(v => v !== 'Unknown');
     const venueCounts = venues.reduce((acc, v) => { acc[v] = (acc[v] || 0) + 1; return acc; }, {});
-    const topVenue = Object.entries(venueCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || 'N/A';
+    const venueCount = Object.keys(venueCounts).length;
 
-    return { total, range: total ? `${minYear} – ${maxYear}` : 'N/A', topVenue };
+    return { total, range: total ? `${minYear} – ${maxYear}` : 'N/A', venueCount };
   }, [includedPapers]);
 
   const yearlyData = useMemo(() => {
@@ -160,8 +156,8 @@ export default function DashboardView({ papers }) {
             colorClass="bg-emerald-100 text-emerald-600" 
           />
           <StatCard 
-            title="Top Venue" 
-            value={stats.topVenue} 
+            title="Number of Venues" 
+            value={stats.venueCount} 
             icon={Landmark} 
             colorClass="bg-amber-100 text-amber-600" 
           />
