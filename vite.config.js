@@ -48,6 +48,32 @@ const saveCsvPlugin = () => ({
           res.statusCode = 500;
           res.end(JSON.stringify({ error: err.message }));
         });
+      } else if (req.url === '/api/save-labels' && req.method === 'POST') {
+        let body = '';
+        req.on('data', chunk => { body += chunk.toString(); });
+        req.on('end', () => {
+          const filePath = path.join(process.cwd(), 'label_descriptions.json');
+          fs.writeFile(filePath, body, (err) => {
+            if (err) {
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: err.message }));
+            } else {
+              res.statusCode = 200;
+              res.end(JSON.stringify({ success: true }));
+            }
+          });
+        });
+      } else if (req.url.startsWith('/vismethodliterature/papers/')) {
+        // Serve PDFs from the papers directory
+        const filename = decodeURIComponent(req.url.replace('/vismethodliterature/papers/', ''));
+        const filePath = path.join(process.cwd(), 'papers', filename);
+        if (fs.existsSync(filePath)) {
+          res.setHeader('Content-Type', 'application/pdf');
+          fs.createReadStream(filePath).pipe(res);
+        } else {
+          res.statusCode = 404;
+          res.end('Not Found');
+        }
       } else {
         next();
       }
@@ -57,4 +83,5 @@ const saveCsvPlugin = () => ({
 
 export default defineConfig({
   plugins: [react(), saveCsvPlugin()],
+  base: '/vismethodliterature/',
 })

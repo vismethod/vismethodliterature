@@ -13,6 +13,8 @@
         "deploy": "gh-pages -d dist"
     },
     "dependencies": {
+        "file-saver": "^2.0.5",
+        "jszip": "^3.10.1",
         "lucide-react": "^0.344.0",
         "papaparse": "^5.4.1",
         "react": "^18.2.0",

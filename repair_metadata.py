@@ -16,7 +16,34 @@ def normalize_title(t):
 
 def is_truncated(text):
     text = clean_text(text)
-    return '...' in text or 'ACM Transactions on' in text or 'proceedings of the' in text.lower() or 'the proceedings of' in text.lower()
+    if not text: return True
+    lower = text.lower()
+    
+    # Explicit truncation markers
+    if '...' in text: return True
+    
+    # Trailing connectors/prepositions often indicate truncation in SerpAPI
+    trailing_words = ['of', 'and', 'on', 'the', 'in', '&', 'at', 'with', 'for']
+    for word in trailing_words:
+        if lower.endswith(f' {word}'):
+            return True
+            
+    # Phrases that are almost always truncated in this dataset
+    truncated_phrases = [
+        'acm transactions on',
+        'proceedings of the',
+        'the proceedings of',
+        'international conference on',
+        'journal of the',
+        'conference on',
+        'of the',
+        'on the'
+    ]
+    for phrase in truncated_phrases:
+        if phrase in lower and (len(text) < 50 or lower.endswith(phrase)):
+            return True
+            
+    return False
 
 def extract_doi(row):
     # Try existing doi field
@@ -77,7 +104,12 @@ def repair():
 
         # 2. Try Crossref by Title if DOI failed
         if not match:
-            query = title.replace(' ', '+')
+            search_title = title
+            if '...' in search_title or '…' in search_title:
+                search_title = search_title.replace('...', '').replace('…', '').strip()
+                print(f"  -> Title truncated, using: {search_title}")
+            
+            query = search_title.replace(' ', '+')
             url = f"https://api.crossref.org/works?query.title={query}&rows=5"
             try:
                 r = requests.get(url, timeout=10, headers={'User-Agent': 'LiterReader/1.0 (mailto:test@example.com)'})
@@ -85,7 +117,10 @@ def repair():
                     items = r.json().get('message', {}).get('items', [])
                     for item in items:
                         item_title = item.get('title', [''])[0]
-                        if normalize_title(title) in normalize_title(item_title) or normalize_title(item_title) in normalize_title(title):
+                        # Flexible matching for truncated titles
+                        norm_search = normalize_title(search_title)
+                        norm_item = normalize_title(item_title)
+                        if norm_search in norm_item or norm_item in norm_search:
                             match = item
                             print("  -> Match found via Title search.")
                             break

@@ -1,0 +1,14 @@
+{
+  "Keyword-26Mar14": {
+    "description": "ZW searched Google Scholar (14 Mar 2026) without restricting the publication year, using the following Boolean search string in title and abstract:\n\n(“video” OR “observational video”) AND (“visual analysis” OR “visualization” OR “temporal visualization” OR “spatial visualization” OR “state diagram”) AND (“interaction” OR “interaction analysis” OR “action sequence”) AND (“qualitative”)\n\nThis search returned 93 results.",
+    "keywords": ""
+  },
+  "Our paper": {
+    "description": "Papers from co-authors",
+    "keywords": ""
+  },
+  "Keyword-26Mar18": {
+    "description": "ZW searched Google Scholar (15 Mar 2026) without restricting the publication year, using the following Boolean search string in title and abstract:\n\nMicro-level: \"visualization\" AND (\"gestures\" OR \"speech\" OR \"transcription\") AND (\"qualitative\" OR \"interpretive\")\nMeso-level: \"visualization\" AND (\"group dynamics\" OR \"team collaboration\" OR \"social networks\") AND \"fieldwork\"\nMacro-level: \"visualization\" AND (\"organizational workflows\" OR \"process mapping\") AND \"exploratory analysis\"\nMethodological Focus: (\"ethnogram\" OR \"timeline\" OR \"flow diagram\" OR \"visual elicitation\") -(\"statistical\" OR \"predictive\" OR \"design evaluation\")\n\nAll initial results (over 700 candidates), after filtering by looking at the title, abstract, and figures in the paper, were narrowed down to 44 new items.\n\n\n",
+    "keywords": ""
+  }
+}

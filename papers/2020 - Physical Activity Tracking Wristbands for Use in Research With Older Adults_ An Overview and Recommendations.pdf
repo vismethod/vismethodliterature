@@ -1,0 +1,1222 @@
+  <!DOCTYPE html>
+  <html >
+    <head>
+      <meta charset="utf-8">
+      <meta rel="search"
+            type="application/opensearchdescription+xml"
+            href="/open_search.xml"
+            title="Academia.edu">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <meta name="google-site-verification" content="bKJMBZA7E43xhDOopFZkssMMkBRjvYERV-NaN4R6mrs">
+
+      <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="2PSkNcv7MSUCWe3Xa30lNkB3mW2CTGGPL9bthxOFQuAUUqFZ6EZPmTnGTOLqgmu5FKpnjRTr9fv1SfA1dwovGg" />
+      <meta name="citation_title" content="Physical Activity Tracking Wristbands for Use in Research With Older Adults: An Overview and Recommendations" />
+<meta name="citation_publication_date" content="2020/01/01" />
+<meta name="citation_author" content="Alexandre Campelo" />
+<meta name="citation_doi" content="10.1123/JMPB.2019-0050" />
+<meta property="fb:app_id" content="2369844204" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations" />
+<meta property="og:title" content="Physical Activity Tracking Wristbands for Use in Research With Older Adults: An Overview and Recommendations" />
+<meta property="og:image" content="http://a.academia-assets.com/images/open-graph-icons/fb-paper.gif" />
+<meta property="og:description" content="Traditional physical activity tracking tools, such as self-report questionnaires, are inherently subjective and vulnerable to bias. Physical activity tracking technology, such as activity tracking wristbands, is becoming more reliable and readily" />
+<meta property="article:author" content="https://unesp.academia.edu/AlexandreCampelo" />
+<meta name="description" content="Traditional physical activity tracking tools, such as self-report questionnaires, are inherently subjective and vulnerable to bias. Physical activity tracking technology, such as activity tracking wristbands, is becoming more reliable and readily" />
+
+        <script>
+    window.__autoProps = window.__autoProps || {};
+  </script>
+
+
+
+      <title>(PDF) Physical Activity Tracking Wristbands for Use in Research With Older Adults: An Overview and Recommendations</title>
+
+        <link rel="canonical" href="https://www.academia.edu/107590770/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations" />
+
+
+      
+
+      
+<script>
+  var $controller_name = 'single_work';
+  var $action_name = "show";
+  var $rails_env = 'production';
+  var $app_rev = '5801a5e1eea8ced576eca1fcda31094759835bd4';
+  var $domain = 'academia.edu';
+  var $app_host = "academia.edu";
+  var $asset_host = "academia-assets.com";
+  var $recaptcha_key = "6LdxlRMTAAAAADnu_zyLhLg0YF9uACwz78shpjJB";
+  var $recaptcha_invisible_key = "6Lf3KHUUAAAAACggoMpmGJdQDtiyrjVlvGJ6BbAj";
+  var $disableClientRecordHit = false;
+  // auvid cookie used for analytics tracking - must be globally available for all bundles
+  var $auvid = "MTc3Mzg5NDg5ODk3MTowLjcyMDU1ODI1MzY0Njk4MTE=";
+  var $route_uri_pattern = '(/:language)/:id(/:slug)(.:format)';
+
+</script>
+
+
+      <script>
+        window.Aedu = window.Aedu || {};
+        window.Aedu.hit_data = null;
+        window.Aedu.serverRenderTime = new Date(1773894899000);
+      </script>
+
+        <link rel="stylesheet" href="//a.academia-assets.com/assets/simpler/logged_out_header-9080beec8106d06ae6309731785d791d9dc265002989b05cb848af938bd67e1e.css" media="all" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VKX33P2DS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5VKX33P2DS', {
+    cookie_domain: 'academia.edu',
+    send_page_view: false,
+  });
+  gtag('event', 'page_view', {
+    'controller': "single_work",
+    'action': "show",
+    'controller_action': 'single_work#show',
+    'logged_in': 'false',
+    'edge': 'unknown',
+    // Send nil if there is no A/B test bucket, in case some records get logged
+    // with missing data - that way we can distinguish between the two cases.
+    // ab_test_bucket should be of the form <ab_test_name>:<bucket>
+    'ab_test_bucket': null,
+  })
+</script>
+
+
+
+      
+
+
+      <script>
+        window.Aedu.SiteStats = {"monthly_visitor_count_in_millions":31,"paper_count_in_millions":55}
+      </script>
+
+
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","abstract":"Traditional physical activity tracking tools, such as self-report questionnaires, are inherently subjective and vulnerable to bias. Physical activity tracking technology, such as activity tracking wristbands, is becoming more reliable and readily available. As such, researchers are employing these objective measurement tools in both observational- and intervention-based studies. There remains a gap in the literature on how to properly select activity tracking wristbands for research, specifically for the older adult population. This paper outlines considerations for choosing the most appropriate wrist-worn wearable device for use in research with older adults. Device features, outcome measures, population, and methodological considerations are explored.","author":[{"@context":"https://schema.org","@type":"Person","name":"Alexandre Campelo","url":"https://unesp.academia.edu/AlexandreCampelo","image":"https://0.academia-photos.com/676229/7921186/28843991/s200_alexandre.campelo.jpg","sameAs":[]}],"contributor":[],"dateCreated":"2022-09-28","datePublished":"2020-01-01","headline":"Physical Activity Tracking Wristbands for Use in Research With Older Adults: An Overview and Recommendations","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.1123/JMPB.2019-0050"},"image":"https://attachments.academia-assets.com/91700244/thumbnails/1.jpg","inLanguage":"en","keywords":["Psychology","Human Kinetics"],"publisher":{"@context":"https://schema.org","@type":"Organization","name":null},"sameAs":"https://doi.org/10.1123/JMPB.2019-0050","sourceOrganization":[{"@context":"https://schema.org","@type":"EducationalOrganization","name":"unesp"}],"thumbnailUrl":"https://attachments.academia-assets.com/91700244/thumbnails/1.jpg","url":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations"}</script><link rel="stylesheet" href="//a.academia-assets.com/assets/design_system/default_tokens/rebrand-89afffb91e093c5385bc943212566acb82d8da08820977c439fbb6656b3d411c.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/single_work_page/loswp_redesigns/outline_variant-d60a1b0e0e8a11abf4e7b34c45fd4937ce8506e31d731e2abfac6e9a4fddcec1.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/single_work_page/outline-81167b90d0109620221d366e55ca8f498a621752df59ae26b6678cf0870d7f37.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/design_system/body-c50f5ab98832f511df8842993148351135752147645352dc0b07c369bcb29ab7.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/design_system/button-4d6745f84a0a0d8316c46d93a0bc87b9c96d3bce729ca2b864b618764cddd832.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/design_system/heading-95367dc03b794f6737f30123738a886cf53b7a65cdef98a922a98591d60063e3.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/design_system/text_button-d1941ab08e91e29ee143084c4749da4aaffa350a2ac6eec2306b1d7a352d911a.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/single_work_page/ordered_list-9123030494f589694fc98dd7b689a70398eb527516b541b1c648dce5ab690c12.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/design_system/pill_button-415e0369ec1a9d16d4ee620aec8867d6e8e5e31496b0c56fb8fea35907265a1b.css" media="all" /><link rel="stylesheet" href="//a.academia-assets.com/assets/about_hiring/footer-4b1d1471325a90ac5ba51422db929bc292e3d4469d0fabb80d93ab2310ff2719.css" media="all" /><link rel="preload" href="//a.academia-assets.com/fonts/design_system/DM-Sans_100-1000_normal_latin.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="//a.academia-assets.com/fonts/design_system/Gupter_400_normal_latin.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="//a.academia-assets.com/fonts/design_system/Material-Symbols-Outlined.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="//a.academia-assets.com/fonts/design_system/Roboto_100-900_normal_latin.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="stylesheet" href="//a.academia-assets.com/assets/design_system/font-faces-2356cee1de094354769ab30bf9bb930e5f4cdeb0a4f2cce7272a440eecfa7de9.css" media="all" /><style>.material-symbols-outlined {
+  visibility: hidden;
+  max-width: 20px; /* Our default icon size */
+}
+html.ms-loaded .material-symbols-outlined {
+  visibility: visible;
+  max-width: none;
+}</style><script>(async () => {
+  await document.fonts.load('24px "Material Symbols Outlined"');
+  document.documentElement.classList.add("ms-loaded");
+})();</script><link rel="stylesheet" href="//a.academia-assets.com/assets/design_system/common-ae6595f765bfa5b551eb44e15de4953d346eabbc005f6ab5a79f366ea5d2b70b.css" media="all" />
+
+      <script src="https://a.academia-assets.com/webpack_bundles/js/runtime-f948bcf8a327ff37.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/design_system-d7b4dd33df557e8c.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/7989-486e31eadf281475.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/1533-572b5c144fff0e3a.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/7820-ee75e5e74d137e9f.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/6293-ad98ffba551606b4.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/5537-305fdfb45d68d47c.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/8128-f0cce6b538683916.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/3135-db28ca4ed4380b56.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/6283-220efd200e88f5ca.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/249-6ad308ee1d27be6c.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/4753-ad45d0174f1bdc89.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/5466-f1ec299a8d01a63e.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/1498-450d52446b037402.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/8076-d920824c9e155ac4.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/677-85034331b248fade.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/7288-b06a22d3356f0d75.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/1567-64716cb9a0a3e614.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/8074-1a60ba27b0eacba7.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/7350-29d9cdea06e5eb11.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/3958-585b711bd15538c7.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/1623-c0ef8de5bcbd05e2.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/3891-2339a3ccbcae42e7.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/402-0d17c16b1d0e07c2.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/fast_loswp-9a9cb3000b773577.js" defer="defer"></script>
+<script src="https://a.academia-assets.com/webpack_bundles/js/qualaroo-68c57f15d4e26996.js" defer="defer"></script>
+      <link rel="stylesheet" href="https://a.academia-assets.com/webpack_bundles/css/design_system-6b4afee79620bce1.css" />
+<link rel="stylesheet" href="https://a.academia-assets.com/webpack_bundles/css/7350-c4fb6e03132e1a07.css" />
+<link rel="stylesheet" href="https://a.academia-assets.com/webpack_bundles/css/fast_loswp-81402b4be28f59b2.css" />
+    </head>
+
+    <body>
+
+      <div id='react-modal'></div>
+
+
+
+
+        <div id="google-root"></div><script>window.loadGoogle = function() {
+  if (window.InitGoogle) {
+    // google.ts already loaded, set it up.
+    window.InitGoogle("331998490334-rsn3chp12mbkiqhl6e7lu2q0mlbu0f1b");
+  } else {
+    // Set a flag for google.ts to use when it loads.
+    window.GoogleClientID = "331998490334-rsn3chp12mbkiqhl6e7lu2q0mlbu0f1b";
+  }
+};</script>
+
+      <script>window.facebookAppId = "2369844204";</script>
+
+        <link rel="stylesheet" href="//a.academia-assets.com/assets/simpler/logged_out_header-9080beec8106d06ae6309731785d791d9dc265002989b05cb848af938bd67e1e.css" media="all" /><div class="header--container" id="main-header-container"><div class="header--inner-container header--inner-container-ds2"><div class="header-ds2--left-wrapper"><div class="header-ds2--left-wrapper-inner"><a data-main-header-link-target="logo_home" href="https://www.academia.edu/"><img class="hide-on-desktop-redesign" style="height: 24px; width: 24px;" alt="Academia.edu" src="//a.academia-assets.com/images/academia-logo-redesign-2015-A.svg" width="24" height="24" /><img width="145.2" height="18" class="hide-on-mobile-redesign" style="height: 24px;" alt="Academia.edu" src="//a.academia-assets.com/images/academia-logo-redesign-2015.svg" /></a><div class="header--search-container header--search-container-ds2"><form class="js-SiteSearch-form select2-no-default-pills" action="https://www.academia.edu/search" accept-charset="UTF-8" method="get"><svg style="width: 14px; height: 14px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="header--search-icon svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><input class="header--search-input header--search-input-ds2 js-SiteSearch-form-input" data-main-header-click-target="search_input" name="q" placeholder="Search" type="text" /></form></div></div></div><nav class="header--nav-buttons header--nav-buttons-ds2 js-main-nav"><button class="ds2-5-button ds2-5-button--secondary js-header-login-url header-button-ds2 header-login-ds2 hide-on-mobile-redesign react-login-modal-opener" data-signup-modal="{&quot;location&quot;:&quot;login-button--header&quot;}" rel="nofollow">Log In</button><button class="ds2-5-button ds2-5-button--secondary header-button-ds2 hide-on-mobile-redesign react-login-modal-opener" data-signup-modal="{&quot;location&quot;:&quot;signup-button--header&quot;}" rel="nofollow">Sign Up</button><button class="header--hamburger-button header--hamburger-button-ds2 hide-on-desktop-redesign js-header-hamburger-button"><div class="icon-bar"></div><div class="icon-bar" style="margin-top: 4px;"></div><div class="icon-bar" style="margin-top: 4px;"></div></button></nav></div><ul class="header--dropdown-container js-header-dropdown"><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/login" rel="nofollow">Log In</a></li><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/signup" rel="nofollow">Sign Up</a></li><li class="header--dropdown-row js-header-dropdown-expand-button"><button class="header--dropdown-button">more<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="header--dropdown-button-icon svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></button></li><li><ul class="header--expanded-dropdown-container"><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/about">About</a></li><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/press">Press</a></li><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/documents">Papers</a></li><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/terms">Terms</a></li><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/privacy">Privacy</a></li><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/copyright">Copyright</a></li><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://www.academia.edu/hiring"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="briefcase" class="header--dropdown-row-icon svg-inline--fa fa-briefcase fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg>We&#39;re Hiring!</a></li><li class="header--dropdown-row"><a class="header--dropdown-link" href="https://support.academia.edu/hc/en-us"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question-circle" class="header--dropdown-row-icon svg-inline--fa fa-question-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg>Help Center</a></li><li class="header--dropdown-row js-header-dropdown-collapse-button"><button class="header--dropdown-button">less<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-up" class="header--dropdown-button-icon svg-inline--fa fa-caret-up fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></button></li></ul></li></ul></div>
+
+      
+
+      <script>window.pageData = {
+  highlighted_claims: null
+}</script><script>window.loswp = {};
+window.loswp.shouldDetectTimezone = true;
+window.loswp.work = {"work":{"id":87513648,"created_at":"2022-09-28T15:13:31.377-07:00","from_world_paper_id":216169581,"updated_at":"2022-09-28T15:38:04.652-07:00","_data":{"abstract":"Traditional physical activity tracking tools, such as self-report questionnaires, are inherently subjective and vulnerable to bias. Physical activity tracking technology, such as activity tracking wristbands, is becoming more reliable and readily available. As such, researchers are employing these objective measurement tools in both observational- and intervention-based studies. There remains a gap in the literature on how to properly select activity tracking wristbands for research, specifically for the older adult population. This paper outlines considerations for choosing the most appropriate wrist-worn wearable device for use in research with older adults. Device features, outcome measures, population, and methodological considerations are explored.","publication_date":"2020,,"},"document_type":"paper","pre_hit_view_count_baseline":null,"quality":"high","language":"en","title":"Physical Activity Tracking Wristbands for Use in Research With Older Adults: An Overview and Recommendations","broadcastable":false,"draft":null,"has_indexable_attachment":true,"indexable":true,"seo_quality":9,"owner_type":"USER_OWNED"}}["work"];
+window.loswp.previewableAttachments = [{"id":91700244,"identifier":"Attachment_91700244","shouldShowBulkDownload":false}];
+window.loswp.hasViewableAttachments = true;
+window.loswp.cwvAbTestBucket = "";
+window.loswp.designVariant = "outline";
+window.loswp.useOptimizedScribd4genScript = false;
+window.loswp.abTestBuckets = {"ungated_layout_v2":"control","gated_layout_v1":"control"};
+
+window.loginModal = {};
+window.loginModal.appleClientId = 'edu.academia.applesignon';
+window.userInChina = "false";
+window.facebookLoginDisabled = 'true';</script><script defer="" src="https://accounts.google.com/gsi/client"></script><div class="safe-loswp--grid-container"><div class="left-rail--container"><div class="outline--wrapper  outline-variant--outline"><div class="outline--heading"><p class="ds2-5-body-md-bold">Outline</p><button aria-controls="outline" aria-expanded="false" aria-label="Expand outline" class="ds2-5-button ds2-5-button--inverse js-tc-loswp--outline-toggle outline--toggle js-outline-toggle"><span class="material-symbols-outlined" style="font-size: 20px" translate="no">keyboard_arrow_down</span></button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (button)';
+  }
+
+  const options = {"source":"loswp--outline-toggle"};
+  const button = document.querySelector('.js-tc-loswp--outline-toggle');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script></div><div class="outline--container js-outline-container" id="outline"><div class="outline--progress-container"><div class="outline--progress-line js-outline-progress-line"></div></div><div class="outline--elements-container"><div class="outline--element js-outline-element-title primary" data-target-id="title"><div class="outline--progress-dot"></div><a class="outline--element-label js-tc-loswp--outline-navigation" href="#title">Title</a></div><div class="outline--element js-outline-element-abstract " data-target-id="abstract"><div class="outline--progress-dot"></div><a class="outline--element-label js-tc-loswp--outline-navigation" href="#abstract">Abstract</a></div><div class="outline--element js-outline-element-outer_page_3 " data-target-id="outer_page_3"><div class="outline--progress-dot"></div><a class="outline--element-label js-tc-loswp--outline-navigation" href="#outer_page_3">Company Support and Research Protocol</a></div><div class="outline--element js-outline-element-outer_page_3 " data-target-id="outer_page_3"><div class="outline--progress-dot"></div><a class="outline--element-label js-tc-loswp--outline-navigation" href="#outer_page_3">Protocol Considerations</a></div><div class="outline--element js-outline-element-outer_page_5 " data-target-id="outer_page_5"><div class="outline--progress-dot"></div><a class="outline--element-label js-tc-loswp--outline-navigation" href="#outer_page_5">Recommendations and Limitations</a></div><div class="outline--element js-outline-element-outer_page_6 " data-target-id="outer_page_6"><div class="outline--progress-dot"></div><a class="outline--element-label js-tc-loswp--outline-navigation" href="#outer_page_6">Future Directions</a></div><div class="outline--element js-outline-element-outer_page_6 " data-target-id="outer_page_6"><div class="outline--progress-dot"></div><a class="outline--element-label js-tc-loswp--outline-navigation" href="#outer_page_6">Conclusion</a></div><div class="outline--element js-outline-element-references " data-target-id="references"><div class="outline--progress-dot"></div><a class="outline--element-label js-tc-loswp--outline-navigation" href="#references">References</a></div></div></div></div><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (outline)';
+  }
+
+  const outlineElements = {"Title":"title","Abstract":"abstract","Company Support and Research Protocol":"outer_page_3","Protocol Considerations":"outer_page_3","Recommendations and Limitations":"outer_page_5","Future Directions":"outer_page_6","Conclusion":"outer_page_6","References":"references"};
+  Object.entries(outlineElements).forEach(([elementName, elementId]) => {
+    const button = document.querySelector(`.js-outline-element-${elementId} .js-tc-loswp--outline-navigation`);
+    if (!button) return;
+    button.addEventListener('click', () => {
+      fetch('/v0/clicks?subdomain_param=api', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': csrfToken,
+        },
+        keepalive: true,
+        mode: 'same-origin',
+        body: JSON.stringify({
+          source: 'loswp--outline-navigation',
+          extra: { element_name: elementName },
+          occurred_at: new Date(),
+          hit_id: window.Aedu?.hit_data?.id,
+        }),
+      });
+    });
+  });
+});</script></div><div class="main-content--container"><div class="safe-work-card--container js-loswp-work-card" id="loswp-work-card"><div class="breadcrumb-wrapper"><div class="topic-breadcrumb"><div class="topic-breadcrumb__item"><div class="topic-breadcrumb__link"><a class="js-tc-loswp-topic-breadcrumb" data-topic-id="all_topics" href="https://www.academia.edu/topics">All Topics</a></div></div><div class="topic-breadcrumb__item"><div class="topic-breadcrumb__link"><a class="js-tc-loswp-topic-breadcrumb" data-topic-id="221" href="https://www.academia.edu/Documents/in/Psychology">Psychology</a></div></div></div><script>document.addEventListener('DOMContentLoaded', () => {
+  const csrfToken = document.querySelector("[name='csrf-token']").content;
+  const options = {"source":"loswp-topic-breadcrumb","entity_id":87513648};
+  const links = document.querySelectorAll('.js-tc-loswp-topic-breadcrumb');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      const clickedTopicId = link.getAttribute('data-topic-id');
+      fetch('/v0/clicks?subdomain_param=api', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': csrfToken,
+        },
+        keepalive: true,
+        mode: 'same-origin',
+        body: JSON.stringify({
+          ...options,
+          occurred_at: new Date(),
+          hit_id: window.Aedu?.hit_data?.id,
+          extra: {
+            ...options.extra,
+            clicked_topic_id: clickedTopicId,
+          },
+        }),
+      });
+    });
+  });
+});</script></div><div class="safe-work-card--cover"><div class="ds-work-cover--wrapper"><div class="ds-work-cover--container"><style>.login-ghost-button {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+
+  display: block;
+  cursor: pointer;
+  position: relative;
+}</style><button class="js-login-button--c0027dd5 login-ghost-button ds-work-cover--clickable"><img alt="First page of “Physical Activity Tracking Wristbands for Use in Research With Older Adults: An Overview and Recommendations”" class="ds-work-cover--cover-thumbnail" src="https://0.academia-photos.com/attachment_thumbnails/91700244/mini_magick20220928-1-1lgno2.png?1664403452" /><img alt="PDF Icon" class="ds-work-cover--file-icon" src="//a.academia-assets.com/images/single_work_splash/adobe_icon.svg" /><div class="ds-work-cover--hover-container"><span class="material-symbols-outlined" style="font-size: 20px" translate="no">download</span><p>Download Free PDF</p></div><div class="ds-work-cover--ribbon-container">Download Free PDF</div><div class="ds-work-cover--ribbon-triangle"></div></button><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--c0027dd5'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","clickTrackingContext":{"source":"loswp--swp-splash-paper-cover","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":91700244}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script></div></div></div><div class="safe-work-card--work-information"><h1 class="ds-work-card--work-title ds2-5-heading-sans-serif-lg" id="title">Physical Activity Tracking Wristbands for Use in Research With Older Adults: An Overview and Recommendations</h1><div class="ds-work-card--work-authors ds-work-card--detail ds-work-card--work-authors--mobile-only"><a class="ds-work-card--author js-wsj-grid-card-author ds2-5-body-md ds2-5-body-link" data-author-id="676229" href="https://unesp.academia.edu/AlexandreCampelo"><img alt="Profile image of Alexandre Campelo" class="ds-work-card--author-avatar" src="https://0.academia-photos.com/676229/7921186/28843991/tiny_alexandre.campelo.jpg" />Alexandre Campelo</a></div><p class="ds-work-card--detail ds2-5-body-sm">2020</p><a class="ds-work-card--detail js-loswp-work-card-doi-link ds2-5-body-sm ds2-5-body-link" href="https://doi.org/10.1123/JMPB.2019-0050" rel="nofollow">https://doi.org/10.1123/JMPB.2019-0050</a><div class="ds-work-card--work-metadata"><div class="ds-work-card--work-metadata__stat"><span class="material-symbols-outlined" style="font-size: 20px" translate="no">visibility</span><p class="ds2-5-body-sm" id="work-metadata-view-count">…</p></div><div class="ds-work-card--work-metadata__stat"><span class="material-symbols-outlined" style="font-size: 20px" translate="no">description</span><p class="ds2-5-body-sm">9 pages</p></div></div><script>(async () => {
+  const workId = 87513648;
+  const worksViewsPath = "/v0/works/views?subdomain_param=api&amp;work_ids%5B%5D=87513648";
+
+  const getWorkViews = async (workId) => {
+    const response = await fetch(worksViewsPath);
+
+    if (!response.ok) {
+      throw new Error('Failed to load work views');
+    }
+
+    const data = await response.json();
+
+    return data.views[workId];
+  };
+  // Get the view count for the work - we send this immediately rather than waiting for
+  // the DOM to load, so it can be available as soon as possible (but without holding up
+  // the backend or other resource requests, because it's a bit expensive and not critical).
+  const viewCount = await getWorkViews(workId);
+
+  const updateViewCount = (viewCount) => {
+    try {
+      const viewCountNumber = parseInt(viewCount, 10);
+      if (viewCountNumber === 0) {
+        // Remove the whole views element if there are zero views.
+        document.getElementById('work-metadata-view-count')?.parentNode?.remove();
+        return;
+      }
+
+      const commaizedViewCount = viewCountNumber.toLocaleString();
+
+      const viewCountBody = document.getElementById('work-metadata-view-count');
+
+      if (!viewCountBody) {
+        throw new Error('Failed to find work views element');
+      }
+
+      viewCountBody.textContent = `${commaizedViewCount} views`;
+    } catch (error) {
+      // Remove the whole views element if there was some issue parsing.
+      document.getElementById('work-metadata-view-count')?.parentNode?.remove();
+      throw new Error(`Failed to parse view count: ${viewCount}`, error);
+    }
+  };
+
+  // If the DOM is still loading, wait for it to be ready before updating the view count.
+  if (document.readyState === "loading") {
+    document.addEventListener('DOMContentLoaded', () => {
+      updateViewCount(viewCount);
+    });
+  // Otherwise, just update it immediately.
+  } else {
+    updateViewCount(viewCount);
+  }
+})();</script><div class="ds-work-card--button-container"><div class="primary-buttons"><button class="ds2-5-button js-tc-loswp--continue-reading-button--work-card js-login-button--1e3888cf"><span class="material-symbols-outlined" style="font-size: 20px" translate="no">description</span>See full PDF</button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (button)';
+  }
+
+  const options = {"source":"loswp--continue-reading-button--work-card","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}};
+  const button = document.querySelector('.js-tc-loswp--continue-reading-button--work-card');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--1e3888cf'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","clickTrackingContext":{"source":"loswp--continue-reading-button--work-card","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":91700244}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><button class="ds2-5-button ds2-5-button--secondary js-tc-loswp--download-pdf-button--work-card js-login-button--c071ad0d"><span class="material-symbols-outlined" style="font-size: 20px" translate="no">download</span>Download PDF</button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (button)';
+  }
+
+  const options = {"source":"loswp--download-pdf-button--work-card","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}};
+  const button = document.querySelector('.js-tc-loswp--download-pdf-button--work-card');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--c071ad0d'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations?auto=download","clickTrackingContext":{"source":"loswp--download-pdf-button--work-card","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Download your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue with your free download."},"emailLoginPage":{"subheader":"Log in to continue with your free download."},"emailRegistrationPage":{"subheader":"Sign up to continue with your free download.","submit":"Start Download"}},"registrationParams":{"user_source":"download","doc_id":91700244,"auto":"download"}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><script type="application/json" id="js-react-on-rails-context">{"componentRegistryTimeout":5000,"railsEnv":"production","inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","rorVersion":"16.1.2","rorPro":true,"rorProVersion":"3.3.1","href":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","location":"/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","scheme":"https","host":"www.academia.edu","port":null,"pathname":"/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","search":null,"httpAcceptLanguage":null,"autoProps":{},"serverSide":false}</script>
+<div id="CitationButton-react-component-c7c919ce-0b45-4055-b779-0bc606e39232"></div>
+<script type="application/json" class="js-react-on-rails-component" id="js-react-on-rails-component-CitationButton-react-component-c7c919ce-0b45-4055-b779-0bc606e39232" data-component-name="CitationButton" data-dom-id="CitationButton-react-component-c7c919ce-0b45-4055-b779-0bc606e39232">{"workId":87513648,"source":"swp_citation_modal","buttonClassName":"ds-work-card--citation-button"}</script></div><div class="share-and-save-buttons"><button class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--bookmark-button--work-card js-login-button--bfd64c29"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">bookmark</span><span class="ds2-5-text-link__content">Save to Library</span></button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button)';
+  }
+
+  const options = {"source":"loswp--bookmark-button--work-card","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}};
+  const button = document.querySelector('.js-tc-loswp--bookmark-button--work-card');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--bfd64c29'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","clickTrackingContext":{"source":"loswp--bookmark-button--work-card","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":91700244}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><button class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--share-button--work-card js-login-button--93cfd59c"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">share</span><span class="ds2-5-text-link__content">Share</span></button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button)';
+  }
+
+  const options = {"source":"loswp--share-button--work-card","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}};
+  const button = document.querySelector('.js-tc-loswp--share-button--work-card');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--93cfd59c'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","clickTrackingContext":{"source":"loswp--share-button--work-card","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":91700244}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script></div></div><div class="ds-signup-banner-trigger-container"><div class="ds-signup-banner-trigger ds-signup-banner-trigger-control"></div></div><div class="ds-signup-banner ds-signup-banner-control"><div id="ds-signup-banner-close-button"><button class="ds2-5-button ds2-5-button--secondary ds2-5-button--inverse"><span class="material-symbols-outlined" style="font-size: 20px" translate="no">close</span></button></div><div class="ds-signup-banner-ctas" data-impression-entity-id="87513648" data-impression-entity-type="2" data-impression-source="signup-banner"><img src="//a.academia-assets.com/images/academia-logo-capital-white.svg" /><h4 class="ds2-5-heading-serif-sm">Sign up for access to the world's latest research</h4><button class="ds2-5-button ds2-5-button--inverse ds2-5-button--full-width js-tc-loswp--signup-banner js-login-button--e4046626">Sign up for free<span class="material-symbols-outlined" style="font-size: 20px" translate="no">arrow_forward</span></button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (button)';
+  }
+
+  const options = {"source":"loswp--signup-banner","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}};
+  const button = document.querySelector('.js-tc-loswp--signup-banner');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--e4046626'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","clickTrackingContext":{"source":"loswp--signup-banner","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":91700244}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script></div><div class="ds-signup-banner-divider"></div><div class="ds-signup-banner-reasons"><div class="ds-signup-banner-reasons-item"><span class="material-symbols-outlined" style="font-size: 24px" translate="no">check</span><span>Get notified about relevant papers</span></div><div class="ds-signup-banner-reasons-item"><span class="material-symbols-outlined" style="font-size: 24px" translate="no">check</span><span>Save papers to use in your research</span></div><div class="ds-signup-banner-reasons-item"><span class="material-symbols-outlined" style="font-size: 24px" translate="no">check</span><span>Join the discussion with peers</span></div><div class="ds-signup-banner-reasons-item"><span class="material-symbols-outlined" style="font-size: 24px" translate="no">check</span><span>Track your impact</span></div></div></div><script>(() => {
+  // Set up signup banner show/hide behavior:
+  // 1. If the signup banner trigger (a 242px-high* invisible div underneath the 'See Full PDF' / 'Download PDF' buttons)
+  //    is already fully scrolled above the viewport, show the banner by default
+  // 2. If the signup banner trigger is fully visible, show the banner
+  // 3. If the signup banner trigger has even a few pixels scrolled below the viewport, hide the banner
+  //
+  // * 242px is the empirically determined height of the signup banner. It's better to be a bit taller than
+  //   necessary than too short, so it's fine that the mobile (small breakpoint) banner is shorter.
+
+  // First check session storage for the signup banner's visibility state
+  const signupBannerHidden = sessionStorage.getItem('ds-signup-banner-hidden');
+  if (signupBannerHidden === 'true') {
+    return;
+  }
+
+  const signupBanner = document.querySelector('.ds-signup-banner');
+  const signupBannerTrigger = document.querySelector('.ds-signup-banner-trigger');
+
+  let footerShown = false;
+
+  window.addEventListener('load', () => {
+    const rect = signupBannerTrigger.getBoundingClientRect();
+    // If page loaded up already scrolled below the trigger (via scroll restoration), show the banner by default
+    if (rect.bottom < 0) {
+      footerShown = true;
+      signupBanner.classList.add('ds-signup-banner-visible');
+    }
+  });
+
+  // Wait for trigger to fully enter viewport before showing banner (ensures PDF CTAs are never covered by banner)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !footerShown) {
+        footerShown = true;
+        signupBanner.classList.add('ds-signup-banner-visible');
+      } else if (!entry.isIntersecting && footerShown) {
+        if (signupBannerTrigger.getBoundingClientRect().bottom > 0) {
+          footerShown = false;
+          signupBanner.classList.remove('ds-signup-banner-visible');
+        }
+      }
+    });
+  });
+  observer.observe(signupBannerTrigger);
+
+  // Set up signup banner close button event handler:
+  const signupBannerCloseButton = document.querySelector('#ds-signup-banner-close-button');
+  signupBannerCloseButton.addEventListener('click', () => {
+    signupBanner.classList.remove('ds-signup-banner-visible');
+    observer.unobserve(signupBannerTrigger);
+
+    // Store the signup banner's visibility state in session storage
+    sessionStorage.setItem('ds-signup-banner-hidden', 'true');
+  });
+})();</script></div></div><style>@media screen and (min-width: 568px) and (max-width: 621px) {  .ds-work-card--button-container .primary-buttons .ds2-5-button, .ds-work-card--citation-button {    font-size: var(--font-size-small);    line-height: var(--line-height-small);    padding: 0 var(--buttons-small-buttons-l-r-padding, 12px);    height: var(--buttons-small-buttons-height, 44px);    gap: var(--buttons-small-buttons-gap, 8px);    border-radius: var(--buttons-small-buttons-corner-radius, 8px);  }}@media screen and (min-width: 1280px) and (max-width: 1515px) {  .ds-work-card--button-container .primary-buttons .ds2-5-button, .ds-work-card--citation-button {    font-size: var(--font-size-small);    line-height: var(--line-height-small);    padding: 0 var(--buttons-small-buttons-l-r-padding, 12px);    height: var(--buttons-small-buttons-height, 44px);    gap: var(--buttons-small-buttons-gap, 8px);    border-radius: var(--buttons-small-buttons-corner-radius, 8px);  } .ds-work-card--button-container {   flex-direction: column !important; } .ds-work-card--button-container .share-and-save-buttons {   align-self: start; }}@media screen and (min-width: 1280px) {  .ds-work-card--work-authors.ds-work-card--work-authors--mobile-only {    display: none !important;  }}</style><div data-auto_select="false" data-client_id="331998490334-rsn3chp12mbkiqhl6e7lu2q0mlbu0f1b" data-doc_id="91700244" data-landing_url="https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations" data-login_uri="https://www.academia.edu/registrations/google_one_tap" data-use_fedcm_for_prompt="true" id="g_id_onload"></div><div class="safe-abstract--container"><h2 class="safe-abstract--heading ds2-5-heading-sans-serif-lg" id="abstract">Abstract</h2><div class="safe-abstract--body"><style>.truncate-component {
+  position: relative;
+
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 16;
+  -webkit-line-clamp: 16;
+  -webkit-box-orient: vertical;
+}
+
+.toggle-truncation-button {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}</style><div class="truncate-component js-truncate-component--abstract"><p class="ds2-5-body-md">Traditional physical activity tracking tools, such as self-report questionnaires, are inherently subjective and vulnerable to bias. Physical activity tracking technology, such as activity tracking wristbands, is becoming more reliable and readily available. As such, researchers are employing these objective measurement tools in both observational- and intervention-based studies. There remains a gap in the literature on how to properly select activity tracking wristbands for research, specifically for the older adult population. This paper outlines considerations for choosing the most appropriate wrist-worn wearable device for use in research with older adults. Device features, outcome measures, population, and methodological considerations are explored.</p><div class="toggle-truncation-button js-toggle-truncation-button--abstract"><button class="safe-abstract--toggle-truncation-button"><span>... </span><span class="safe-abstract--toggle-truncation-button-text">Read more</span></button></div></div></div></div><div class="safe-below-fold--related-works"><h2 class="safe-related-content--heading">Related papers</h2><div class="safe-related-content--container" data-nosnippet=""><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="0" data-entity-id="118012840" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/118012840/Efficacy_and_acceptability_of_using_wearable_activity_trackers_in_older_adults_living_in_retirement_communities_a_mixed_method_study">Efficacy and acceptability of using wearable activity trackers in older adults living in retirement communities: a mixed method study</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="9683454" href="https://independent.academia.edu/WeiyunChen">Weiyun  Chen</a></div><p class="ds-related-work--metadata ds2-5-body-xs">BMC Geriatrics, 2022</p><p class="ds2-5-body-sm ds-related-work--abstract ">Background Wearable activity trackers hold the potential for enhancing health and fitness, but the use of wearable activity trackers has remained largely unexplored in older adults. The purpose of the current study was to examine the effectiveness and acceptability of wearable activity trackers for promoting physical activity (PA) in older adults living in retirement communities. Methods Forty older adult participants (mean age = 85.4 years) used a wearable activity tracker (Fitbit InspireHR) for 12 weeks. Participants were provided with personalized activity goals and weekly feedback of PA during the 12 weeks. The main outcomes were daily step counts collected at baseline and the end of the intervention, and participants’ experiences of using the wearable activity tracker assessed after the 12-week intervention through an 8-item questionnaire and individual interviews. Results Participants used the activity tracker on 97.5% of measured days and had an average increase of 900 steps/...</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--5ca31817"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":118012840,"extra":{"source_work_id":118012840}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--5ca31817'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/118012840/Efficacy_and_acceptability_of_using_wearable_activity_trackers_in_older_adults_living_in_retirement_communities_a_mixed_method_study","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":118012840,"extra":{"source_work_id":118012840}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":113737279}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/118012840/Efficacy_and_acceptability_of_using_wearable_activity_trackers_in_older_adults_living_in_retirement_communities_a_mixed_method_study"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="1" data-entity-id="78870667" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/78870667/Using_consumer_friendly_wearables_to_correlate_patient_and_technology_reported_physical_activity_in_healthy_seniors">Using consumer-friendly wearables to correlate patient and technology-reported physical activity in healthy seniors</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="226720032" href="https://independent.academia.edu/BerrocalAllan">Allan Berrocal</a><span>, </span><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="12664315" href="https://independent.academia.edu/VladManea6">Vlad Manea</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Procedia Computer Science, 2020</p><p class="ds2-5-body-sm ds-related-work--abstract ">A leading risk factor for chronic disease is physical inactivity. In efforts to assess physical activity and inform designs for prevention, health professionals currently use inexpensive, but subjective validated scales, or objective, but expensive research-grade wearables. In the meanwhile, individuals increasingly use affordable consumer-friendly wearable devices that can objectively monitor behaviours while daily life unfolds. However, the relationships between their outcomes and the validated scales are yet to be calibrated. We report our results from a study on 31 seniors from Hungary and Spain (mean age 70.6 +/-3.2). Our study quantified the relations between physical activity outcomes, as patient-reported through 53 answers (1.71 +/-0.96 / person) on the International Physical Activity Questionnaire (IPAQ) with a 7-day recall period, and 5615 days (mean 181.1 +/-179.2 days collected / person) technology-reported by Fitbit Charge 2. The wearables monitored daily life behaviours of physical activity and sleep for long durations (7 to 120 days). We found strong Spearman correlations between light and moderate IPAQ physical activity in the domestic activity domain, and light-fair intensity Fitbit physical activity (e.g., r S = 0.88, p &lt; 0.005). We also found negative moderate-strong correlations between Fitbit sedentary duration and all IPAQ physical activity domains and intensities (e.g., r S = 0.64, p &lt; 0.005). We obtained increasingly stronger relationships across all IPAQ domains and Fitbit intensities by monitoring physical activity beyond the scale recall period, quantifying physical activity relative to all activities of the day, and including sleep. Our findings inform the design of longitudinal observations and personalized, focused, and potentially effective interventions for physical activity in seniors.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--f23e34be"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":78870667,"extra":{"source_work_id":78870667}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--f23e34be'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/78870667/Using_consumer_friendly_wearables_to_correlate_patient_and_technology_reported_physical_activity_in_healthy_seniors","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":78870667,"extra":{"source_work_id":78870667}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":85762233}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/78870667/Using_consumer_friendly_wearables_to_correlate_patient_and_technology_reported_physical_activity_in_healthy_seniors"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="2" data-entity-id="115363697" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/115363697/Reliability_and_validity_of_two_fitness_tracker_devices_in_the_laboratory_and_home_environment_for_older_community_dwelling_people">Reliability and validity of two fitness tracker devices in the laboratory and home environment for older community-dwelling people</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="43181028" href="https://curtinedu.academia.edu/GLewin">Gill Lewin</a></div><p class="ds-related-work--metadata ds2-5-body-xs">BMC Geriatrics, 2018</p><p class="ds2-5-body-sm ds-related-work--abstract ">Background: Two-thirds of older Australians are sedentary. Fitness trackers have been popular with younger people and may encourage older adults to become more active. Older adults may have different gait patterns and as such it is important to establish whether fitness trackers are valid and reliable for this population. The aim of the study was to test the reliability and validity of two fitness trackers (Fitbit Flex and ChargeHR) by step count when worn by older adults. Reliability and validity were tested in two conditions: 1) in the laboratory using a two-minute-walk-test (2MWT) and 2) in a free-living environment. Methods: Two 2MWTs were completed while wearing the fitness trackers. Participants were videoed during each test. Participants were then given one fitness tracker and a GENEactiv accelerometer to wear at home for 14-days. Results: Thirty-one participants completed two 2MWTs and 30 completed the free-living procedure. Intra Class Correlation&#39;s of the fitness trackers with direct observation of steps (criterion validity) was high (ICC:0.86,95%CI:0.76,0. 93). However, both fitness trackers underestimated steps. Excellent test-retest reliability (ICC ≥ 0.75) was found between the two 2MWTs for each device, particularly the ChargeHR devices. Good strength of agreement was found for total distance and steps (fitness tracker) and moderate-to-vigorous physical activity (GENEactiv) for the free-living environment (Spearman Rho&#39;s 0.78 and 0.74 respectively). Conclusion: Reliability and validity of the Flex and ChargeHR when worn by older adults is good, however both devices underestimated step count within the laboratory environment. These fitness trackers appear suitable for consumer use and promoting physical activity for older adults.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--1ee1e6e4"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":115363697,"extra":{"source_work_id":115363697}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--1ee1e6e4'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/115363697/Reliability_and_validity_of_two_fitness_tracker_devices_in_the_laboratory_and_home_environment_for_older_community_dwelling_people","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":115363697,"extra":{"source_work_id":115363697}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":111792300}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/115363697/Reliability_and_validity_of_two_fitness_tracker_devices_in_the_laboratory_and_home_environment_for_older_community_dwelling_people"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="3" data-entity-id="128728294" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/128728294/Reliability_and_validity_of_wrist_worn_activity_monitors_in_healthy_young_adults">Reliability and validity of wrist-worn activity monitors in healthy young adults</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="317534352" href="https://independent.academia.edu/WaniDipti">Dipti Wani</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Physiotherapy Practice and Research, 2018</p><p class="ds2-5-body-sm ds-related-work--abstract ">BACKGROUND: Wrist-Worn Activity Monitors (WWAMs) are low-cost, user-friendly devices which have become popular for monitoring physical activity. Their reliability and validity need investigation for accurate physical activity monitoring. We examined between-sessions and inter-device reliability of the WWAMs. In addition, we examined the criteria-related validity of the WWAMs against two gold standards, an Ankle-Worn Activity monitor (AWAM) and video. METHODS: Twenty volunteers participated in two sessions, one week apart. In each session, participants walked on a treadmill for five minutes at each of the three speeds: 0.89 m/s (slow),1.12 m/s (moderate) and 1.33 m/s (fast). Total step counts at each speed were obtained using one AWAM (stepWatch), three-WWAMs (Fitbit Flex) and video. The Intraclass Correlation Coefficient (ICC) was calculated to determine the reliability and validity of the WWAMs. The WWAMs exhibited moderate to excellent between-sessions reliability (ICC = 0.69-0.90). The WWAMs demonstrated excellent inter-device reliability at each speed across both sessions (ICC = 0.91-0.98). The criteria-related validity of WWAMs compared to the AWAM, and video recording showed moderate to excellent agreement (ICC = 0.67-0.85) at each speed. CONCLUSIONS: WWAMs recorded steps consistently between-sessions and between-devices for treadmill walking among healthy adults at each speed but exhibited limited agreement for recording steps at each speed compared to AWAM and video.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--b1e94500"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":128728294,"extra":{"source_work_id":128728294}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--b1e94500'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/128728294/Reliability_and_validity_of_wrist_worn_activity_monitors_in_healthy_young_adults","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":128728294,"extra":{"source_work_id":128728294}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":122260944}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/128728294/Reliability_and_validity_of_wrist_worn_activity_monitors_in_healthy_young_adults"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="4" data-entity-id="122278892" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/122278892/Benefits_of_a_Wearable_Activity_Tracker_with_Safety_Features_for_Older_Adults_An_Intervention_Study">Benefits of a Wearable Activity Tracker with Safety Features for Older Adults: An Intervention Study</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="32419729" href="https://independent.academia.edu/Mojca%C5%A0etinc">Mojca Šetinc</a></div><p class="ds-related-work--metadata ds2-5-body-xs">International Journal of Environmental Research and Public Health, 2022</p><p class="ds2-5-body-sm ds-related-work--abstract ">This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--9c6c02b7"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":122278892,"extra":{"source_work_id":122278892}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--9c6c02b7'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/122278892/Benefits_of_a_Wearable_Activity_Tracker_with_Safety_Features_for_Older_Adults_An_Intervention_Study","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":122278892,"extra":{"source_work_id":122278892}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":116978145}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/122278892/Benefits_of_a_Wearable_Activity_Tracker_with_Safety_Features_for_Older_Adults_An_Intervention_Study"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="5" data-entity-id="143164975" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/143164975/Wearable_Use_in_an_Observational_Study_Among_Older_Adults_Adherence_Feasibility_and_Effects_of_Clinicodemographic_Factors">Wearable Use in an Observational Study Among Older Adults: Adherence, Feasibility, and Effects of Clinicodemographic Factors</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="170559260" href="https://independent.academia.edu/AnnaVandeBunte">Anna VandeBunte</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Frontiers in digital health, 2022</p><p class="ds2-5-body-sm ds-related-work--abstract ">Wearable Use Among Older Adults including demographics and cognitive functioning. Future studies and clinical providers utilizing wearable activity trackers with older adults may benefit from implementation of reminders (e.g., texts, calls) for device use, particularly among men and individuals with memory impairment.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--93915ded"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":143164975,"extra":{"source_work_id":143164975}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--93915ded'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/143164975/Wearable_Use_in_an_Observational_Study_Among_Older_Adults_Adherence_Feasibility_and_Effects_of_Clinicodemographic_Factors","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":143164975,"extra":{"source_work_id":143164975}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":124000761}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/143164975/Wearable_Use_in_an_Observational_Study_Among_Older_Adults_Adherence_Feasibility_and_Effects_of_Clinicodemographic_Factors"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="6" data-entity-id="57966011" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/57966011/The_Use_of_Wearable_Activity_Trackers_Among_Older_Adults_A_Focus_Group_Study_of_Tracker_Perceptions_Motivators_And_Barriers_in_Different_Stages_of_Behavior_Change_Preprint_">The Use of Wearable Activity Trackers Among Older Adults: A Focus Group Study of Tracker Perceptions, Motivators, And Barriers in Different Stages of Behavior Change (Preprint)</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="801855" href="https://michiganstate.academia.edu/AnastasiaKononova">Anastasia Kononova</a></div><p class="ds-related-work--metadata ds2-5-body-xs">JMIR mHealth and uHealth</p><p class="ds2-5-body-sm ds-related-work--abstract ">Background: Wearable activity trackers offer the opportunity to increase physical activity through continuous monitoring. Viewing tracker use as a beneficial health behavior, we explored the factors that facilitate and hinder long-term activity tracker use, applying the transtheoretical model of behavior change with the focus on the maintenance stage and relapse. Objective: The aim of this study was to investigate older adults&#39; perceptions and uses of activity trackers at different points of use: from nonuse and short-term use to long-term use and abandoned use to determine the factors to maintain tracker use and prevent users from discontinuing tracker usage. Methods: Data for the research come from 10 focus groups. Of them, 4 focus groups included participants who had never used activity trackers (n=17). These focus groups included an activity tracker trial. The other 6 focus groups (without the activity tracker trial) were conducted with short-term (n=9), long-term (n=11), and former tracker users (n=11; 2 focus groups per user type). Results: The results revealed that older adults in different tracker use stages liked and wished for different tracker features, with long-term users (users in the maintenance stage) being the most diverse and sophisticated users of the technology. Long-term users had developed a habit of tracker use whereas other participants made an effort to employ various encouragement strategies to ensure behavior maintenance. Social support through collaboration was the primary motivator for long-term users to maintain activity tracker use. Short-term and former users focused on competition, and nonusers engaged in vicarious tracker use experiences. Former users, or those who relapsed by abandoning their trackers, indicated that activity tracker use was fueled by curiosity in quantifying daily physical activity rather than the desire to increase physical activity. Long-term users saw a greater range of pros in activity tracker use whereas others focused on the cons of this behavior. Conclusions: The results suggest that activity trackers may be an effective technology to encourage physical activity among older adults, especially those who have never tried it. However, initial positive response to tracker use does not guarantee tracker use maintenance. Maintenance depends on recognizing the long-term benefits of tracker use, social support, and internal motivation. Nonadoption and relapse may occur because of technology&#39;s limitations and gaining awareness of one&#39;s physical activity without changing the physical activity level itself.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--fb7935e6"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":57966011,"extra":{"source_work_id":57966011}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--fb7935e6'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/57966011/The_Use_of_Wearable_Activity_Trackers_Among_Older_Adults_A_Focus_Group_Study_of_Tracker_Perceptions_Motivators_And_Barriers_in_Different_Stages_of_Behavior_Change_Preprint_","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":57966011,"extra":{"source_work_id":57966011}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":72607282}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/57966011/The_Use_of_Wearable_Activity_Trackers_Among_Older_Adults_A_Focus_Group_Study_of_Tracker_Perceptions_Motivators_And_Barriers_in_Different_Stages_of_Behavior_Change_Preprint_"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="7" data-entity-id="78981346" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/78981346/Validation_of_Consumer_Based_Hip_and_Wrist_Activity_Monitors_in_Older_Adults_With_Varied_Ambulatory_Abilities">Validation of Consumer-Based Hip and Wrist Activity Monitors in Older Adults With Varied Ambulatory Abilities</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="1750041" href="https://javeriana.academia.edu/AlbertoFl%C3%B3rezPregonero">Alberto Flórez Pregonero</a></div><p class="ds-related-work--metadata ds2-5-body-xs">The journals of gerontology. Series A, Biological sciences and medical sciences, 2016</p><p class="ds2-5-body-sm ds-related-work--abstract ">The accuracy of step detection in consumer-based wearable activity monitors in older adults with varied ambulatory abilities is not known. We assessed the validity of two hip-worn (Fitbit One and Omron HJ-112) and two wrist-worn (Fitbit Flex and Jawbone UP) activity monitors in 99 older adults of varying ambulatory abilities and also included the validity results from the ankle-worn StepWatch as a comparison device. Nonimpaired, impaired (Short Physical Performance Battery Score &amp;lt; 9), cane-using, or walker-using older adults (62 and older) ambulated at a self-selected pace for 100 m wearing all activity monitors simultaneously. The criterion measure was directly observed steps. Intraclass correlation coefficients (ICC), mean percent error and mean absolute percent error, equivalency, and Bland-Altman plots were used to assess accuracy. Nonimpaired adults steps were underestimated by 4.4% for StepWatch (ICC = 0.87), 2.6% for Fitbit One (ICC = 0.80), 4.5% for Omron HJ-112 (ICC = 0....</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--7774bc76"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":78981346,"extra":{"source_work_id":78981346}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--7774bc76'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/78981346/Validation_of_Consumer_Based_Hip_and_Wrist_Activity_Monitors_in_Older_Adults_With_Varied_Ambulatory_Abilities","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":78981346,"extra":{"source_work_id":78981346}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":85855697}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/78981346/Validation_of_Consumer_Based_Hip_and_Wrist_Activity_Monitors_in_Older_Adults_With_Varied_Ambulatory_Abilities"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="8" data-entity-id="127545196" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/127545196/The_Validity_of_Consumer_Level_Activity_Monitors_in_Healthy_Older_Adults_in_Free_Living_Conditions">The Validity of Consumer-Level Activity Monitors in Healthy Older Adults in Free-Living Conditions</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="127193452" href="https://independent.academia.edu/RuthLowry">Ruth Lowry</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Journal of Aging and Physical Activity, 2018</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--a5653e1e"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":127545196,"extra":{"source_work_id":127545196}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--a5653e1e'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/127545196/The_Validity_of_Consumer_Level_Activity_Monitors_in_Healthy_Older_Adults_in_Free_Living_Conditions","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":127545196,"extra":{"source_work_id":127545196}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":121262945}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/127545196/The_Validity_of_Consumer_Level_Activity_Monitors_in_Healthy_Older_Adults_in_Free_Living_Conditions"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-wsj-grid-card js-safe-related-work-wsj " data-collection-position="9" data-entity-id="114580637" data-sort-order="default"><a class="ds-related-work--title js-wsj-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/114580637/Activity_Monitors_as_Support_for_Older_Persons_Physical_Activity_in_Daily_Life_Qualitative_Study_of_the_Users_Experiences">Activity Monitors as Support for Older Persons’ Physical Activity in Daily Life: Qualitative Study of the Users’ Experiences</a><div class="ds-related-work--metadata"><a class="js-wsj-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="34686610" href="https://independent.academia.edu/MariaEhn">Maria Ehn</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Jmir mhealth and uhealth, 2018</p><p class="ds2-5-body-sm ds-related-work--abstract ">Background: Falls are a major threat to the health and independence of seniors. Regular physical activity (PA) can prevent 40% of all fall injuries. The challenge is to motivate and support seniors to be physically active. Persuasive systems can constitute valuable support for persons aiming at establishing and maintaining healthy habits. However, these systems need to support effective behavior change techniques (BCTs) for increasing older adults&#39; PA and meet the senior users&#39; requirements and preferences. Therefore, involving users as codesigners of new systems can be fruitful. Prestudies of the user&#39;s experience with similar solutions can facilitate future user-centered design of novel persuasive systems. Objective: The aim of this study was to investigate how seniors experience using activity monitors (AMs) as support for PA in daily life. The addressed research questions are as follows: (1) What are the overall experiences of senior persons, of different age and balance function, in using wearable AMs in daily life?; (2) Which aspects did the users perceive relevant to make the measurements as meaningful and useful in the long-term perspective?; and (3) What needs and requirements did the users perceive as more relevant for the activity monitors to be useful in a long-term perspective? Methods: This qualitative interview study included 8 community-dwelling older adults (median age: 83 years). The participants&#39; experiences in using two commercial AMs together with tablet-based apps for 9 days were investigated. Activity diaries during the usage and interviews after the usage were exploited to gather user experience. Comments in diaries were summarized, and interviews were analyzed by inductive content analysis. Results: The users (n=8) perceived that, by using the AMs, their awareness of own PA had increased. However, the AMs&#39; impact on the users&#39; motivation for PA and activity behavior varied between participants. The diaries showed that self-estimated physical effort varied between participants and varied for each individual over time. Additionally, participants reported different types of accomplished activities; talking walks was most frequently reported. To be meaningful, measurements need to provide the user with a reliable receipt of whether his or her current activity behavior is sufficient for reaching an activity goal. Moreover, praise when reaching a goal was described as motivating feedback. To be useful, the devices must be easy to handle. In this study, the users perceived wearables as easy to handle, whereas tablets were perceived difficult to maneuver. Users reported in the diaries that the devices had been functional 78% (58/74) of the total test days. Conclusions: Activity monitors can be valuable for supporting seniors&#39; PA. However, the potential of the solutions for a broader group of seniors can significantly be increased. Areas of improvement include reliability, usability, and content supporting effective BCTs with respect to increasing older adults&#39; PA.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--a94bc548"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":114580637,"extra":{"source_work_id":114580637}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--a94bc548'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/114580637/Activity_Monitors_as_Support_for_Older_Persons_Physical_Activity_in_Daily_Life_Qualitative_Study_of_the_Users_Experiences","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":114580637,"extra":{"source_work_id":114580637}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":111242101}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-wsj-grid-card-view-pdf" href="https://www.academia.edu/114580637/Activity_Monitors_as_Support_for_Older_Persons_Physical_Activity_in_Daily_Life_Qualitative_Study_of_the_Users_Experiences"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div></div></div><div class="safe-sticky-ctas--container js-loswp-sticky-ctas hidden"><button class="ds2-5-button js-tc-loswp--continue-reading-button--sticky-ctas js-login-button--d98a71aa">See full PDF</button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (button)';
+  }
+
+  const options = {"source":"loswp--continue-reading-button--sticky-ctas","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}};
+  const button = document.querySelector('.js-tc-loswp--continue-reading-button--sticky-ctas');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--d98a71aa'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","clickTrackingContext":{"source":"loswp--continue-reading-button--sticky-ctas","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":91700244}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><button class="ds2-5-button ds2-5-button--secondary js-tc-loswp--download-pdf-button--sticky-ctas js-login-button--e49664f7"><span class="material-symbols-outlined" style="font-size: 20px" translate="no">download</span>Download PDF</button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (button)';
+  }
+
+  const options = {"source":"loswp--download-pdf-button--sticky-ctas","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}};
+  const button = document.querySelector('.js-tc-loswp--download-pdf-button--sticky-ctas');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--e49664f7'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations?auto=download","clickTrackingContext":{"source":"loswp--download-pdf-button--sticky-ctas","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Download your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue with your free download."},"emailLoginPage":{"subheader":"Log in to continue with your free download."},"emailRegistrationPage":{"subheader":"Sign up to continue with your free download.","submit":"Start Download"}},"registrationParams":{"user_source":"download","doc_id":91700244,"auto":"download"}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script></div><div class="ds-work--container js-loswp-embedded-document" id="loswp-embedded-document"><div class="attachment_preview" data-attachment="Attachment_91700244" style="display: none"><div class="js-scribd-document-container"><div class="scribd--document-loading js-scribd-document-loader" style="display: block;"><img alt="Loading..." src="//a.academia-assets.com/images/loaders/paper-load.gif" /><p>Loading Preview</p></div></div><div style="text-align: center;"><div class="scribd--no-preview-alert js-preview-unavailable"><p>Sorry, preview is currently unavailable. You can download the paper by clicking the button above.</p></div></div></div></div><div class="references--container"><h2 class="references--heading" id="references">References (81)</h2><ol class="ordered-list"><li class="ordered-list--item ds2-5-body-md">Ainsworth, B., Cahalin, L., Buman, M., &amp; Ross, R. (2015). The current state of physical activity assessment tools. Progress in Cardiovascu- lar Diseases, 57(4), 387-395. PubMed ID: 25446555 doi:10.1016/j. pcad.2014.10.005</li><li class="ordered-list--item ds2-5-body-md">Alharbi, M., Straiton, N., Smith, S., Neubeck, L., &amp; Gallagher, R. (2019). Data management and wearables in older adults: A systematic review. Maturitas, 124, 100-110. PubMed ID: 30910279 doi:10.1016/j. maturitas.2019.03.012</li><li class="ordered-list--item ds2-5-body-md">Alinia, P., Cain, C., Fallahzadeh, R., Shahrokni, A., Cook, D., &amp; Gha- semzadeh, H. (2017). How accurate is your activity tracker? A comparative study of step counts in low-intensity physical activities. JMIR Mhealth Uhealth, 5(8), e106. PubMed ID: 28801304 doi:10. 2196/mhealth.6321</li><li class="ordered-list--item ds2-5-body-md">Allen, J. (2007). Photoplethysmography and its application in clinical physiological measurement. Physiological Measurement, 28(3), R1-R39. PubMed ID: 17322588 doi:10.1088/0967-3334/28/3/R01</li><li class="ordered-list--item ds2-5-body-md">An, H.-S., Jones, G.C., Kang, S.-K., Welk, G.J., &amp; Lee, J.-M. (2017). How valid are wearable physical activity trackers for measuring steps? European Journal of Sport Science, 17(3), 360-368. PubMed ID: 27912681 doi:10.1080/17461391.2016.1255261</li><li class="ordered-list--item ds2-5-body-md">Appelboom, G., Yang, A.H., Christophe, B.R., Bruce, E.M., Slomian, J., Bruyère, O., : : : Sander Connolly, E., Jr. (2014). The promise of wearable activity sensors to define patient recovery. Journal of Clinical Neuroscience, 21(7), 1089-1093. PubMed ID: 24534628 doi:10.1016/j.jocn.2013.12.003</li><li class="ordered-list--item ds2-5-body-md">Barnard, Y., Bradley, M.D., Hodgson, F., &amp; Lloyd, A.D. (2013). Learning to use new technologies by older adults: Perceived difficulties, experimentation behaviour and usability. Computers in Human Behavior, 29(4), 1715-1724. doi:10.1016/j.chb.2013.02.006</li><li class="ordered-list--item ds2-5-body-md">Bass, S.A. (1995). Older and active: How Americans over 55 are contributing to society. New Haven, CT: Yale University Press.</li><li class="ordered-list--item ds2-5-body-md">Bunn, J.A., Navalta, J.W., Fountaine, C.J., &amp; Reece, J.D. (2018). Current state of commercial wearable technology in physical activity moni- toring 2015-2017. International Journal of Exercise Science, 11(7), 503-515. PubMed ID: 29541338</li><li class="ordered-list--item ds2-5-body-md">Burton, E., Hill, K.D., Lautenschlager, N.T., Thøgersen-Ntoumani, C., Lewin, G., Boyle, E., &amp; Howie, E. (2018). Reliability and validity of two fitness tracker devices in the laboratory and home environment for older community-dwelling people. BMC Geriatrics, 18(1), 103. PubMed ID: 29724191 doi:10.1186/s12877-018-0793-4</li><li class="ordered-list--item ds2-5-body-md">Cadmus-Bertram, L. (2017). Using fitness trackers in clinical research: What nurse practitioners need to know. The Journal for Nurse Practitioners, 13(1), 34-40. PubMed ID: 28603469 doi:10.1016/j. nurpra.2016.10.012</li><li class="ordered-list--item ds2-5-body-md">Centers for Disease Control and Prevention. (2016). Adults need more physical activity. Retrieved from https://www.cdc.gov/physical activity/inactivity-among-adults-50plus/index.html</li><li class="ordered-list--item ds2-5-body-md">Chen, K., &amp; Chan, A. (2013). Use or non-use of gerontechnology-A qualitative study. International Journal of Environmental Research and Public Health, 10(10), 4645-4666. PubMed ID: 24084674 doi:10.3390/ijerph10104645</li><li class="ordered-list--item ds2-5-body-md">Clevenger, K.A., Molesky, M.J., Vusich, J., &amp; Montoye, A.H.K. (2019). Free-living comparison of physical activity and sleep data from Fitbit activity trackers worn on the dominant and nondominant wrists. Measurement in Physical Education and Exercise Science, 23(2), 194-204. doi:10.1080/1091367X.2019.1577737</li><li class="ordered-list--item ds2-5-body-md">Cooper, C., Gross, A., Brinkman, C., Pope, R., Allen, K., Hastings, S., : : : Goode, A.P. (2018). The impact of wearable motion sensing tech- nology on physical activity in older adults. Experimental Gerontol- ogy, 112, 9-19. PubMed ID: 30103025 doi:10.1016/j.exger.2018. 08.002</li><li class="ordered-list--item ds2-5-body-md">Dall, P.M., Skelton, D.A., Dontje, M.L., Coulter, E.H., Stewart, S., Cox, S.R., : : : Chastin, S.F.M. (2018). Characteristics of a protocol to collect objective physical activity/sedentary behavior data in a large study: Seniors USP (understanding sedentary patterns). Journal for the Measurement of Physical Behaviour, 1(1), 26-31. PubMed ID: 30159548 doi:10.1123/jmpb.2017-0004</li><li class="ordered-list--item ds2-5-body-md">de Arriba-Pérez, F., Caeiro-Rodríguez, M., &amp; Santos-Gago, J.M. (2016). Collection and processing of data from wrist wearable devices in heterogeneous and multiple-user scenarios. Sensors, 16(9), 1538. doi:10.3390/s16091538</li><li class="ordered-list--item ds2-5-body-md">de Arriba-Pérez, F., Caeiro-Rodríguez, M., &amp; Santos-Gago, J.M. (2017). Ongoing research about the use of commercial-off-the-shelf wrist wearables in educational contexts. LASI-SPAIN.</li><li class="ordered-list--item ds2-5-body-md">de Zambotti, M., Cellini, N., Goldstone, A., Colrain, I.M., &amp; Baker, F.C. (2019). Wearable sleep technology in clinical and research settings. Medicine &amp; Science in Sports &amp; Exercise, 51(7):1538-1557. PubMed ID: 30789439 doi:10.1249/MSS.0000000000001947</li><li class="ordered-list--item ds2-5-body-md">Diaz, K.M., Krupka, D.J., Chang, M.J., Peacock, J., Ma, Y., Goldsmith, J., : : : Davidson, K.W. (2015). Fitbit ® : An accurate and reliable device for wireless physical activity tracking. International Journal of Cardiology, 185, 138-140. PubMed ID: 25795203 doi:10.1016/j .ijcard.2015.03.038</li><li class="ordered-list--item ds2-5-body-md">Doherty, A., Jackson, D., Hammerla, N., Plötz, T., Olivier, P., Granat, M.H., : : : Wareham, N.J. (2017). Large scale population assessment of physical activity using wrist worn accelerometers: The UK Bio- bank Study. PLoS One, 12(2), e0169649. PubMed ID: 28146576 doi:10.1371/journal.pone.0169649</li><li class="ordered-list--item ds2-5-body-md">Dowd, K.P., Szeklicki, R., Minetto, M.A., Murphy, M.H., Polito, A., Ghigo, E., : : : Donnelly, A.E. (2018). A systematic literature review of reviews on techniques for physical activity measurement in adults: A DEDIPAC study. International Journal of Behavioral Nutrition and Physical Activity, 15(1), 15. PubMed ID: 29422051 doi:10.1186/ s12966-017-0636-2</li><li class="ordered-list--item ds2-5-body-md">Edwardson, C.L., Davies, M., Khunti, K., Yates, T., &amp; Rowlands, A.V. (2018). Steps per day measured by consumer activity trackers worn at the non-dominant and dominant wrist relative to a waist-worn pedometer. Journal for the Measurement of Physical Behaviour, 1(1), 2-8. doi:10.1123/jmpb.2017-0001</li><li class="ordered-list--item ds2-5-body-md">Evans, A., Collins, G.Q., Rosquist, P.G., Tuttle, N.J., Morrin, S.J., Tracy, J.B., : : : Seeley, M.K. (2018). A novel method to characterize walking and running energy expenditure. Journal for the Measure- ment of Physical Behaviour, 1(3), 100-107. doi:10.1123/jmpb.2018- 0008</li><li class="ordered-list--item ds2-5-body-md">Evenson, K.R., Goto, M.M., &amp; Furberg, R.D. (2015). Systematic review of the validity and reliability of consumer-wearable activity trackers. International Journal of Behavioral Nutrition and Physical Activity, 12(1), 159. doi:10.1186/s12966-015-0314-1</li><li class="ordered-list--item ds2-5-body-md">Feehan, L.M., Geldman, J., Sayre, E.C., Park, C., Ezzat, A.M., Yoo, J.Y., : : : Li, L.C. (2018). Accuracy of Fitbit devices: Systematic review and narrative syntheses of quantitative data. JMIR Mhealth Uhealth, 6(8), e10527. PubMed ID: 30093371 doi:10.2196/10527</li><li class="ordered-list--item ds2-5-body-md">Floegel, T.A., Florez-Pregonero, A., Hekler, E.B., &amp; Buman, M.P. (2017). Validation of consumer-based hip and wrist activity monitors in older adults with varied ambulatory abilities. The Journals of Gerontology Series A: Biological Sciences and Medical Sciences, 72(2), 229-236. doi:10.1093/gerona/glw098</li><li class="ordered-list--item ds2-5-body-md">Fokkema, T., Kooiman, T.J.M., Krijnen, W.P., Van Der Schans, C.P., &amp; De Groot, M. (2017). Reliability and validity of ten consumer activity trackers depend on walking speed. Medicine &amp; Science in Sports &amp; Exercise, 49(4), 793-800. PubMed ID: 28319983 doi:10.1249/MSS. 0000000000001146</li><li class="ordered-list--item ds2-5-body-md">Garcia, A., &amp; Wong, P. (2018). Towards successful aging in Asia. Retrieved from https://www.milkeninstitute.org/reports/towards- successful-aging-asia</li><li class="ordered-list--item ds2-5-body-md">Gell, N.M., Rosenberg, D.E., Carlson, J., Kerr, J., &amp; Belza, B. (2015). Built environment attributes related to GPS measured active trips in mid-life and older adults with mobility disabilities. Disability and Health Journal, 8(2), 290-295. PubMed ID: 25637503 doi:10.1016/j. dhjo.2014.12.002</li><li class="ordered-list--item ds2-5-body-md">Glasgow, M.E.S., Colbert, A., Viator, J., &amp; Cavanagh, S. (2018). The nurse-engineer: A new role to improve nurse technology inter- face and patient care device innovations. Journal of Nursing Schol- arship, 50(6), 601-611. PubMed ID: 30221824 doi:10.1111/jnu. 12431</li><li class="ordered-list--item ds2-5-body-md">Godfrey, A. (2017). Wearables for independent living in older adults: Gait and falls. Maturitas, 100, 16-26. PubMed ID: 28539173 doi:10.1016/ j.maturitas.2017.03.317</li><li class="ordered-list--item ds2-5-body-md">Henriksen, A., Haugen Mikalsen, M., Woldaregay, A.Z., Muzny, M., Hartvigsen, G., Hopstock, L.A., &amp; Grimsgaard, S. (2018). Using fitness trackers and smartwatches to measure physical activity in research: Analysis of consumer wrist-worn wearables. Journal of Medical Internet Research, 20(3), e110. PubMed ID: 29567635 doi:10.2196/jmir.9157</li><li class="ordered-list--item ds2-5-body-md">Hergenroeder, A.L., Barone Gibbs, B., Kotlarczyk, M.P., Perera, S., Kowalsky, R.J., &amp; Brach, J.S. (2019). Accuracy and acceptability of commercial-grade physical activity monitors in older adults. Journal of Aging and Physical Activity, 27(2), 222-229. PubMed ID: 30117355 doi:10.1123/japa.2018-0036</li><li class="ordered-list--item ds2-5-body-md">Horton, J.F., Stergiou, P., Fung, T.S., &amp; Katz, L. (2017). Comparison of polar m600 optical heart rate and ECG heart rate during exercise. Medicine &amp; Science in Sports &amp; Exercise, 49(12), 2600-2607.</li><li class="ordered-list--item ds2-5-body-md">PubMed ID: 29135785 doi:10.1249/MSS.0000000000001388</li><li class="ordered-list--item ds2-5-body-md">Huang, Y., Xu, J., Yu, B., &amp; Shull, P.B. (2016). Validity of Fitbit, Jawbone UP, Nike+ and other wearable devices for level and stair walking. Gait &amp; Posture, 48, 36-41. PubMed ID: 27477705 doi:10.1016/j. gaitpost.2016.04.025</li><li class="ordered-list--item ds2-5-body-md">Huston, C. (2013). The impact of emerging technology on nursing care: Warp speed ahead. The Online Journal of Issues in Nursing, 18(2), 1. PubMed ID: 23758419</li><li class="ordered-list--item ds2-5-body-md">Imamura, P.G. (2014). The role of technology in older adult healthcare: A content analysis of existing literature. Retrieved from http://web. csulb.edu/colleges/chhs/documents/OptimizingCollectiveImpact- Aging.pdf</li><li class="ordered-list--item ds2-5-body-md">Kamišalić, A., Fister, I., Turkanović, M., &amp; Karakatič, S. (2018). Sensors and functionalities of non-invasive wrist-wearable devices: A review. Sensors, 18(6), 1714. doi:10.3390/s18061714</li><li class="ordered-list--item ds2-5-body-md">Kaye, H.S., Yeager, P., &amp; Reed, M. (2008). Disparities in usage of assistive technology among people with disabilities. Assistive Technology, 20(4), 194-203. PubMed ID: 19160906 doi:10.1080/10400435. 2008.10131946</li><li class="ordered-list--item ds2-5-body-md">Ko, S.-U., Hausdorff, J.M., &amp; Ferrucci, L. (2010). Age-associated differ- ences in the gait pattern changes of older adults during fast-speed and fatigue conditions: Results from the Baltimore longitudinal study of ageing. Age and Aging, 39(6), 688-694. doi:10.1093/ageing/afq113</li><li class="ordered-list--item ds2-5-body-md">Kuerbis, A., Mulliken, A., Muench, F., Moore, A.A., &amp; Gardner, D. (2017). Older adults and mobile technology: Factors that enhance and inhibit utilization in the context of behavioral health. Mental Health and Addiction Research, 2(2), 1-11. doi:10.15761/MHAR.1000136</li><li class="ordered-list--item ds2-5-body-md">LaMonte, M.J., Lee, I.M., Rillamas-Sun, E., Bellettiere, J., Evenson, K.R., Buchner, D.M., : : : LaCroix, A.Z. (2019). Comparison of question- naire and device measures of physical activity and sedentary behavior in a multi-ethnic cohort of older women. Journal for the Measurement of Physical Behaviour, 2(2), 82-93. doi:10.1123/jmpb.2018-0057</li><li class="ordered-list--item ds2-5-body-md">Levy, B.R., Slade, M.D., &amp; Kasl, S.V. (2002). Longitudinal benefit of positive self-perceptions of aging on functional health. The Journals of Gerontology: Series B: Psychological Sciences and Social Sciences, 57(5), P409-P417. doi:10.1093/geronb/57.5.P409</li><li class="ordered-list--item ds2-5-body-md">Lichtenberg, F.R. (2015). The impact of biomedical innovation on lon- gevity and health. Nordic Journal of Health Economics, 5(1), 45-57. doi:10.5617/njhe.1290</li><li class="ordered-list--item ds2-5-body-md">Malwade, S., Abdul, S.S., Uddin, M., Nursetyo, A.A., Fernandez-Luque, L., Zhu, X., : : : Li, Y.-C. (2018). Mobile and wearable technologies in healthcare for the aging population. Computer Methods and Programs in Biomedicine, 161, 233-237. PubMed ID: 29852964 doi:10.1016/j.cmpb.2018.04.026</li><li class="ordered-list--item ds2-5-body-md">Martin, J.A., Ramsay, J., Hughes, C., Peters, D.M., &amp; Edwards, M.G. (2015). Age and grip strength predict hand dexterity in adults. PLoS One, 10(2), 1-18. doi:10.1371/journal.pone.0117598</li><li class="ordered-list--item ds2-5-body-md">Milhorn, H.T. (2018). The elderly substance use disorders. In Substance use disorders (pp. 307-316). New York, NY: Springer International Publishing.</li><li class="ordered-list--item ds2-5-body-md">Mokhlespour Esfahani, M., &amp; Nussbaum, M. (2018). Preferred placement and usability of a smart textile system vs. inertial measurement units for activity monitoring. Sensors, 18(8), 2501. doi:10.3390/ s18082501</li><li class="ordered-list--item ds2-5-body-md">Montoye, A.H.K., Vusich, J., Mitrzyk, J., &amp; Wiersma, M. (2018). Heart rate alters, but does not improve, calorie predictions in Fitbit activity monitors. Journal for the Measurement of Physical Behaviour, 1(1), 9-17. doi:10.1123/jmpb.2018-0003</li><li class="ordered-list--item ds2-5-body-md">Nelson, E.C., Verhagen, T., &amp; Noordzij, M.L. (2016). Health empower- ment through activity trackers: An empirical smart wristband study. Computers in Human Behavior, 62, 364-374. doi:10.1016/j.chb. 2016.03.065</li><li class="ordered-list--item ds2-5-body-md">Nelson, M.B., Kaminsky, L.A., Dickin, D.C., &amp; Montoye, A.H.K. (2016). Validity of consumer-based physical activity monitors for specific activity types. Medicine &amp; Science in Sports &amp; Exercise, 48(8), 1619- 1628. PubMed ID: 27015387 doi:10.1249/MSS.0000000000000933</li><li class="ordered-list--item ds2-5-body-md">O&#39;Brien, T., Troutman-Jordan, M., Hathaway, D., Armstrong, S., &amp; Moore, M. (2015). Acceptability of wristband activity trackers among community dwelling older adults. Geriatric Nursing, 36(2), S21- S25. doi:10.1016/j.gerinurse.2015.02.019</li><li class="ordered-list--item ds2-5-body-md">O&#39;Connell, S., ÓLaighin, G., &amp; Quinlan, L.R. (2017). When a step is not a step! Specificity analysis of five physical activity monitors. PLoS One, 12(1), e0169616. doi:10.1371/journal.pone.0169616</li><li class="ordered-list--item ds2-5-body-md">Peake, J.M., Kerr, G., &amp; Sullivan, J.P. (2018). A critical review of consumer wearables, mobile applications, and equipment for provid- ing biofeedback, monitoring stress, and sleep in physically active populations. Frontiers in Physiology, 9, 743. PubMed ID: 30002629 doi:10.3389/fphys.2018.00743</li><li class="ordered-list--item ds2-5-body-md">Pirker, W., &amp; Katzenschlager, R. (2017). Gait disorders in adults and the elderly. Wiener Klinische Wochenschrift, 129(3), 81-95. doi:10. 1007/s00508-016-1096-4</li><li class="ordered-list--item ds2-5-body-md">Preusse, K.C., Mitzner, T.L., Fausset, C.B., &amp; Rogers, W.A. (2017). Older adults&#39; acceptance of activity trackers. Journal of Applied Gerontology, 36(2), 127-155. PubMed ID: 26753803 doi:10.1177/ 0733464815624151</li><li class="ordered-list--item ds2-5-body-md">Rao, A.K. (2019). Wearable sensor technology to measure physical activity (PA) in the elderly. Current Geriatrics Reports. 55-56. doi:10.1007/s13670-019-0275-3</li><li class="ordered-list--item ds2-5-body-md">Rupp, M.A., Michaelis, J.R., McConnell, D.S., &amp; Smither, J.A. (2018). The role of individual differences on perceptions of wearable fitness device trust, usability, and motivational impact. Applied Ergonomics, 70, 77-87. PubMed ID: 29866329 doi:10.1016/j.apergo.2018. 02.005</li><li class="ordered-list--item ds2-5-body-md">Sazonov, E., &amp; Neuman, M.R. (2014). Wearable sensors: Fundamentals, implementation and applications (1st ed.). San Diego, CA: Academic Press.</li><li class="ordered-list--item ds2-5-body-md">Schaller, A., Rudolf, K., Dejonghe, L., Grieben, C., &amp; Froboese, I. (2016). Influencing factors on the overestimation of self-reported physical activity: A cross-sectional analysis of low back pain patients and healthy controls. BioMed Research International, 2016, 1-11. doi:10. 1155/2016/1497213</li><li class="ordered-list--item ds2-5-body-md">Schrack, J.A., Gresham, G., &amp; Wanigatunga, A.A. (2017). Understanding physical activity in cancer patients and survivors: New methodology, new challenges, and new opportunities. Molecular Case Studies, 3(4), a001933. PubMed ID: 28679694 doi:10.1101/mcs.a001933</li><li class="ordered-list--item ds2-5-body-md">Scott, J., Grierson, A., Gehue, L., Kallestad, H., MacMillan, I., &amp; Hickie, I. (2019). Can consumer grade activity devices replace research grade actiwatches in youth mental health settings? Sleep and Biological Rhythms, 17(2), 223-232. doi:10.1007/s41105-018-00204-x</li><li class="ordered-list--item ds2-5-body-md">Shephard, R.J. (2016). A history of physical activity measurement in epidemiology. In R.J. Shephard &amp; C. Tudor-Locke (Eds.), The objective monitoring of physical activity: Contributions of accelero- metry to epidemiology, exercise science and rehabilitation (pp. 39- 83). Cham, Switzerland: Springer International Publishing.</li><li class="ordered-list--item ds2-5-body-md">Statistics Canada. (2012). Canada year book, 2012 (Chapter 28, pp. 406- 421). Ottawa, Canada: Author.</li><li class="ordered-list--item ds2-5-body-md">Statt, N. (2015). The rise and fall of fitness trackers. Retrieved from https:// www.cnet.com</li><li class="ordered-list--item ds2-5-body-md">Steinert, A., Haesner, M., &amp; Steinhagen-Thiessen, E. (2018). Activity- tracking devices for older adults: Comparison and preferences. Universal Access in the Information Society, 17(2), 411-419. doi:10.1007/s10209-017-0539-7</li><li class="ordered-list--item ds2-5-body-md">Stewart, J., &amp; Coughlin, S.S. (2016). Use of consumer wearable devices to promote physical activity: A review of health intervention studies. Journal of Environment and Health Science, 2(6), 1-6. doi:10.15436/ 2378-6841.16.1123</li><li class="ordered-list--item ds2-5-body-md">Straiton, N., Alharbi, M., Bauman, A., Neubeck, L., Gullick, J., Bhindi, R., &amp; Gallagher, R. (2018). The validity and reliability of consumer- grade activity trackers in older, community-dwelling adults: A sys- tematic review. Maturitas, 112, 85-93. PubMed ID: 29704922 doi: 10.1016/j.maturitas.2018.03.016</li><li class="ordered-list--item ds2-5-body-md">Tedesco, S., Barton, J., &amp; O&#39;Flynn, B. (2017). A review of activity trackers for senior citizens: Research perspectives, commercial landscape and the role of the insurance industry. Sensors, 17(6), 1277. doi:10.3390/ s17061277</li><li class="ordered-list--item ds2-5-body-md">Tudor-Locke, C., Craig, C.L., Aoyagi, Y., Bell, R.C., Croteau, K.A., De Bourdeaudhuij, I., : : : Blair, S.N. (2011). How many steps/day are enough? For older adults and special populations. International Journal of Behavioral Nutrition and Physical Activity, 8(1), 80. doi:10.1186/1479-5868-8-80</li><li class="ordered-list--item ds2-5-body-md">Turner-McGrievy, G., Jake-Schoffman, D.E., Singletary, C., Wright, M., Crimarco, A., Wirth, M.D., : : : McGrievy, M.J. (2019). Using commercial physical activity trackers for health promotion research: Four case studies. Health Promotion Practice, 20(3), 381-389.</li><li class="ordered-list--item ds2-5-body-md">PubMed ID: 29618233 doi:10.1177/1524839918769559</li><li class="ordered-list--item ds2-5-body-md">United Nations, Department of Economic and Social Affairs: Population Division. (2017). World population prospects: The 2017 revision. Retrieved from https://esa.un.org/unpd/wpp/Publications/Files/ WPP2017_KeyFindings.pdf</li><li class="ordered-list--item ds2-5-body-md">Vuori, I. (2018). World health organization and physical activity. Progress in Preventive Medicine, 4(1), 7.</li><li class="ordered-list--item ds2-5-body-md">World Health Organization. (2002). Active aging: A policy framework. Retrieved from http://www.who.int/aging/publications/active_aging/ en/files/984/en.html</li><li class="ordered-list--item ds2-5-body-md">World Health Organization. (n.d.). Physical activity and older adults. Retrieved from https://www.who.int/dietphysicalactivity/factsheet_ olderadults/en/</li><li class="ordered-list--item ds2-5-body-md">Wright, S.P., Hall Brown, T.S., Collier, S.R., &amp; Sandberg, K. (2017). How consumer physical activity monitors could transform human physi- ology research. American Journal of Physiology-Regulatory, Inte- grative and Comparative Physiology, 312(3), R358-R367. PubMed ID: 28052867 doi:10.1152/ajpregu.00349.2016</li><li class="ordered-list--item ds2-5-body-md">Yang, C.-C., &amp; Hsu, Y.-L. (2010). A review of accelerometry-based wearable motion detectors for physical activity monitoring. Sensors, 10(8), 7772-7788. doi:10.3390/s100807772</li><li class="ordered-list--item ds2-5-body-md">Zenger, T.R., &amp; Lawrence, B.S. (1989). Organizational demography: The differential effects of age and tenure distributions on technical communication. Academy of Management Journal, 32(2), 353- 376. doi:10.2307/256366</li></ol><button class="ds2-5-button ds2-5-button--extra-small ds2-5-button--full-width js-tc-loswp--references-view-more references--view-more-link" onclick="this.parentElement.classList.add(&#39;references--show-all&#39;);">View more<span class="material-symbols-outlined" style="font-size: 20px" translate="no">arrow_downward</span></button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (button)';
+  }
+
+  const options = {"source":"loswp--references-view-more"};
+  const button = document.querySelector('.js-tc-loswp--references-view-more');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script></div></div><div class="right-rail--container"><script type="application/json" id="js-react-on-rails-context">{"componentRegistryTimeout":5000,"railsEnv":"production","inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","rorVersion":"16.1.2","rorPro":true,"rorProVersion":"3.3.1","href":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","location":"/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","scheme":"https","host":"www.academia.edu","port":null,"pathname":"/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","search":null,"httpAcceptLanguage":null,"autoProps":{},"serverSide":false}</script>
+<div id="AboutTheAuthorsSSR-react-component-6e0d442d-f1bb-4bb6-a165-454fe0dcdb44"><div class="AboutTheAuthorsSSR-cls2_Yk9 AboutTheAuthorsSSR-cls1_c2J"><section style="gap:var(--spacing-xs-16, 16px)" class="SidebarSection-cls2_48y SidebarSection-cls1_sjk"><header class="SidebarSection-cls2_y03 SidebarSection-cls1_08-">About the author</header><div class="UserCard-cls2_j80 UserCard-cls1_lJx"><img src="https://0.academia-photos.com/676229/7921186/28843991/s65_alexandre.campelo.jpg" width="48" height="48" class="UserAvatar-cls2_NlM UserAvatar-cls1_C6Z"/><div class="UserCard-cls2_lsu UserCard-cls1_3Lh"><div class="UserCard-cls2_7GZ UserCard-cls1_OMn"><a href="https://unesp.academia.edu/AlexandreCampelo" class="ds2-5-body-md ds2-5-body-link">Alexandre Campelo</a></div><div class="UserCard-cls2_dRF UserCard-cls1_6gN">Universidade Estadual Paulista &quot;Júlio de Mesquita Filho&quot;, Department Member</div><div class="UserCard-cls2_W7U UserCard-cls1_3FG"><div class="AuthorCard-cls2_ZvH AuthorCard-cls1_M61"><button class="ds2-5-text-link ds2-5-text-link--inline"><span class="material-symbols-outlined" style="font-size:20px" translate="no">add</span><span class="ds2-5-text-link__content">Follow</span></button><button class="ds2-5-text-link ds2-5-text-link--inline"><span class="material-symbols-outlined" style="font-size:20px" translate="no">mail</span><span class="ds2-5-text-link__content">Message</span></button></div></div></div></div><div class="AboutTheAuthorsSection-cls2_m7J AboutTheAuthorsSection-cls1_8jj"><div class="ds2-5-stat--basic-small"><div class="ds2-5-stat--basic-small__label">Papers</div><div class="ds2-5-stat--basic-small__value">12</div></div><div class="ds2-5-stat--basic-small"><div class="ds2-5-stat--basic-small__label">Followers</div><div class="ds2-5-stat--basic-small__value">153</div></div></div><a href="https://unesp.academia.edu/AlexandreCampelo" class="AboutTheAuthorsSection-cls2_A6v AboutTheAuthorsSection-cls1_hRN"><span class="AboutTheAuthorsSection-cls2_5sH AboutTheAuthorsSection-cls1_X-b">View all papers from <!-- -->Alexandre Campelo</span><span class="AboutTheAuthorsSection-cls2_W7r AboutTheAuthorsSection-cls1_Oh8 material-symbols-outlined" style="font-size:18px" translate="no">arrow_forward</span></a></section></div></div>
+<script type="application/json" class="js-react-on-rails-component" id="js-react-on-rails-component-AboutTheAuthorsSSR-react-component-6e0d442d-f1bb-4bb6-a165-454fe0dcdb44" data-component-name="AboutTheAuthorsSSR" data-dom-id="AboutTheAuthorsSSR-react-component-6e0d442d-f1bb-4bb6-a165-454fe0dcdb44">{"authors":[{"id":676229,"displayName":"Alexandre Campelo","bio":"","photo":"https://0.academia-photos.com/676229/7921186/28843991/s65_alexandre.campelo.jpg","url":"https://unesp.academia.edu/AlexandreCampelo","position":"Department Member","university":"Universidade Estadual Paulista \"Júlio de Mesquita Filho\"","followers":153,"papers":12,"following":false,"show_premium_badge":false}],"workId":87513648}</script><div class="safe-right-rail--related-works"><h2 class="safe-related-content--heading">Related papers</h2><div class="safe-related-content--container" data-nosnippet=""><div class="ds-related-work--container js-related-work-sidebar-card js-safe-related-work-related-work " data-collection-position="0" data-entity-id="80978933" data-sort-order="default"><a class="ds-related-work--title js-related-work-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/80978933/The_validity_and_reliability_of_consumer_grade_activity_trackers_in_older_community_dwelling_adults_A_systematic_review">The validity and reliability of consumer-grade activity trackers in older, community-dwelling adults: A systematic review</a><div class="ds-related-work--metadata"><a class="js-related-work-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="5282517" href="https://sydney.academia.edu/JaniceGullick">Janice Gullick</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Maturitas, 2018</p><p class="ds2-5-body-sm ds-related-work--abstract hide-on-large">To understand the validity and reliability of consumer-grade activity trackers (consumer wearables) in older, community-dwelling adults. A systematic review of studies involving adults aged over 65 years who underwent physical activity monitoring with consumer wearables. A total of 7 observational studies qualified, identified from electronic databases: MEDLINE, EMBASE, Cochrane Library and others (2014-2018). Validity was interpreted using correlation coefficients (CC) and percentage error for agreement between reference devices or gold-standard validation methods Reliability was compared using mean differences or ranges (under- or overestimation) of step count and activity time. Total sample size was 290 adults, mean age of 70.2 ± 4.8 years and females constituting 46.7 ± 26.1%. The studies evaluated eight different consumer wearables used by community-dwelling adults with a range of co-morbidities. Daily step count for all consumer wearables correlated highly with validation crit...</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--ebe554e5"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":80978933,"extra":{"source_work_id":80978933}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--ebe554e5'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/80978933/The_validity_and_reliability_of_consumer_grade_activity_trackers_in_older_community_dwelling_adults_A_systematic_review","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":80978933,"extra":{"source_work_id":80978933}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":87181222}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-related-work-grid-card-view-pdf" href="https://www.academia.edu/80978933/The_validity_and_reliability_of_consumer_grade_activity_trackers_in_older_community_dwelling_adults_A_systematic_review"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-related-work-sidebar-card js-safe-related-work-related-work " data-collection-position="1" data-entity-id="78935903" data-sort-order="default"><a class="ds-related-work--title js-related-work-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/78935903/Acceptability_of_wristband_activity_trackers_among_community_dwelling_older_adults">Acceptability of wristband activity trackers among community dwelling older adults</a><div class="ds-related-work--metadata"><a class="js-related-work-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="87820112" href="https://usf.academia.edu/ReneeObrien">Renee Obrien</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Geriatric nursing (New York, N.Y.), 2015</p><p class="ds2-5-body-sm ds-related-work--abstract hide-on-large">Wristband activity trackers have become widely used among young adults. However, few studies have explored their use for monitoring and improving health outcomes among older adults. The purpose of this study was to evaluate the feasibility and utility of activity tracker use among older adults for monitoring activity, improving self-efficacy, and health outcomes. A 12-week pilot study was conducted to evaluate the feasibility and utility of mobile wristband activity trackers. The sample (N = 34) was 65% women 73.5 ± 9.4 years of age who had a high school diploma or GED (38%) and reported an income ≤$35,000 (58%). Participants completing the study (95%) experienced a decrease in waist circumference (p &amp;gt; 0.009), however no change in self-efficacy. Participants found activity trackers easy to use which contributed to minimal study withdrawals. It was concluded that activity trackers could be useful for monitoring and promoting physical activity and improving older adults&amp;#39; health.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--4fc058cb"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":78935903,"extra":{"source_work_id":78935903}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--4fc058cb'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/78935903/Acceptability_of_wristband_activity_trackers_among_community_dwelling_older_adults","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":78935903,"extra":{"source_work_id":78935903}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":85819670}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-related-work-grid-card-view-pdf" href="https://www.academia.edu/78935903/Acceptability_of_wristband_activity_trackers_among_community_dwelling_older_adults"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-related-work-sidebar-card js-safe-related-work-related-work " data-collection-position="2" data-entity-id="144006390" data-sort-order="default"><a class="ds-related-work--title js-related-work-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/144006390/Wearable_Devices_for_Physical_Activity_and_Healthcare_Monitoring_in_Elderly_People_A_Critical_Review">Wearable Devices for Physical Activity and Healthcare Monitoring in Elderly People: A Critical Review</a><div class="ds-related-work--metadata"><a class="js-related-work-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="310400651" href="https://independent.academia.edu/DiogoPinto98">Diogo Pinto</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Geriatrics, 2021</p><p class="ds2-5-body-sm ds-related-work--abstract hide-on-large">The availability of wearable devices (WDs) to collect biometric information and their use during activities of daily living is significantly increasing in the general population. These small electronic devices, which record fitness and health-related outcomes, have been broadly utilized in industries such as medicine, healthcare, and fitness. Since they are simple to use and progressively cheaper, they have also been used for numerous research purposes. However, despite their increasing popularity, most of these WDs do not accurately measure the proclaimed outcomes. In fact, research is equivocal about whether they are valid and reliable methods to specifically evaluate physical activity and health-related outcomes in older adults, since they are mostly designed and produced considering younger subjects’ physical and mental characteristics. Additionally, their constant evolution through continuous upgrades and redesigned versions, suggests the need for constant up-to-date reviews an...</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--65832780"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":144006390,"extra":{"source_work_id":144006390}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--65832780'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/144006390/Wearable_Devices_for_Physical_Activity_and_Healthcare_Monitoring_in_Elderly_People_A_Critical_Review","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":144006390,"extra":{"source_work_id":144006390}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":124647912}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-related-work-grid-card-view-pdf" href="https://www.academia.edu/144006390/Wearable_Devices_for_Physical_Activity_and_Healthcare_Monitoring_in_Elderly_People_A_Critical_Review"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-related-work-sidebar-card js-safe-related-work-related-work " data-collection-position="3" data-entity-id="92815025" data-sort-order="default"><a class="ds-related-work--title js-related-work-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/92815025/Accuracy_of_consumer_level_and_research_grade_activity_trackers_in_ambulatory_settings_in_older_adults">Accuracy of consumer-level and research-grade activity trackers in ambulatory settings in older adults</a><div class="ds-related-work--metadata"><a class="js-related-work-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="35702948" href="https://independent.academia.edu/SuzanneTimmons">Suzanne Timmons</a></div><p class="ds-related-work--metadata ds2-5-body-xs">PLOS ONE, 2019</p><p class="ds2-5-body-sm ds-related-work--abstract hide-on-large">Wrist-worn activity trackers have experienced a tremendous growth lately and studies on the accuracy of mainstream trackers used by older adults are needed. This study explores the performance of six trackers (Fitbit Charge2, Garmin VivoSmart HR+, Philips Health Watch, Withings Pulse Ox, ActiGraph GT9X-BT, Omron HJ-72OITC) for estimating: steps, travelled distance, and heart-rate measurements for a cohort of older adults. Eighteen older adults completed a structured protocol involving walking tasks, simulated household activities, and sedentary activities. Less standardized activities were also included, such as: dusting, using a walking aid, or playing cards, in order to simulate real-life scenarios. Wristmounted and chest/waist-mounted devices were used. Gold-standards included treadmill, ECG-based chest strap, direct observation or video recording according to the activity and parameter. Every tracker showed a decreasing accuracy with slower walking speed, which resulted in a significant step under-counting. A large mean absolute percentage error (MAPE) was found for every monitor at slower walking speeds with the lowest reported MAPE at 2 km/h being 7.78%, increasing to 20.88% at 1.5 km/h, and 44.53% at 1 km/h. During household activities, the MAPE climbing up/down-stairs ranged from 8.38-19.3% and 10.06-19.01% (dominant and non-dominant arm), respectively. Waist-worn devices showed a more uniform performance. However, unstructured activities (e.g. dusting, playing cards), and using a walking aid represent a challenge for all wrist-worn trackers as evidenced by large MAPE (&gt; 57.66% for dusting, &gt; 67.32% when using a walking aid). Poor performance in travelled distance estimation was also evident during walking at low speeds and climbing up/down-stairs (MAPE &gt; 71.44% and &gt; 48.3%, respectively). Regarding heart-rate measurement, there was no significant difference (p-values &gt; 0.05) in accuracy between trackers placed on the dominant or non-dominant arm. Concordant with existing literature, while the mean error was limited (between-3.57 bpm and 4.21 bpm), a single heartrate measurement could be underestimated up to 30 beats-per-minute. This study showed a number of limitations of consumer-level wrist-based activity trackers for older adults. Therefore caution is required when used, in healthcare or in research settings, to measure activity in older adults.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--03dcd0f8"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":92815025,"extra":{"source_work_id":92815025}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--03dcd0f8'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/92815025/Accuracy_of_consumer_level_and_research_grade_activity_trackers_in_ambulatory_settings_in_older_adults","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":92815025,"extra":{"source_work_id":92815025}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":95723870}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-related-work-grid-card-view-pdf" href="https://www.academia.edu/92815025/Accuracy_of_consumer_level_and_research_grade_activity_trackers_in_ambulatory_settings_in_older_adults"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-related-work-sidebar-card js-safe-related-work-related-work " data-collection-position="4" data-entity-id="143164973" data-sort-order="default"><a class="ds-related-work--title js-related-work-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/143164973/Physical_activity_measurement_in_older_adults_Wearables_versus_self_report">Physical activity measurement in older adults: Wearables versus self-report</a><div class="ds-related-work--metadata"><a class="js-related-work-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="170559260" href="https://independent.academia.edu/AnnaVandeBunte">Anna VandeBunte</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Frontiers in digital health, 2022</p><p class="ds2-5-body-sm ds-related-work--abstract hide-on-large">Physical activity (PA) is associated with preserved age-related body and brain health. However, PA quantification can vary. Commercial-grade wearable monitors are objective, low burden tools to capture PA but are less well validated in older adults. Self-report PA questionnaires are widely accepted and more frequently used but carry inherent limitations. We aimed to compare these commonly used PA measures against one another and examine their convergent validity with a host of relevant outcomes. We also examined the factors that drive differences in PA self-reporting styles in older adults. 179 older adults completed 30-day Fitbit Flex2™ monitoring and reported PA levels via two widely used PA questionnaires: PASE and CHAMPS-METs (metabolic expenditure calories burned). Participants also completed measures of cardiometabolic (hypertension diagnosis, resting heart rate, A1C levels), cognitive (memory, processing speed, executive functioning), and brain MRI (medial temporal lobe volume) outcomes. The discrepancy between objective Fitbit monitoring and self-reported PA was evaluated using a sample-based z difference score. There were only modest relationships across all PA metrics. Fitbit step count demonstrated a stronger association with the PASE, whereas Fitbit calories burned was more strongly associated with CHAMPS-MET. Fitbit outcomes had more consistent convergence with relevant outcomes of interest (e.g., cardiometabolic and brain health indices) when compared to subjective measures; however, considerable heterogeneity within these associations was observed. A higher degree of overreporting was associated with worse memory and executive performances, as well as hypertension diagnoses. We build on prior findings that wearable, digital health indicators of PA demonstrate greater construct validity than self-report in older adults. We further show important clinical features (e.g., poorer cognitive status) of older adults that could contribute to a higher level of overreporting on self-report measures. Characterization of what PA measures truly operationalize will help elucidate relationships between most relevant facets of PA and outcomes of interest.</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--4cd92862"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":143164973,"extra":{"source_work_id":143164973}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--4cd92862'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/143164973/Physical_activity_measurement_in_older_adults_Wearables_versus_self_report","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":143164973,"extra":{"source_work_id":143164973}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":124000759}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-related-work-grid-card-view-pdf" href="https://www.academia.edu/143164973/Physical_activity_measurement_in_older_adults_Wearables_versus_self_report"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-related-work-sidebar-card js-safe-related-work-related-work hidden" data-collection-position="5" data-entity-id="113200741" data-sort-order="default"><a class="ds-related-work--title js-related-work-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/113200741/Validity_Reliability_and_Sensitivity_to_Change_of_Three_Consumer_Grade_Activity_Trackers_in_Controlled_and_Free_Living_Conditions_among_Older_Adults">Validity, Reliability and Sensitivity to Change of Three Consumer-Grade Activity Trackers in Controlled and Free-Living Conditions among Older Adults</a><div class="ds-related-work--metadata"><a class="js-related-work-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="220432326" href="https://independent.academia.edu/MarinaDobnik">Marina Dobnik</a></div><p class="ds-related-work--metadata ds2-5-body-xs">Sensors, 2021</p><p class="ds2-5-body-sm ds-related-work--abstract hide-on-large">This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--c0a0aedc"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":113200741,"extra":{"source_work_id":113200741}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--c0a0aedc'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/113200741/Validity_Reliability_and_Sensitivity_to_Change_of_Three_Consumer_Grade_Activity_Trackers_in_Controlled_and_Free_Living_Conditions_among_Older_Adults","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":113200741,"extra":{"source_work_id":113200741}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":110222660}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-related-work-grid-card-view-pdf" href="https://www.academia.edu/113200741/Validity_Reliability_and_Sensitivity_to_Change_of_Three_Consumer_Grade_Activity_Trackers_in_Controlled_and_Free_Living_Conditions_among_Older_Adults"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><div class="ds-related-work--container js-related-work-sidebar-card js-safe-related-work-related-work hidden" data-collection-position="6" data-entity-id="70691308" data-sort-order="default"><a class="ds-related-work--title js-related-work-grid-card-title ds2-5-body-md ds2-5-body-link" href="https://www.academia.edu/70691308/Assessing_Daily_Physical_Activity_in_Older_Adults_Unraveling_the_Complexity_of_Monitors_Measures_and_Methods">Assessing Daily Physical Activity in Older Adults: Unraveling the Complexity of Monitors, Measures, and Methods</a><div class="ds-related-work--metadata"><a class="js-related-work-grid-card-author ds2-5-body-sm ds2-5-body-link" data-author-id="33412879" href="https://jhsph.academia.edu/JenniferSchrack">Jennifer Schrack</a></div><p class="ds-related-work--metadata ds2-5-body-xs">The journals of gerontology. Series A, Biological sciences and medical sciences, 2016</p><p class="ds2-5-body-sm ds-related-work--abstract hide-on-large">At the 67th Gerontological Society of America Annual Meeting, a preconference workshop was convened to discuss the challenges of accurately assessing physical activity in older populations. The advent of wearable technology (eg, accelerometers) to monitor physical activity has created unprecedented opportunities to observe, quantify, and define physical activity in the real-world setting. These devices enable researchers to better understand the associations of physical activity with aging, and subsequent health outcomes. However, a consensus on proper methodological use of these devices in older populations has not been established. To date, much of the validation research regarding device type, placement, and data interpretation has been performed in younger, healthier populations, and translation of these methods to older populations remains problematic. A better understanding of these devices, their measurement properties, and the data generated is imperative to furthering our u...</p><div class="ds-related-work--ctas"><a class="ds2-5-text-link ds2-5-text-link--inline js-tc-loswp--wsj-grid-card-download-pdf-modal js-login-button--f2d88b7c"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">download</span><span class="ds2-5-text-link__content">Download free PDF</span></a><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (text button link)';
+  }
+
+  const options = {"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":70691308,"extra":{"source_work_id":70691308}};
+  const button = document.querySelector('.js-tc-loswp--wsj-grid-card-download-pdf-modal');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--f2d88b7c'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/70691308/Assessing_Daily_Physical_Activity_in_Older_Adults_Unraveling_the_Complexity_of_Monitors_Measures_and_Methods","clickTrackingContext":{"source":"loswp--wsj-grid-card-download-pdf-modal","bucket":"outline","entity_id":70691308,"extra":{"source_work_id":70691308}},"configuredText":{"buttonsPage":{"header":"Read your PDF for free"},"emailEntryPage":{"subheader":"Sign up or log in to continue reading."},"emailLoginPage":{"subheader":"Log in to continue reading."},"emailRegistrationPage":{"subheader":"Sign up to continue reading."}},"registrationParams":{"user_source":"download","doc_id":80335467}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script><a class="ds2-5-text-link ds2-5-text-link--inline js-related-work-grid-card-view-pdf" href="https://www.academia.edu/70691308/Assessing_Daily_Physical_Activity_in_Older_Adults_Unraveling_the_Complexity_of_Monitors_Measures_and_Methods"><span class="ds2-5-text-link__content">View PDF</span><span class="material-symbols-outlined" style="font-size: 18px" translate="no">chevron_right</span></a></div></div><button class="ds2-5-text-link ds2-5-text-link--inline safe-related-works--view-more-button js-safe-related-works-related-work--view-more-button"><span class="material-symbols-outlined" style="font-size: 18px" translate="no">keyboard_arrow_down</span><span class="ds2-5-text-link__content">View more papers</span></button></div></div><div class="safe-related-topics--container"><h2 class="safe-related-topics--heading">Related topics</h2><div class="safe-related-topics--list"><div class="safe-related-topics--subgroup"><li class="safe-related-topics--list-item"><a class="ds2-5-body-sm ds2-5-body-link js-related-research-interest" data-entity_id="221" href="https://www.academia.edu/Documents/in/Psychology">Psychology</a><button class="ds-pill-button ds-pill-button--small js-tc-loswp--related-topics--follow js-login-button--aab32854 safe-related-topics--pill"><span class="material-symbols-outlined" style="font-size: 16px" translate="no">add</span>Follow</button><script>document.addEventListener('DOMContentLoaded', () => {
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const csrfToken = document.querySelector("[name='csrf-token']")?.content ??
+    getCookie('masked_csrf_token');
+  if (!csrfToken) {
+    throw 'click tracking disabled due to missing CSRF token (pill button)';
+  }
+
+  const options = {"source":"loswp--related-topics--follow","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}};
+  const button = document.querySelector('.js-tc-loswp--related-topics--follow');
+  button.addEventListener('click', () => {
+    fetch('/v0/clicks?subdomain_param=api', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': csrfToken,
+      },
+      keepalive: true,
+      mode: 'same-origin',
+      body: JSON.stringify({
+        ...options,
+        occurred_at: new Date(),
+        hit_id: window.Aedu?.hit_data?.id,
+      }),
+    });
+  });
+});</script><script>document.addEventListener('DOMContentLoaded', () => { const loginButton = document.querySelector('.js-login-button--aab32854'); if (!loginButton) { throw new Error('Login button not found'); } const options = { detail: {"postLoginRedirectUrl":"https://www.academia.edu/Documents/in/Psychology","clickTrackingContext":{"source":"loswp--related-topics--follow","bucket":"outline","entity_id":87513648,"extra":{"source_work_id":87513648}},"configuredText":{"buttonsPage":{"header":"Follow topics to stay up-to-date"},"emailEntryPage":{"subheader":"Sign up or log in to follow this topic."},"emailLoginPage":{"subheader":"Log in to follow this topic."},"emailRegistrationPage":{"subheader":"Sign up to follow this topic."}},"registrationParams":{"user_source":"download","doc_id":91700244}} }; loginButton.addEventListener('click', () => { document.dispatchEvent(new CustomEvent('open-login-modal', options)); }); });</script></li></div></div></div></div></div><script type="application/json" id="js-react-on-rails-context">{"componentRegistryTimeout":5000,"railsEnv":"production","inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","rorVersion":"16.1.2","rorPro":true,"rorProVersion":"3.3.1","href":"https://www.academia.edu/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","location":"/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","scheme":"https","host":"www.academia.edu","port":null,"pathname":"/87513648/Physical_Activity_Tracking_Wristbands_for_Use_in_Research_With_Older_Adults_An_Overview_and_Recommendations","search":null,"httpAcceptLanguage":null,"autoProps":{},"serverSide":false}</script>
+<div id="LoginModalManager-react-component-9e3e950e-fc14-47d2-9212-d8560d69d603"></div>
+<script type="application/json" class="js-react-on-rails-component" id="js-react-on-rails-component-LoginModalManager-react-component-9e3e950e-fc14-47d2-9212-d8560d69d603" data-component-name="LoginModalManager" data-dom-id="LoginModalManager-react-component-9e3e950e-fc14-47d2-9212-d8560d69d603">{}</script><script>window.qualarooInitialization = {"route__controller":"single_work","route__action":"show","user_id":"auvid_MTc3Mzg5NDg5ODk3MTowLjcyMDU1ODI1MzY0Njk4MTE=","premium":null,"author":null,"country":null,"is_faculty":false,"over_1_week_old":null,"account_age_in_days":null,"role":null,"is_author":null,"is_published":false,"num_works_uploaded":null,"in_ehcc":false,"in_hcc":false,"in_row":false,"premium_age_in_days":null,"num_premium_sessions":null}</script>
+
+        <div class="about-footer-container"><div class="footer-grid"><div class="links-row"><div class="text-column"><div class="academia-logo"><a href="https://www.academia.edu/"><img alt="Academia" src="//a.academia-assets.com/images/design_system/academia_logo_short_white.svg" /></a></div></div><div class="responsive-two-column-container"><div class="inner-two-column-container"><ul class="single-column"><li class="header">Explore</li><li><a href="https://www.academia.edu/documents">Papers</a></li><li><a href="https://www.academia.edu/topics">Topics</a></li></ul><ul class="single-column"><li class="header">Features</li><li><a href="https://www.academia.edu/login?post_login_redirect_url=https%3A%2F%2Fwww.academia.edu%2Fmentions">Mentions</a></li><li><a href="https://www.academia.edu/login?post_login_redirect_url=https%3A%2F%2Fwww.academia.edu%2Fanalytics">Analytics</a></li><li><a href="https://www.academia.edu/login?post_login_redirect_url=https%3A%2F%2Fwww.academia.edu%2Fresearch">PDF Packages</a></li><li><a href="https://www.academia.edu/login?post_login_redirect_url=https%3A%2F%2Fwww.academia.edu%2Fsearch%2Fadvanced">Advanced Search</a></li><li><a href="https://www.academia.edu/login?post_login_redirect_url=https%3A%2F%2Fwww.academia.edu%2Fsaved_searches">Search Alerts</a></li></ul></div><div class="inner-two-column-container"><ul class="single-column"><li class="header">Journals</li><li><a href="https://www.academia.edu/journals">Academia.edu Journals</a></li><li><a href="https://www.academia.edu/login?post_login_redirect_url=https%3A%2F%2Fwww.academia.edu%2Fjournals%2Fsubmissions">My submissions</a></li><li><a href="https://www.academia.edu/login?post_login_redirect_url=https%3A%2F%2Fwww.academia.edu%2Fjournals%2Fsubmissions%23reviewer%2Finvitations">Reviewer Hub</a></li><li><a href="https://www.academia.edu/journals/about/why-publish-with-us">Why publish with us</a></li><li><a href="https://www.academia.edu/journals/about/testimonials">Testimonials</a></li></ul><ul class="single-column"><li class="header">Company</li><li><a href="https://www.academia.edu/about">About</a></li><li><a href="https://www.academia.edu/hiring">Careers</a></li><li><a href="https://www.academia.edu/press">Press</a></li><li><a href="https://support.academia.edu/hc/en-us">Help Center</a></li><li><a href="https://www.academia.edu/terms">Terms</a></li><li><a href="https://www.academia.edu/privacy">Privacy</a></li><li><a href="https://www.academia.edu/copyright">Copyright</a></li><li><a href="https://www.academia.edu/content_policy">Content Policy</a></li></ul></div></div></div><div class="subfooter-row"><div class="academia-logo"><a href="https://www.academia.edu/"><img alt="Academia" src="//a.academia-assets.com/images/design_system/academia_logo_white.svg" /></a></div><div class="text"><div>580 California St., Suite 400</div><div>San Francisco, CA, 94104</div></div><div class="text"><div><a href="https://www.academia.edu/copyright">© 2026 Academia. All rights reserved</a></div></div></div></div></div>
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9de9c48f7817275a',t:'MTc3Mzg5NDg5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  </html>
