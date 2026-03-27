@@ -67,10 +67,15 @@ const saveCsvPlugin = () => ({
         // Serve PDFs from the papers directory
         const filename = decodeURIComponent(req.url.replace('/vismethodliterature/papers/', ''));
         const filePath = path.join(process.cwd(), 'papers', filename);
+        console.log(`[PDF DEBUG] Serving: "${filename}" at "${filePath}"`);
         if (fs.existsSync(filePath)) {
+          const stats = fs.statSync(filePath);
           res.setHeader('Content-Type', 'application/pdf');
+          res.setHeader('Content-Length', stats.size);
+          res.setHeader('Accept-Ranges', 'bytes');
           fs.createReadStream(filePath).pipe(res);
         } else {
+          console.error(`[PDF ERROR] File not found: "${filePath}"`);
           res.statusCode = 404;
           res.end('Not Found');
         }

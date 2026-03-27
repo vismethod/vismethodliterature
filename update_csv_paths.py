@@ -5,14 +5,33 @@ import re
 csv_path = 'paper_search_results.csv'
 papers_dir = 'papers'
 
-files = [f for f in os.listdir(papers_dir) if f.endswith('.pdf')]
-
 def normalize_name(name):
     # Strip year prefix, extensions, and non-alphanumeric chars
     name = re.sub(r'^\d{4}\s*-\s*', '', name)
     name = re.sub(r'[^a-zA-Z0-9]', '', name).lower()
     name = name.replace('pdf', '')
     return name
+
+files = []
+file_map = {}
+if os.path.exists(papers_dir):
+    for paper_file in os.listdir(papers_dir):
+        if not paper_file.endswith('.pdf'):
+            continue
+            
+        full_path = os.path.join(papers_dir, paper_file)
+        # Verify it's valid PDF binary
+        try:
+            with open(full_path, 'rb') as f:
+                header = f.read(4)
+                if header != b'%PDF':
+                    continue
+        except Exception:
+            continue
+            
+        files.append(paper_file)
+        norm = normalize_name(paper_file)
+        file_map[norm] = full_path
 
 file_map = {}
 for f in files:
@@ -22,63 +41,82 @@ for f in files:
 rows = []
 update_count = 0
 
-with open(csv_path, 'r', encoding='utf-8') as f:
+with open(csv_path, 'r', encoding='utf-8-sig') as f:
     reader = csv.DictReader(f)
-    fieldnames = reader.fieldnames
-    for row in reader:
-        rows.append(row)
+def normalize_title(title):
+    if not title:
+        return ""
+    # Add spaces around transitions from lower to upper case (CamelCase)
+    title = re.sub(r'([a-z])([A-Z])', r'\1 \2', title)
+    return re.sub(r'[^a-z0-9 ]', ' ', title.lower()).strip()
 
-import difflib
+def get_bag_of_words(text):
+    # Split on any whitespace and filter out short words
+    words = normalize_title(text).split()
+    return set(w for w in words if len(w) > 2 or w.isdigit())
 
-for row in rows:
-    title = row.get('title', '')
-    if not title: continue
+def update_csv_links(csv_path, papers_dir):
+    if not os.path.exists(csv_path):
+        print(f"CSV not found: {csv_path}")
+        return
     
-    norm_title = normalize_name(title)
-    if not norm_title: continue
+    # Pre-index files by normalized name parts
+    paper_files = [f for f in os.listdir(papers_dir) if f.lower().endswith('.pdf')]
+    paper_bags = [(f, get_bag_of_words(f)) for f in paper_files]
     
-    best_match = None
-    best_ratio = 0.0
+    rows = []
+    updated_count = 0
     
-    # 1. Try exact substring
-    for f in files:
-        n_file = normalize_name(f)
-        if norm_title in n_file or n_file in norm_title:
-            best_match = f
-            best_ratio = 1.0
-            break
+    # Use utf-8-sig to handle BOM
+    with open(csv_path, 'r', encoding='utf-8-sig') as f:
+        reader = csv.DictReader(f)
+        fieldnames = list(reader.fieldnames) if reader.fieldnames else []
+        for row in reader:
+            # If pdf_file is already set and valid, keep it
+            current_pdf = row.get('pdf_file', '').strip()
+            if current_pdf and os.path.exists(os.path.join(papers_dir, current_pdf)):
+                rows.append(row)
+                continue
             
-    # 2. Try fuzzy match
-    if not best_match:
-        for f in files:
-            n_file = normalize_name(f)
-            # if the file is just a number, skip fuzzy title match
-            if n_file.isdigit(): continue 
-            
-            ratio = difflib.SequenceMatcher(None, norm_title, n_file).ratio()
-            if ratio > best_ratio:
-                best_ratio = ratio
-                best_match = f
+            # Try fuzzy matching
+            title = row.get('title', '')
+            if not title:
+                rows.append(row)
+                continue
                 
-    if best_match and best_ratio > 0.75:
-        matched_path = os.path.join('/Users/zezhongwang/Downloads/VIS-Method/papers', best_match)
-        current_path = row.get('pdf_file', '').strip()
+            title_bag = get_bag_of_words(title)
+            if not title_bag:
+                rows.append(row)
+                continue
+                
+            best_match = None
+            best_score = 0
+            
+            for filename, file_bag in paper_bags:
+                # Intersection over union (or just intersection over title words)
+                if not file_bag: continue
+                intersection = title_bag.intersection(file_bag)
+                score = len(intersection) / len(title_bag)
+                
+                if score > best_score:
+                    best_score = score
+                    best_match = filename
+            
+            # Use a threshold to avoid false positives (e.g. 25% of title words must match)
+            if best_match and best_score >= 0.25:
+                row['pdf_file'] = best_match
+                if 'download_status' in row:
+                    row['download_status'] = 'downloaded'
+                updated_count += 1
+            
+            rows.append(row)
+            
+    with open(csv_path, 'w', encoding='utf-8-sig', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
         
-        if current_path != matched_path:
-            row['pdf_file'] = matched_path
-            row['download_status'] = 'downloaded'
-            update_count += 1
-    else:
-        # Ensure we don't hold dead links
-        old = row.get('pdf_file', '').strip()
-        if old and not os.path.exists(old):
-            row['pdf_file'] = ''
-            row['download_status'] = 'no_open_pdf_found'
-            update_count += 1
+    print(f"Updated {updated_count} CSV records to match the current papers directory.")
 
-with open(csv_path, 'w', encoding='utf-8', newline='') as f:
-    writer = csv.DictWriter(f, fieldnames=fieldnames)
-    writer.writeheader()
-    writer.writerows(rows)
-
-print(f"Updated {update_count} CSV records to match the current papers directory.")
+if __name__ == "__main__":
+    update_csv_links("paper_search_results.csv", "papers")

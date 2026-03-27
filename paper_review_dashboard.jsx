@@ -16,8 +16,7 @@ function sanitizeFilename(name) {
   return String(name || "")
     .replace(/\\/g, "/")
     .split("/")
-    .pop()
-    .trim();
+    .pop();
 }
 
 function cleanFilenameForUpload(title) {

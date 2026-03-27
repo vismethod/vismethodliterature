@@ -1,0 +1,54 @@
+On researching activity tracking to support learning: a retrospective
+Use of GPS tracking to interactively explore disabled children's mobility and accessibility patterns
+Toward understanding person–place transactions in neighborhoods: a qualitative-participatory geospatial approach
+"Personal informatics
+Health experience model of personal informatics: The case of a quantified self
+Effectiveness of collaborative map-based decision support tools: Results of an experiment
+"Put Your Muscle Into It: Introducing XEM2
+"Digital health interventions for promoting healthy aging: a systematic review of adoption patterns
+Unlocking inclusive education: A quality assessment of software design in applications for children with autism
+Towards Data-Enabled Physical Activity Planning: An Exploratory Study of HCP Perspectives On The Integration Of Patient-Generated Health Data
+Wearable Health Technology Data Privacy; Investigating the Balance between the Benefits of Wearable Health Devices and the Privacy Concerns they Raise
+Tap to Track: A One-Button System foreasy to use Emotional Logging: Development and Feasibility Evaluation of a Prototype for Everyday Real-Time Health Data …
+Co-Creation of Micro-Content Types.
+Lifelogging by senior citizens: implications from a light-weight GPS-based study
+Comparing bicycling and pedestrian mobility: Patterns of non-motorized human mobility in Greater Boston
+An interaction design toolkit for physical task guidance with artificial intelligence and mixed reality
+Development and Exploratory Findings of a Smartwatch Interface to Facilitate Group Cohesion in a Statewide Health Promotion Program
+"Design beyond the numbers: sharing
+Smartwatch Centered System for Facilitating Group Processes of Small Teams in a Statewide Health Promotion Program
+Usability testing: a review of some methodological and technical aspects of the method
+Wearable Product Design for Pain Management and Behavioral Support in Bipolar Disorder
+Integrating data-driven methods and expert knowledge to develop personas: Balancing automation and multi-disciplinary validation
+Designing Multimodal Alternatives for Nonvisual Computer Interaction
+Quantifying urban activities using nodal seismometers in a heterogeneous urban space
+A design toolkit for task support with mixed reality and artificial intelligence
+Leveraging mobile fitness apps for healthier lifestyles: How affordances drive sustained engagement
+Food logging: an information literacy perspective
+"Usability
+Information retrieval in digital environments
+Gamified wearable fitness tracker for physical activity: a comprehensive literature review
+The living lab as a practical approach for ICT design: setup and maintenance work in domestic environments
+SmartHub: Transitioning Mixed Software and Hardware Projects Across Student Generations–Lessons Learned
+Understanding and Design of Everyday Technology for Coproducing Parenting within New Couple Parents
+An investigation of usage barriers for personal informatics tools
+Preliminary Efficacy of a Gamified Mobile App for Promoting Self-Health Management Among Nurses in the Post-COVID Era: Single-Group Pre-Post Study
+Survey on demand for smart home technology as assistive technology for people with physical disabilities in Korea
+How Do Users Perceive Nudges Against Online Misinformation? A Repertory-Grid Study
+Socially Relevant Knowledge Based Telemedicine
+"A synopsis of “The impact of motivation
+DEVELOPMENT OF COMPETENCIES AND SKILLS THROUGH THE CREATION AND PROTOTYPING OF HEALTH APPLICATIONS
+Quantified stress: toward data-driven stress awareness
+The Atlanta Phoenix Project: Applications of Gamification for Online Civic Engagement
+A framework for remotely enabled co-design with young people: its development and application with neurodiverse children and their caregivers
+"Growth Product Manager's Handbook: Winning strategies and frameworks for driving user acquisition
+A Framework for Remotely Enabled Co-Design with Young people (FREDY): its development and application with neurodiverse children neurodevelopmental …
+Landscape of the now: A topography of movement improvisation
+AUTOMATIC DISCOVERY OF PROBLEMATIC SITUATIONS IN BIOSIGNALS OF PATIENTS WITH DIABETES
+Map-based decision support tools for collaborative land use planning
+Usability testing: some current practices and research questions
+Identifying and combating cyber-threats in the field of online banking
+Scenery of pharmaceutical care
+The use of horses for undergraduate practical teaching: animal welfare and teaching implications: a thesis presented in partial fulfilment of the requirements for the …
+BEYOND THE NUMBERS
+""" FitHub"" a service design to encourage physical activity through branded incentives Sub Title Author Salikova

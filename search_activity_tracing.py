@@ -15,17 +15,17 @@ CSV_PATH = OUTPUT_DIR / "paper_search_results.csv"
 
 # Configuration
 USE_SERPAPI = True
-SERPAPI_API_KEY = "a5ea7b3b33234b1f322739785c85746ef1d1c5785171d03de74d2b2a08073328"
+SERPAPI_API_KEY = os.environ.get("SERPAPI_API_KEY", "YOUR_SERPAPI_KEY") # Replace with your regenerated key
 SERPAPI_URL = "https://serpapi.com/search.json"
 
 # Search settings
 MAX_SERPAPI_PAGES = 10 # Up to 10 pages (200 results)
 MAX_S2_RESULTS = 200
 SLEEP_SECONDS = 3.0
-TARGET_LABEL = "Keyword-26Mar18-ActivityTracing"
+TARGET_LABEL = "Keyword-26Mar25-ActivityTracing"
 
 # Primary Refined Boolean Query from User
-PRIMARY_QUERY = '("video" OR "observation") AND ("visualization" OR "visualiz") AND ("analyz" OR "interpret" OR "understand") AND ("interaction" OR "action") AND ("qualitative") AND ("activity tracing" OR "activity tracking")'
+PRIMARY_QUERY = '("observation") AND ("visualization" OR "visualiz") AND ("analyz" OR "interpret" OR "understand") AND ("human interaction" OR "human activity" OR "user interaction") AND ("qualitative") AND ("activity tracing" OR "activity tracking") -"eye-tracking" -"eye tracking" -"computer vision" -"machine learning" -"deep learning" -"neural network"'
 
 QUERY_LIST = [
     PRIMARY_QUERY,
@@ -223,7 +223,12 @@ def download_pdfs(records: List[Dict[str, Any]], pdf_dir: Path, max_downloads: i
         pdf_url = r.get("pdf_url")
         if not pdf_url: continue
         
-        filename = f"{r.get('year', '2024')} - {re.sub(r'[\\\\/*?:\x22<>|]', '_', r.get('title', 'untitled'))}.pdf"
+        safe_title = re.sub(r'[\\\\/*?:\x22<>|]', '_', r.get('title', 'untitled'))
+        year = r.get('year')
+        if year:
+            filename = f"{year} - {safe_title}.pdf"
+        else:
+            filename = f"{safe_title}.pdf"
         out_path = pdf_dir / filename
         
         if out_path.exists():
@@ -280,6 +285,6 @@ if __name__ == "__main__":
     
     if len(sys.argv) > 1 and sys.argv[1] == "--execute":
         merge_to_csv(results, CSV_PATH)
-        download_pdfs(results, PDF_DIR, max_downloads=50)
+        download_pdfs(results, PDF_DIR, max_downloads=300)
     else:
         print("\nTo actually add these to the CSV and download PDFs, run with: python3 search_activity_tracing.py --execute")
