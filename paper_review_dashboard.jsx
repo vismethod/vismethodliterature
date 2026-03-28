@@ -302,11 +302,21 @@ export default function PaperReviewDashboard() {
     executePaperChange(next);
   }
 
-  async function updatePaperLabel(key, value) {
-    const updated = papers.map(p => paperKey(p) === key ? { ...p, label: value } : p);
+  async function updatePaperLabel(key, nextLabel) {
+    const updated = papers.map(p => {
+      if (paperKey(p) === key) {
+        const currentLabels = String(p.label || "").split(",").map(l => l.trim()).filter(Boolean);
+        const exists = currentLabels.includes(nextLabel);
+        const nextLabelsSet = exists ? currentLabels.filter(l => l !== nextLabel) : [...currentLabels, nextLabel];
+        return { ...p, label: nextLabelsSet.join(", ") };
+      }
+      return p;
+    });
     executePaperChange(updated);
-    setAddingLabelId(null);
-    setNewLabelText("");
+    if (addingLabelId === key) {
+      setAddingLabelId(null);
+      setNewLabelText("");
+    }
   }
 
   async function saveLabelData(newData) {
@@ -448,9 +458,61 @@ export default function PaperReviewDashboard() {
                                 </>
                               )}
                             </div>
-                            <div className="mt-2.5 flex flex-wrap gap-1.5" onClick={e => e.stopPropagation()}>{uniqueLabels.filter(l => paper.label?.includes(l)).map(l => (
-                              <span key={l} className="inline-flex items-center gap-1 rounded bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600"><Tag className="h-2.5 w-2.5" />{l}</span>
-                            ))}</div>
+                             <div className="mt-2.5 flex flex-wrap gap-1.5" onClick={e => e.stopPropagation()}>
+                              {uniqueLabels.filter(l => paper.label?.includes(l)).map(l => (
+                                <span key={l} className="group/tag inline-flex items-center gap-1 rounded bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600 transition-colors hover:bg-rose-50 hover:text-rose-600 cursor-pointer" onClick={() => updatePaperLabel(paper._key, l)}>
+                                  <Tag className="h-2.5 w-2.5" />
+                                  {l}
+                                  <X className="h-2 w-2 opacity-0 group-hover/tag:opacity-100" />
+                                </span>
+                              ))}
+                              {addingLabelId === paper._key ? (
+                                <div className="relative flex flex-col gap-1 w-full max-w-[200px]">
+                                  <div className="flex items-center gap-1 bg-white border border-violet-200 rounded-md shadow-sm p-1">
+                                    <input 
+                                      autoFocus
+                                      value={newLabelText}
+                                      onChange={e => setNewLabelText(e.target.value)}
+                                      onKeyDown={e => {
+                                        if (e.key === "Enter" && newLabelText.trim()) updatePaperLabel(paper._key, newLabelText.trim());
+                                        if (e.key === "Escape") { setAddingLabelId(null); setNewLabelText(""); }
+                                      }}
+                                      className="text-[10px] px-1.5 py-0.5 outline-none flex-1 min-w-0"
+                                      placeholder="Label name..."
+                                    />
+                                    <button onClick={() => newLabelText.trim() && updatePaperLabel(paper._key, newLabelText.trim())} className="text-emerald-600 hover:text-emerald-700 p-0.5 shrink-0"><Check className="h-3.5 w-3.5" /></button>
+                                    <button onClick={() => { setAddingLabelId(null); setNewLabelText(""); }} className="text-slate-400 hover:text-slate-500 p-0.5 shrink-0"><X className="h-3.5 w-3.5" /></button>
+                                  </div>
+                                  
+                                  {(() => {
+                                    const suggestions = uniqueLabels.filter(l => !String(paper.label || "").includes(l) && (newLabelText === "" || l.toLowerCase().includes(newLabelText.toLowerCase())));
+                                    if (suggestions.length === 0) return null;
+                                    return (
+                                      <div className="absolute top-full left-0 right-0 z-[100] mt-1 max-h-32 overflow-auto bg-white border border-slate-200 rounded-md shadow-lg p-1 animate-in fade-in slide-in-from-top-1 duration-100">
+                                        <div className="text-[9px] font-bold text-slate-400 uppercase tracking-tight px-1.5 py-1 border-b mb-1">Suggestions</div>
+                                        {suggestions.map(l => (
+                                          <button 
+                                            key={l} 
+                                            onClick={() => updatePaperLabel(paper._key, l)}
+                                            className="w-full text-left px-1.5 py-1 text-[10px] text-slate-600 hover:bg-violet-50 hover:text-violet-700 rounded transition-colors"
+                                          >
+                                            {l}
+                                          </button>
+                                        ))}
+                                      </div>
+                                    );
+                                  })()}
+                                </div>
+                              ) : (
+                                <button
+                                  onClick={() => setAddingLabelId(paper._key)}
+                                  className="inline-flex items-center gap-1 rounded border border-dashed border-slate-300 bg-white px-2 py-0.5 text-[10px] font-medium text-slate-400 hover:border-violet-300 hover:text-violet-600 transition-colors"
+                                >
+                                  <Plus className="h-2.5 w-2.5" />
+                                  Add Label
+                                </button>
+                              )}
+                            </div>
                           </div>
                         </div>
                       </div>
