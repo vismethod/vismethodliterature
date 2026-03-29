@@ -355,7 +355,7 @@ export default function PaperReviewDashboard() {
 
       <div className="flex-1 flex flex-col overflow-hidden">
         <div className="shrink-0 border-b bg-white/90 backdrop-blur px-4 py-4"><div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <h1 className="text-2xl font-semibold">VIS Literature</h1>
+          <h1 className="text-2xl font-semibold">VIS Method</h1>
           <div className="flex flex-wrap gap-2">{uniqueLabels.map(lbl => (
             <button key={lbl} onClick={() => setLabelFilters(prev => prev.includes(lbl) ? prev.filter(l => l !== lbl) : [...prev, lbl])} className={`px-3 py-1.5 text-xs font-medium rounded-full border transition ${labelFilters.includes(lbl) ? "bg-violet-600 text-white" : "bg-white text-slate-600 hover:bg-slate-50"}`}>{lbl}</button>
           ))}</div>
