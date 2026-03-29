@@ -7,7 +7,7 @@
     "license": "Apache-2.0",
     "scripts": {
         "dev": "vite",
-        "build": "vite build && cp paper_search_results.csv dist/ && cp -r papers dist/",
+        "build": "vite build && cp paper_search_results.csv dist/ && cp label_descriptions.json dist/ && cp -r papers dist/",
         "preview": "vite preview",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist"
