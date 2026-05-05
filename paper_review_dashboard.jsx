@@ -199,7 +199,7 @@ export default function PaperReviewDashboard() {
   const [papers, setPapers] = useState([]);
   const [selectedKey, setSelectedKey] = useState("");
   const [search, setSearch] = useState("");
-  const [includeFilter, setIncludeFilter] = useState("all");
+  const [includeFilter, setIncludeFilter] = useState("included");
   const [reviewFilter, setReviewFilter] = useState("all");
   const [manualNumbers, setManualNumbers] = useState({});
   const [annotations, setAnnotations] = useState({});
